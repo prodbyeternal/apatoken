@@ -4,7 +4,7 @@
 
 # iAPATOKEN
 
-**Natifowa aplikacja iOS (SwiftUI) dla przedpłatowych liczników energii APATOR**
+**Natywna aplikacja iOS (SwiftUI) dla przedpłatowych liczników energii APATOR**
 
 Port aplikacji **APATOKEN (Android / .NET MAUI)** — komunikacja DLMS/HDLC przez Bluetooth Low Energy.
 
