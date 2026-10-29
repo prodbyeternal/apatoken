@@ -16,9 +16,9 @@ Port aplikacji **APATOKEN (Android / .NET MAUI)** — komunikacja DLMS/HDLC prze
 
 ## 📱 Zrzuty ekranu
 
-| Doładowanie | Odczyty | Ustawienia |
+| Doładowanie | Odczyty | O aplikacji |
 |:---:|:---:|:---:|
-| ![Doładowanie](IMG_0225.PNG) | ![Odczyty](IMG_0226.PNG) | ![Ustawienia](IMG_0227.PNG) |
+| ![Doładowanie](IMG_0225.PNG) | ![Odczyty](IMG_0226.PNG) | ![O aplikacji](IMG_0227.PNG) |
 
 ---
 
