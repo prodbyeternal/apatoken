@@ -18,16 +18,17 @@ struct ReadingsView: View {
         VStack(spacing: 0) {
             ReadingsHeader()
             ScrollView {
-                VStack(spacing: 18) {
+                VStack(spacing: 16) {
                     zone1Card
                     zone2Card
                     deviceAndActivity
                     readButton
                 }
-                .padding(16)
+                .padding(.horizontal, 16)
+                .padding(.bottom, 24)
             }
         }
-        .background(Color(uiColor: .systemGroupedBackground))
+        .background(ApaColor.page)
         .alertPopup($alert)
         .onAppear {
             if updateDeviceName() {
@@ -66,9 +67,9 @@ struct ReadingsView: View {
 
     private func zoneCard(zone: Int, display: CreditDisplay) -> some View {
         VStack(spacing: 6) {
-            Text("\(L.ui.txtZone) \(zone)")
-                .font(ApaFont.regular(18))
-                .foregroundStyle(ApaColor.gray)
+            Label("\(L.ui.txtZone) \(zone)", systemImage: "bolt.badge.clock")
+                .font(ApaFont.regular(15))
+                .foregroundStyle(ApaColor.subtleText)
             creditLabel(display)
         }
         .frame(maxWidth: .infinity)
@@ -85,26 +86,28 @@ struct ReadingsView: View {
 
     private var deviceAndActivity: some View {
         VStack(spacing: 12) {
-            Text(deviceName.isEmpty ? Self.notSpecifiedDeviceName : deviceName)
-                .font(ApaFont.semibold(16))
-                .foregroundStyle(ApaColor.gray)
+            Label(deviceName.isEmpty ? Self.notSpecifiedDeviceName : deviceName,
+                  systemImage: "powermeter")
+                .font(ApaFont.semibold(15))
+                .foregroundStyle(ApaColor.subtleText)
             if !deviceDefined {
                 Button(action: { app.goToSettings() }) {
-                    Text(L.ui.txtSelect)
+                    Label(L.ui.txtSelect, systemImage: "antenna.radiowaves.left.and.right")
                         .font(ApaFont.semibold(15))
                         .foregroundStyle(.white)
-                        .padding(.horizontal, 22)
+                        .padding(.horizontal, 20)
                         .padding(.vertical, 10)
-                        .background(ApaColor.blue)
-                        .cornerRadius(AppStyle.buttonCorner)
+                        .background(ApaColor.blue,
+                                    in: RoundedRectangle(cornerRadius: AppStyle.buttonCorner, style: .continuous))
                 }
+                .buttonStyle(.plain)
             }
             if busy {
                 ActivityIndicatorView()
             }
         }
         .frame(maxWidth: .infinity)
-        .padding(.vertical, 10)
+        .padding(.vertical, 6)
     }
 
     private var readButton: some View {
@@ -113,14 +116,14 @@ struct ReadingsView: View {
         } label: {
             HStack {
                 Spacer()
+                Image(systemName: "dot.radiowaves.left.and.right")
                 Text(L.ui.txtReadCredits)
                     .font(ApaFont.semibold(16))
                 Spacer()
             }
             .padding(.vertical, 14)
             .foregroundStyle(.white)
-            .background(busy ? ApaColor.gray.opacity(0.5) : ApaColor.blue)
-            .cornerRadius(AppStyle.buttonCorner)
+            .apaButtonBackground(!busy)
         }
         .buttonStyle(.plain)
         .disabled(busy)
@@ -180,19 +183,24 @@ struct ReadingsView: View {
 struct ReadingsHeader: View {
     var body: some View {
         HStack(spacing: 10) {
-            Text(L.ui.txtCurrentCredits)
-                .font(ApaFont.semibold(18))
-                .foregroundStyle(.white)
-                .frame(maxWidth: .infinity, alignment: .leading)
+            VStack(alignment: .leading, spacing: 2) {
+                Text(L.ui.txtCurrentCredits)
+                    .font(ApaFont.semibold(28))
+                    .foregroundStyle(ApaColor.text)
+                Text(L.ui.txtReadings)
+                    .font(ApaFont.regular(13))
+                    .foregroundStyle(ApaColor.subtleText)
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
             Image("apatoken_logo")
                 .resizable()
                 .scaledToFit()
                 .frame(height: 40)
         }
-        .padding(.leading, 16)
-        .padding(.trailing, 12)
-        .padding(.vertical, 12)
-        .background(ApaColor.darkBlue)
+        .padding(.leading, 20)
+        .padding(.trailing, 16)
+        .padding(.top, 8)
+        .padding(.bottom, 6)
     }
 }
 

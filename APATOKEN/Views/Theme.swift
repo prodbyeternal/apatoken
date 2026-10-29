@@ -1,25 +1,73 @@
 import Combine
 import SwiftUI
+import UIKit
 
-// MARK: - Colors (carried over from the Android app)
+// MARK: - Colors (brand palette, adaptive for light/dark appearance)
 
 enum ApaColor {
-    /// #E3003D
-    static let red = Color(red: 0.8901961, green: 0, blue: 0.23921569)
-    /// #004586
-    static let blue = Color(red: 0, green: 23.0 / 85.0, blue: 0.5254902)
-    /// #001E3B
-    static let darkBlue = Color(red: 0, green: 0.11764706, blue: 0.23137255)
-    /// #01B101
-    static let green = Color(red: 0.003921569, green: 59.0 / 85.0, blue: 0.003921569)
-    /// #737373
-    static let gray = Color(red: 23.0 / 51.0, green: 23.0 / 51.0, blue: 23.0 / 51.0)
+    /// Dynamic color: light variant in light mode, dark variant in dark mode.
+    private static func adaptive(_ light: UIColor, _ dark: UIColor) -> Color {
+        Color(UIColor { traits in
+            traits.userInterfaceStyle == .dark ? dark : light
+        })
+    }
+
+    /// #E3003D (brightened in dark mode for contrast).
+    static let red = adaptive(
+        UIColor(red: 0.8901961, green: 0, blue: 0.23921569, alpha: 1),
+        UIColor(red: 1.0, green: 0.29, blue: 0.44, alpha: 1))
+
+    /// #004586 (lifted in dark mode so filled buttons stay visible).
+    static let blue = adaptive(
+        UIColor(red: 0, green: 23.0 / 85.0, blue: 0.5254902, alpha: 1),
+        UIColor(red: 0.10, green: 0.46, blue: 0.80, alpha: 1))
+
+    /// #001E3B – deep brand navy (headers/accents).
+    static let darkBlue = adaptive(
+        UIColor(red: 0, green: 0.11764706, blue: 0.23137255, alpha: 1),
+        UIColor(red: 0.04, green: 0.09, blue: 0.16, alpha: 1))
+
+    /// #01B101 (mint-green in dark mode, like system greens).
+    static let green = adaptive(
+        UIColor(red: 0.003921569, green: 59.0 / 85.0, blue: 0.003921569, alpha: 1),
+        UIColor(red: 0.19, green: 0.80, blue: 0.35, alpha: 1))
+
+    /// #737373 (lifted in dark mode).
+    static let gray = adaptive(
+        UIColor(red: 23.0 / 51.0, green: 23.0 / 51.0, blue: 23.0 / 51.0, alpha: 1),
+        UIColor(red: 0.60, green: 0.60, blue: 0.62, alpha: 1))
+
     /// #8493BD – token entry text color.
-    static let entryText = Color(red: 44.0 / 85.0, green: 49.0 / 85.0, blue: 63.0 / 85.0)
-    /// #808080 – token entry border.
-    static let border = Color(red: 0.5019608, green: 0.5019608, blue: 0.5019608)
+    static let entryText = adaptive(
+        UIColor(red: 44.0 / 85.0, green: 49.0 / 85.0, blue: 63.0 / 85.0, alpha: 1),
+        UIColor(red: 0.67, green: 0.75, blue: 0.89, alpha: 1))
+
+    /// #808080 – token entry border (dimmer in dark mode).
+    static let border = adaptive(
+        UIColor(red: 0.5019608, green: 0.5019608, blue: 0.5019608, alpha: 1),
+        UIColor(red: 0.36, green: 0.36, blue: 0.38, alpha: 1))
+
     /// Reset-state label gray (115, 115, 115).
-    static let creditReset = Color(red: 115.0 / 255.0, green: 115.0 / 255.0, blue: 115.0 / 255.0)
+    static let creditReset = adaptive(
+        UIColor(red: 115.0 / 255.0, green: 115.0 / 255.0, blue: 115.0 / 255.0, alpha: 1),
+        UIColor(red: 0.56, green: 0.56, blue: 0.58, alpha: 1))
+
+    // MARK: Semantic surfaces (follow light/dark automatically)
+
+    /// Screen background (grouped, like Settings).
+    static let page = Color(uiColor: .systemGroupedBackground)
+
+    /// Card / control background on top of `page`.
+    static let card = Color(uiColor: .secondarySystemGroupedBackground)
+
+    /// Hairline separators.
+    static let separator = Color(uiColor: .separator)
+
+    /// Primary text on cards.
+    static let text = Color.primary
+
+    /// Secondary text on cards.
+    static let subtleText = Color(uiColor: .secondaryLabel)
 }
 
 // MARK: - Fonts (Open Sans, registered in code)
@@ -79,7 +127,7 @@ struct AlertPopupHost: View {
         GeometryReader { proxy in
             if let presentation {
                 ZStack {
-                    Color.black.opacity(0.35)
+                    Color.black.opacity(0.4)
                         .ignoresSafeArea()
                         .transition(.opacity)
                     AlertPopupCard(presentation: presentation,
@@ -98,10 +146,10 @@ struct AlertPopupHost: View {
     }
 }
 
-/// AlertPopup card mirror: white card, radius 0 (kept for parity with the
-/// squared Android frame), padding 20, three auto rows with 10 spacing,
-/// bold title with the red error symbol when the title == txtError,
-/// scrollable text area (max height 200), OK button on the trailing side.
+/// AlertPopup card mirror: adaptive card, continuous corners, padding 20,
+/// three auto rows with 10 spacing, bold title with the red error symbol
+/// when the title == txtError, scrollable text area (max height 200),
+/// OK button on the trailing side.
 struct AlertPopupCard: View {
     let presentation: AlertPresentation
     let showsErrorIcon: Bool
@@ -116,10 +164,10 @@ struct AlertPopupCard: View {
                         .font(.system(size: 20))
                 }
                 Text(presentation.title)
-                    .font(ApaFont.semibold(14))
+                    .font(ApaFont.semibold(15))
                     .lineLimit(nil)
                     .fixedSize(horizontal: false, vertical: true)
-                    .frame(maxWidth: .infinity, alignment: showsErrorIcon ? .leading : .leading)
+                    .frame(maxWidth: .infinity, alignment: .leading)
             }
             .frame(maxWidth: .infinity, alignment: .leading)
 
@@ -127,11 +175,13 @@ struct AlertPopupCard: View {
                 VStack(alignment: .leading, spacing: 6) {
                     Text(presentation.text1)
                         .font(ApaFont.regular(14))
+                        .foregroundStyle(ApaColor.text)
                         .fixedSize(horizontal: false, vertical: true)
                         .frame(maxWidth: .infinity, alignment: .leading)
                     if !presentation.text2.isEmpty {
                         Text(presentation.text2)
                             .font(ApaFont.semibold(14))
+                            .foregroundStyle(ApaColor.text)
                             .fixedSize(horizontal: false, vertical: true)
                             .frame(maxWidth: .infinity, alignment: .leading)
                     }
@@ -141,16 +191,15 @@ struct AlertPopupCard: View {
 
             Button(action: onDismiss) {
                 Text(L.ui.txtOk)
-                    .font(ApaFont.semibold(14))
+                    .font(ApaFont.semibold(15))
                     .foregroundStyle(ApaColor.blue)
             }
             .buttonStyle(.plain)
             .frame(maxWidth: .infinity, alignment: .trailing)
         }
         .padding(20)
-        .background(.white)
-        .cornerRadius(AppStyle.alertCorner)
-        .shadow(color: .black.opacity(0.25), radius: 12, y: 6)
+        .background(ApaColor.card, in: RoundedRectangle(cornerRadius: AppStyle.alertCorner, style: .continuous))
+        .shadow(color: .black.opacity(0.22), radius: 14, y: 6)
         .padding(.horizontal, 4)
     }
 }
@@ -158,9 +207,8 @@ struct AlertPopupCard: View {
 // MARK: - Shared style constants
 
 enum AppStyle {
-    /// Angular Android look → slightly rounded for the iOS port.
-    static let alertCorner: CGFloat = 12
-    static let cardCorner: CGFloat = 16
+    static let alertCorner: CGFloat = 16
+    static let cardCorner: CGFloat = 18
     static let buttonCorner: CGFloat = 14
 }
 
@@ -171,12 +219,18 @@ extension View {
         frame(maxHeight: height)
     }
 
-    /// Card look used across the main screens.
+    /// Card look used across the main screens: flat grouped-list style,
+    /// continuous (squircle) corners, adaptive background.
     func apaCard() -> some View {
         padding(16)
-            .background(.white)
-            .cornerRadius(AppStyle.cardCorner)
-            .shadow(color: .black.opacity(0.08), radius: 8, y: 3)
+            .background(ApaColor.card,
+                        in: RoundedRectangle(cornerRadius: AppStyle.cardCorner, style: .continuous))
+    }
+
+    /// Filled primary button shape.
+    func apaButtonBackground(_ enabled: Bool) -> some View {
+        background(enabled ? ApaColor.blue : ApaColor.gray.opacity(0.45),
+                   in: RoundedRectangle(cornerRadius: AppStyle.buttonCorner, style: .continuous))
     }
 }
 

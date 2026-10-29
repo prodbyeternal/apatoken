@@ -110,27 +110,28 @@ struct HistoryView: View {
                         Button {
                             showMeters = true
                         } label: {
-                            HStack {
-                                Spacer()
+                            HStack(spacing: 8) {
+                                Image(systemName: "powermeter")
+                                    .font(.system(size: 14, weight: .semibold))
                                 Text(model.currentMeter)
-                                    .font(ApaFont.semibold(18))
-                                Spacer()
+                                    .font(ApaFont.semibold(17))
+                                Image(systemName: "chevron.up.chevron.down")
+                                    .font(.system(size: 11, weight: .semibold))
+                                    .foregroundStyle(.white.opacity(0.7))
                             }
                             .foregroundStyle(.white)
                             .padding(.vertical, 12)
+                            .frame(maxWidth: .infinity)
                             .background(ApaColor.blue)
                         }
+                        .buttonStyle(.plain)
                         .padding(.top, 8)
-                        Divider()
-                            .background(Color(uiColor: .lightGray))
-                            .frame(height: 2)
-                            .padding(.top, 6)
                     }
                     chargeRows
                 }
-                .padding(.horizontal, 10)
+                .padding(.horizontal, 12)
             }
-            .background(Color(uiColor: .systemGroupedBackground))
+            .background(ApaColor.page)
             .navigationTitle(L.ui.txtChargesHistory)
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
@@ -160,17 +161,21 @@ struct HistoryView: View {
                 Button {
                     model.chargeSelection = charge
                 } label: {
-                    HStack(alignment: .center, spacing: 8) {
+                    HStack(alignment: .center, spacing: 12) {
+                        Image(systemName: "bolt.circle.fill")
+                            .font(.system(size: 26))
+                            .foregroundStyle(ApaColor.green)
+                            .accessibilityHidden(true)
                         VStack(alignment: .leading, spacing: 4) {
                             Text(ChargeConverter.dateText(charge))
-                                .font(ApaFont.semibold(12))
-                                .foregroundStyle(Color(uiColor: .darkText))
+                                .font(ApaFont.semibold(13))
+                                .foregroundStyle(ApaColor.text)
                             Text(ChargeConverter.chargingType(charge))
                                 .font(ApaFont.semibold(12))
-                                .foregroundStyle(Color(uiColor: .darkText))
+                                .foregroundStyle(ApaColor.subtleText)
                             Text(ChargeConverter.chargingValues(charge))
-                                .font(ApaFont.semibold(10))
-                                .foregroundStyle(ApaColor.gray)
+                                .font(ApaFont.regular(11))
+                                .foregroundStyle(ApaColor.subtleText)
                                 .fixedSize(horizontal: false, vertical: true)
                         }
                         Spacer()
@@ -179,8 +184,8 @@ struct HistoryView: View {
                             .foregroundStyle(ApaColor.gray)
                     }
                     .padding(12)
-                    .background(.white)
-                    .cornerRadius(AppStyle.cardCorner)
+                    .background(ApaColor.card,
+                                in: RoundedRectangle(cornerRadius: AppStyle.cardCorner, style: .continuous))
                 }
                 .buttonStyle(.plain)
                 .accessibilityHint(L.ui.txtDetails)
@@ -202,8 +207,7 @@ struct MetersSheet: View {
                 Text(L.ui.txtPickValue)
                     .font(ApaFont.semibold(16))
                             Divider()
-                            .background(Color(uiColor: .lightGray))
-                            .frame(height: 2)
+                            .background(ApaColor.separator)
             }
             .padding(.top, 18)
             ScrollView {
@@ -216,20 +220,22 @@ struct MetersSheet: View {
                             dismiss()
                         } label: {
                             HStack {
+                                Image(systemName: "powermeter")
+                                    .font(.system(size: 14))
+                                    .foregroundStyle(ApaColor.blue)
                                 Text(meterName)
                                     .font(ApaFont.regular(15))
-                                    .foregroundStyle(Color(uiColor: .darkText))
+                                    .foregroundStyle(ApaColor.text)
                                 Spacer()
-                                Image(systemName: "chevron.right")
-                                    .font(.system(size: 11, weight: .semibold))
-                                    .foregroundStyle(ApaColor.gray)
+                                Image(systemName: "checkmark")
+                                    .font(.system(size: 12, weight: .semibold))
+                                    .foregroundStyle(ApaColor.blue)
                             }
                             .padding(.vertical, 13)
-                            .padding(.horizontal, 10)
+                            .padding(.horizontal, 14)
                             Divider()
-                                .background(Color(uiColor: .lightGray))
-                                .frame(height: 1)
-                                .padding(.leading, 10)
+                                .background(ApaColor.separator)
+                                .padding(.leading, 14)
                         }
                         .buttonStyle(.plain)
                     }

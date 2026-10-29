@@ -20,7 +20,7 @@
 	<key>Zone</key>
 	<string>tariff zone</string>
 	<key>app_name</key>
-	<string>APATOKEN</string>
+	<string>iAPATOKEN</string>
 	<key>msgAccessError</key>
 	<string>Access error.</string>
 	<key>msgAllFilesAccessOperationDisabled</key>
@@ -573,6 +573,8 @@
 	<string>Go to settings</string>
 	<key>txtHistory</key>
 	<string>History</string>
+	<key>txtIosPort</key>
+	<string>iOS port: eternal</string>
 	<key>txtLocatedOnTheMeterCasing</key>
 	<string>identification located on its casing</string>
 	<key>txtMemoryCard</key>

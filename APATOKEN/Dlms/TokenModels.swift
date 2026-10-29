@@ -125,18 +125,22 @@ struct TokenDescriptor {
 
     init(dataValue: [UInt8]) {
         dataValueHex = dataValue.map { String(format: "%02X", $0) }.joined()
-        codeStatus = TokenCodeStatus(rawValue: dataValue[0]) ?? .none
-        codeType = TokenCodeType(rawValue: dataValue[1] & 0xF0) ?? .none
-        rateId = dataValue[1] & 0x0F
-        chargeRate1 = Int32(dataValue[5])
-        chargeRate1 |= Int32(dataValue[4]) << 8
-        chargeRate1 |= Int32(dataValue[3]) << 16
-        chargeRate1 |= Int32(dataValue[2]) << 24
+        // C# indexes dataValue[0..9] and throws on short input; that
+        // exception is caught upstream and shown as an error alert. Swift
+        // indexing would crash instead, so short inputs map to defaults.
+        let b = { (i: Int) -> UInt8 in i < dataValue.count ? dataValue[i] : 0 }
+        codeStatus = TokenCodeStatus(rawValue: b(0)) ?? .none
+        codeType = TokenCodeType(rawValue: b(1) & 0xF0) ?? .none
+        rateId = b(1) & 0x0F
+        chargeRate1 = Int32(b(5))
+        chargeRate1 |= Int32(b(4)) << 8
+        chargeRate1 |= Int32(b(3)) << 16
+        chargeRate1 |= Int32(b(2)) << 24
         chargeRate1 /= 10
-        chargeRate2 = Int32(dataValue[9])
-        chargeRate2 |= Int32(dataValue[8]) << 8
-        chargeRate2 |= Int32(dataValue[7]) << 16
-        chargeRate2 |= Int32(dataValue[6]) << 24
+        chargeRate2 = Int32(b(9))
+        chargeRate2 |= Int32(b(8)) << 8
+        chargeRate2 |= Int32(b(7)) << 16
+        chargeRate2 |= Int32(b(6)) << 24
         chargeRate2 /= 10
     }
 

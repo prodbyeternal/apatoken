@@ -13,7 +13,6 @@ struct APATOKENApp: App {
         WindowGroup {
             RootView()
                 .environmentObject(AppState())
-                .preferredColorScheme(.light)
         }
     }
 

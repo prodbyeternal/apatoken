@@ -25,7 +25,7 @@ struct DetailsView: View {
             }
             .padding(16)
         }
-        .background(Color(uiColor: .systemGroupedBackground))
+        .background(ApaColor.page)
         .navigationBarTitleDisplayMode(.inline)
     }
 
@@ -52,8 +52,7 @@ struct DetailsView: View {
     private var totalGrid: some View {
         VStack(alignment: .leading, spacing: 10) {
             Divider()
-                .background(Color(uiColor: .lightGray))
-                .frame(height: 1)
+                .background(ApaColor.separator)
             Text(L.ui.txtTotalCredit)
             Grid(alignment: .leading, horizontalSpacing: 10, verticalSpacing: 10) {
                 detailRow(0, label: "    \(L.ui.txtZone) 1",
@@ -69,10 +68,10 @@ struct DetailsView: View {
         GridRow {
             Text(label)
                 .font(ApaFont.regular(12))
-                .foregroundStyle(ApaColor.gray)
+                .foregroundStyle(ApaColor.subtleText)
             Text(value)
                 .font(valueBold ? ApaFont.semibold(12) : ApaFont.regular(12))
-                .foregroundStyle(Color(uiColor: .darkText))
+                .foregroundStyle(ApaColor.text)
                 .gridColumnAlignment(.trailing)
         }
     }

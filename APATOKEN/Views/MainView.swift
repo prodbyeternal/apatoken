@@ -7,25 +7,30 @@ struct MainHeader: View {
 
     var body: some View {
         HStack(spacing: 10) {
-            Text(L.ui.appName)
-                .font(ApaFont.semibold(18))
-                .foregroundStyle(.white)
-                .lineLimit(1)
-                .frame(maxWidth: .infinity, alignment: .leading)
+            VStack(alignment: .leading, spacing: 2) {
+                Text(L.ui.appName)
+                    .font(ApaFont.semibold(28))
+                    .foregroundStyle(ApaColor.text)
+                    .lineLimit(1)
+                Text(L.ui.txtPrepaidRecharge)
+                    .font(ApaFont.regular(13))
+                    .foregroundStyle(ApaColor.subtleText)
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
             Image("apatoken_logo")
                 .resizable()
                 .scaledToFit()
                 .frame(height: 44)
             Button(action: onInfo) {
                 Image(systemName: "info.circle")
-                    .font(.system(size: 20))
-                    .foregroundStyle(.white)
+                    .font(.system(size: 20, weight: .medium))
+                    .foregroundStyle(ApaColor.blue)
             }
         }
-        .padding(.leading, 16)
-        .padding(.trailing, 12)
-        .padding(.vertical, 12)
-        .background(ApaColor.darkBlue)
+        .padding(.leading, 20)
+        .padding(.trailing, 16)
+        .padding(.top, 8)
+        .padding(.bottom, 6)
     }
 }
 
@@ -61,18 +66,21 @@ struct MainView: View {
         VStack(spacing: 0) {
             MainHeader {
                 alert = AlertPresentation(L.ui.appName,
-                                          "\(L.ui.txtPackageVersion): 1.1\n\(L.ui.txtPublisher): APATOR S.A.")
+                                          "\(L.ui.txtPackageVersion): 1.1\n\(L.ui.txtPublisher): APATOR S.A.\n\(L.ui.txtIosPort)")
             }
             ScrollView {
-                VStack(spacing: 18) {
+                VStack(spacing: 16) {
                     tokenEntry
+                        .apaCard()
                     deviceAndActivity
+                        .apaCard()
                     uploadButton
                 }
-                .padding(16)
+                .padding(.horizontal, 16)
+                .padding(.bottom, 24)
             }
         }
-        .background(Color(uiColor: .systemGroupedBackground))
+        .background(ApaColor.page)
         .alertPopup($alert)
         .onAppear { updateDeviceName() }
     }
@@ -85,16 +93,16 @@ struct MainView: View {
             TextField("", text: $eCode)
                 .keyboardType(.numberPad)
                 .multilineTextAlignment(.center)
-                .font(ApaFont.semibold(28))
+                .font(ApaFont.semibold(28).monospacedDigit())
                 .foregroundStyle(ApaColor.entryText)
                 .disabled(!entryEnabled || busy)
                 .focused($focusedEntry)
                 .padding(.vertical, 14)
-                .background(.white)
+                .background(ApaColor.page.opacity(0.6))
                 .cornerRadius(AppStyle.buttonCorner)
                 .overlay(
-                    RoundedRectangle(cornerRadius: AppStyle.buttonCorner)
-                        .stroke(focusedEntry ? ApaColor.blue : ApaColor.border, lineWidth: 1.4)
+                    RoundedRectangle(cornerRadius: AppStyle.buttonCorner, style: .continuous)
+                        .stroke(focusedEntry ? ApaColor.blue : ApaColor.border.opacity(0.5), lineWidth: 1.4)
                 )
                 .onChange(of: eCode) { _, newValue in
                     let formatted = Self.enforceEntryFormat(newValue)
@@ -106,7 +114,7 @@ struct MainView: View {
                 Text(L.message.msgTooShortToken)
                     .font(ApaFont.regular(14))
                     .multilineTextAlignment(.center)
-                    .foregroundStyle(ApaColor.gray)
+                    .foregroundStyle(ApaColor.red)
             }
         }
     }
@@ -119,28 +127,30 @@ struct MainView: View {
 
     private var deviceAndActivity: some View {
         VStack(spacing: 12) {
-            Text(deviceName.isEmpty ? Self.notSpecifiedDeviceName : deviceName)
-                .font(ApaFont.semibold(16))
-                .foregroundStyle(ApaColor.gray)
+            Label(deviceName.isEmpty ? Self.notSpecifiedDeviceName : deviceName,
+                  systemImage: "powermeter")
+                .font(ApaFont.semibold(15))
+                .foregroundStyle(ApaColor.subtleText)
             if !deviceDefined {
                 Button(action: {
                     app.goToSettings()
                 }) {
-                    Text(L.ui.txtSelect)
+                    Label(L.ui.txtSelect, systemImage: "antenna.radiowaves.left.and.right")
                         .font(ApaFont.semibold(15))
                         .foregroundStyle(.white)
-                        .padding(.horizontal, 22)
+                        .padding(.horizontal, 20)
                         .padding(.vertical, 10)
-                        .background(ApaColor.blue)
-                        .cornerRadius(AppStyle.buttonCorner)
+                        .background(ApaColor.blue,
+                                    in: RoundedRectangle(cornerRadius: AppStyle.buttonCorner, style: .continuous))
                 }
+                .buttonStyle(.plain)
             }
             if busy {
                 ActivityIndicatorView()
             }
         }
         .frame(maxWidth: .infinity)
-        .padding(.vertical, 10)
+        .padding(.vertical, 6)
     }
 
     private var canUpload: Bool {
@@ -155,14 +165,14 @@ struct MainView: View {
         } label: {
             HStack {
                 Spacer()
+                Image(systemName: "arrow.up.circle.fill")
                 Text(L.ui.txtUploadToken)
                     .font(ApaFont.semibold(16))
                 Spacer()
             }
             .padding(.vertical, 14)
             .foregroundStyle(.white)
-            .background(canUpload && !busy ? ApaColor.blue : ApaColor.gray.opacity(0.5))
-            .cornerRadius(AppStyle.buttonCorner)
+            .apaButtonBackground(canUpload && !busy)
         }
         .buttonStyle(.plain)
         .disabled(!canUpload || busy)

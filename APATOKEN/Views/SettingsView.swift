@@ -122,13 +122,13 @@ struct SettingsView: View {
             .padding(.horizontal, 20)
             .padding(.top, 12)
         }
-        .background(Color(uiColor: .systemGroupedBackground))
+        .background(ApaColor.page)
         .navigationTitle(L.ui.txtMenuSettings)
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
                 Button {
                     alert = AlertPresentation(L.ui.appName,
-                                              "\(L.ui.txtPackageVersion): 1.1\n\(L.ui.txtPublisher): APATOR S.A.")
+                                              "\(L.ui.txtPackageVersion): 1.1\n\(L.ui.txtPublisher): APATOR S.A.\n\(L.ui.txtIosPort)")
                 } label: {
                     Image(systemName: "info.circle")
                 }
@@ -182,14 +182,14 @@ struct SettingsView: View {
         } label: {
             HStack {
                 Spacer()
+                Image(systemName: "antenna.radiowaves.left.and.right")
                 Text(L.ui.txtSelectDevice)
                     .font(ApaFont.semibold(16))
                 Spacer()
             }
             .padding(.vertical, 12)
             .foregroundStyle(.white)
-            .background(ApaColor.blue)
-            .cornerRadius(AppStyle.buttonCorner)
+            .apaButtonBackground(true)
         }
         .buttonStyle(.plain)
         .padding(.top, 12)
@@ -199,39 +199,40 @@ struct SettingsView: View {
         VStack(spacing: 0) {
             fieldRow(label: L.ui.txtDeviceName, value: deviceName)
             Divider()
-                .background(Color(uiColor: .lightGray))
-                .frame(height: 1)
+                .background(ApaColor.separator)
             fieldRow(label: L.ui.txtDeviceAddress, value: deviceAddress)
                 .padding(.top, 15)
             Divider()
-                .background(Color(uiColor: .lightGray))
-                .frame(height: 1)
+                .background(ApaColor.separator)
         }
         .padding(.top, 18)
-        .background(.white)
-        .cornerRadius(AppStyle.cardCorner)
+        .padding(.horizontal, 16)
+        .padding(.bottom, 8)
+        .background(ApaColor.card,
+                    in: RoundedRectangle(cornerRadius: AppStyle.cardCorner, style: .continuous))
         .padding(.vertical, 18)
     }
 
     private func fieldRow(label: String, value: String) -> some View {
         VStack(alignment: .leading, spacing: 2) {
             Text(label)
-                .font(ApaFont.semibold(16))
-                .foregroundStyle(ApaColor.gray)
+                .font(ApaFont.semibold(14))
+                .foregroundStyle(ApaColor.subtleText)
             Text(value)
                 .font(ApaFont.regular(16))
-                .foregroundStyle(Color(uiColor: .darkGray))
+                .foregroundStyle(ApaColor.text)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.vertical, 4)
         }
     }
 
-    /// On-device BLE diagnostics (PortLog ring buffer).
+    /// On-device BLE diagnostics (PortLog ring buffer) — debug feature.
     private var portLogCard: some View {
         VStack(alignment: .leading, spacing: 6) {
             HStack {
-                Text("Port activity log")
+                Label("Port activity log", systemImage: "antenna.radiowaves.left.and.right")
                     .font(ApaFont.semibold(14))
+                    .foregroundStyle(ApaColor.subtleText)
                 Spacer()
                 Button {
                     UIPasteboard.general.string = PortLog.shared.text()
@@ -256,16 +257,19 @@ struct SettingsView: View {
             ScrollView {
                 Text(portLogText.isEmpty ? "(empty)" : portLogText)
                     .font(.system(size: 10).monospaced())
-                    .foregroundStyle(ApaColor.gray)
+                    .foregroundStyle(ApaColor.subtleText)
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(8)
             }
             .frame(height: 220)
-            .background(Color(uiColor: .systemBackground).opacity(0.65))
+            .background(ApaColor.page.opacity(0.8))
             .cornerRadius(8)
         }
         .padding(.horizontal, 16)
         .padding(.bottom, 10)
+        .background(ApaColor.card,
+                    in: RoundedRectangle(cornerRadius: AppStyle.cardCorner, style: .continuous))
+        .padding(.bottom, 18)
     }
 
     private func refreshPortLog() {
@@ -319,7 +323,7 @@ struct DeviceScanSheet: View {
             }
             .padding(.horizontal, 16)
             Divider()
-                .background(Color(uiColor: .lightGray))
+                .background(ApaColor.separator)
             ScrollView {
                 LazyVStack(spacing: 0) {
                     ForEach(scanner.devices) { device in
@@ -332,19 +336,25 @@ struct DeviceScanSheet: View {
                             onSelected(device)
                             dismiss()
                         } label: {
-                            VStack(alignment: .leading, spacing: 2) {
-                                Text(device.shortName)
-                                    .font(ApaFont.regular(15))
-                                    .foregroundStyle(Color(uiColor: .darkText))
-                                Text(device.address)
-                                    .font(ApaFont.regular(12))
-                                    .foregroundStyle(ApaColor.gray)
+                            HStack(spacing: 12) {
+                                Image(systemName: "dot.radiowaves.left.and.right")
+                                    .font(.system(size: 16))
+                                    .foregroundStyle(ApaColor.blue)
+                                VStack(alignment: .leading, spacing: 2) {
+                                    Text(device.shortName)
+                                        .font(ApaFont.regular(15))
+                                        .foregroundStyle(ApaColor.text)
+                                    Text(device.address)
+                                        .font(ApaFont.regular(12))
+                                        .foregroundStyle(ApaColor.subtleText)
+                                }
                             }
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .padding(.vertical, 12)
                             .padding(.horizontal, 16)
                             Divider()
-                                .background(Color(uiColor: .lightGray))
+                                .background(ApaColor.separator)
+                                .padding(.leading, 16)
                         }
                         .buttonStyle(.plain)
                     }

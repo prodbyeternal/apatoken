@@ -9,13 +9,13 @@ struct RootView: View {
         TabView(selection: $app.selection) {
             MainView()
                 .tabItem {
-                    Label(L.ui.txtPrepaidRecharge, systemImage: "keyboard")
+                    Label(L.ui.txtPrepaidRecharge, systemImage: "plus.circle.fill")
                 }
                 .tag(0)
 
             ReadingsView()
                 .tabItem {
-                    Label(L.ui.txtReadings, systemImage: "bolt.kwh")
+                    Label(L.ui.txtReadings, systemImage: "powermeter")
                 }
                 .tag(1)
 
@@ -31,6 +31,5 @@ struct RootView: View {
                 }
                 .tag(3)
         }
-        .preferredColorScheme(.light)
     }
 }

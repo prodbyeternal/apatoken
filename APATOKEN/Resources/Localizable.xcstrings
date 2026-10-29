@@ -134,13 +134,13 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "APATOKEN"
+            "value": "iAPATOKEN"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "APATOKEN"
+            "value": "iAPATOKEN"
           }
         }
       }
@@ -5389,6 +5389,22 @@
           "stringUnit": {
             "state": "translated",
             "value": "Oui"
+          }
+        }
+      }
+    },
+    "txtIosPort": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "iOS port: eternal"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Port iOS : eternal"
           }
         }
       }

@@ -20,7 +20,7 @@
 	<key>Zone</key>
 	<string>zone tarifaire</string>
 	<key>app_name</key>
-	<string>APATOKEN</string>
+	<string>iAPATOKEN</string>
 	<key>msgAccessError</key>
 	<string>Erreur d'accès.</string>
 	<key>msgAllFilesAccessOperationDisabled</key>
@@ -573,6 +573,8 @@
 	<string>Accéder aux réglages</string>
 	<key>txtHistory</key>
 	<string>Historique</string>
+	<key>txtIosPort</key>
+	<string>Port iOS : eternal</string>
 	<key>txtLocatedOnTheMeterCasing</key>
 	<string>identification située sur son boîtier</string>
 	<key>txtMemoryCard</key>

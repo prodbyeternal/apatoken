@@ -14,6 +14,8 @@ enum L {
         static var txtError: String { NSLocalizedString("txtError", comment: "") }
         static var txtPackageVersion: String { NSLocalizedString("txtPackageVersion", comment: "") }
         static var txtPublisher: String { NSLocalizedString("txtPublisher", comment: "") }
+        /// iOS port credit line (About ⓘ).
+        static var txtIosPort: String { NSLocalizedString("txtIosPort", comment: "") }
         static var txtOk: String { NSLocalizedString("txtOk", comment: "") }
         static var txtExit: String { NSLocalizedString("txtExit", comment: "") }
         static var txtCancel: String { NSLocalizedString("txtCancel", comment: "") }
