@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AccessParametersCanTBeNull</key>
+	<string>AccessParameters ne peut pas être null</string>
+	<key>ApatorLimiterQueueCommandTypePlanned</key>
+	<string>Planifié</string>
+	<key>AttributeDescriptorCanTBeNull</key>
+	<string>AttributeDescriptor ne peut pas être null</string>
+	<key>CanTBeNull</key>
+	<string>{0} ne peut pas être null</string>
+	<key>InstanceIdCanTBeNull</key>
+	<string>InstanceId ne peut pas être null</string>
+	<key>MsgAllPermissionsShouldBeGranted</key>
+	<string>Toutes les autorisations :
+{0} doivent être accordées.</string>
+	<key>SelectFile</key>
+	<string>Sélectionner un fichier</string>
+	<key>Zone</key>
+	<string>zone tarifaire</string>
+	<key>app_name</key>
+	<string>APATOKEN</string>
+	<key>msgAccessError</key>
+	<string>Erreur d'accès.</string>
+	<key>msgAllFilesAccessOperationDisabled</key>
+	<string>L'écriture et la lecture de tous les fichiers sont désactivées.</string>
+	<key>msgAllFilesAccessPermissionRequest</key>
+	<string>L'application {0} demande les autorisations d'accès à tous les fichiers.</string>
+	<key>msgApplicationContextNameNotSupported</key>
+	<string>Nom de contexte d'application non pris en charge. Méthode d'authentification erronée.</string>
+	<key>msgAssociatedBluetoothDeviceNotBonded</key>
+	<string>L'appareil Bluetooth sélectionné n'est pas appairé à la radio Bluetooth locale.</string>
+	<key>msgAssociationError</key>
+	<string>Erreur d'association.</string>
+	<key>msgAttributeAccessError</key>
+	<string>Erreur d'accès à l'attribut {0} sur {1}.</string>
+	<key>msgAttributeMethodMismatch</key>
+	<string>Il s'agit de l'attribut, pas d'une méthode !</string>
+	<key>msgAuthenticationFailure</key>
+	<string>Échec d'authentification. Mot de passe erroné.</string>
+	<key>msgAuthenticationMechanismNameNotRecognised</key>
+	<string>Nom de mécanisme d'authentification non reconnu.</string>
+	<key>msgAuthenticationMechanismNameNotrecognized</key>
+	<string>Nom de mécanisme d'authentification non reconnu.</string>
+	<key>msgAuthenticationMechanismNameRequired</key>
+	<string>Nom du mécanisme d'authentification requis.</string>
+	<key>msgAuthenticationRequired</key>
+	<string>Authentification requise.</string>
+	<key>msgAuthorizationClientError</key>
+	<string>Erreur d'autorisation du client - f(StoC)</string>
+	<key>msgAuthorizationError</key>
+	<string>Erreur d'autorisation HLS.</string>
+	<key>msgAuthorizationServerError</key>
+	<string>Erreur d'autorisation du serveur - f(CtoS)</string>
+	<key>msgBadDataChecksum</key>
+	<string>Somme de contrôle des données incorrecte.</string>
+	<key>msgBadHeaderChecksum</key>
+	<string>Somme de contrôle d'en-tête incorrecte.</string>
+	<key>msgBasicInfoReadingUnderProgress</key>
+	<string>Lecture de l'identification de base du compteur...</string>
+	<key>msgBleNotSupported</key>
+	<string>Bluetooth Low Energy n'est pas pris en charge.</string>
+	<key>msgBluetoothDeviceChoseError</key>
+	<string>Une erreur s'est produite lors du choix de l'appareil Bluetooth.</string>
+	<key>msgBluetoothDeviceGettingError</key>
+	<string>Une erreur s'est produite lors de la récupération de l'appareil Bluetooth.</string>
+	<key>msgBluetoothDeviceVerificationError</key>
+	<string>Une erreur s'est produite lors de la vérification de l'appareil Bluetooth.</string>
+	<key>msgBluetoothNotSupported</key>
+	<string>Bluetooth n'est pas pris en charge.</string>
+	<key>msgBluetoothRadioNotConnectable</key>
+	<string>La radio Bluetooth locale n'est pas connectable.</string>
+	<key>msgBluetoothRadioNotFound</key>
+	<string>Appareil Bluetooth introuvable.</string>
+	<key>msgBluetoothRadioNotTurnedOn</key>
+	<string>La radio Bluetooth locale n'est pas activée.</string>
+	<key>msgBluetoothRadioVerificationError</key>
+	<string>Une erreur s'est produite lors de la vérification de la radio Bluetooth locale.</string>
+	<key>msgBtDeviceUnreachable</key>
+	<string>L'appareil Bluetooth {0} est inaccessible</string>
+	<key>msgCaptureObjectsAreNotDefined</key>
+	<string>Les objets de capture ne sont pas définis.</string>
+	<key>msgClassNotImplemented</key>
+	<string>La classe avec l'identifiant {0} fourni n'est pas implémentée.</string>
+	<key>msgClassVersionNotImplemented</key>
+	<string>La version {0} de la classe {1} n'est pas implémentée.</string>
+	<key>msgCodeStatusAboveLimit</key>
+	<string>État du code : au-dessus de la limite.</string>
+	<key>msgCodeStatusBlocked</key>
+	<string>État du code : saisie de code bloquée.</string>
+	<key>msgCodeStatusError</key>
+	<string>État du code : autre erreur.</string>
+	<key>msgCodeStatusNotOk</key>
+	<string>État du code : incorrect.</string>
+	<key>msgCodeStatusOk</key>
+	<string>État du code : correct.</string>
+	<key>msgCodeStatusPrepaidOff</key>
+	<string>État du code : prépayé désactivé.</string>
+	<key>msgCodeStatusTooOld</key>
+	<string>État du code : trop ancien.</string>
+	<key>msgCodeStatusUnknown</key>
+	<string>État du code : inconnu</string>
+	<key>msgCodeStatusUsed</key>
+	<string>État du code : déjà utilisé.</string>
+	<key>msgCommPortNotDefinedInXml</key>
+	<string>Le port de communication n'est pas défini dans le nœud xml.</string>
+	<key>msgCommunicationWithDeviceNotPossible</key>
+	<string>La communication avec l'appareil ne sera pas possible.</string>
+	<key>msgCosemValueTypeIsNotSimple</key>
+	<string>Le type de données COSEM {0} n'est pas simple.</string>
+	<key>msgDataReadUnderProgress</key>
+	<string>Lecture des données. Veuillez patienter...</string>
+	<key>msgDataReadUnsuccessful</key>
+	<string>Échec de la lecture des données.</string>
+	<key>msgDataReadingError</key>
+	<string>Erreur de lecture des données.</string>
+	<key>msgDataSendingError</key>
+	<string>Erreur d'envoi des données.</string>
+	<key>msgDeviceMissing</key>
+	<string>Aucun appareil sélectionné.</string>
+	<key>msgDlmsArrayIsToShort</key>
+	<string>Tableau d'octets DLMS trop court.</string>
+	<key>msgEmptyDlmsArray</key>
+	<string>Tableau d'octets DLMS vide.</string>
+	<key>msgEnteredTokenAlreadyUsed</key>
+	<string>Jeton déjà utilisé.</string>
+	<key>msgEnteredTokenIsWrong</key>
+	<string>Jeton erroné.</string>
+	<key>msgEntityDoesNotMatch</key>
+	<string>L'entité ne correspond pas.</string>
+	<key>msgEntryTypeMustBeSimple</key>
+	<string>Le type d'entrée du tableau doit être simple.</string>
+	<key>msgExpectedVsReceived</key>
+	<string>Attendu « {0} », reçu « {1} ».</string>
+	<key>msgExternalStoragePermissionsNotGranted</key>
+	<string>Autorisation d'accès au stockage non accordée. Impossible d'enregistrer ou de lire l'historique des recharges prépayées.</string>
+	<key>msgFileChoosingUnsuccessful</key>
+	<string>Le fichier n'a pas pu être sélectionné.</string>
+	<key>msgFileNotExist</key>
+	<string>Le fichier au chemin spécifié n'existe pas.</string>
+	<key>msgGivenCosemTypeCouldNotBeMappedToSystemType</key>
+	<string>Le type de données COSEM {0} n'a pas pu être converti en type système.</string>
+	<key>msgGivenSystemTypeCouldNotBeMappedToCosemType</key>
+	<string>Le type de données {0} n'a pas pu être converti en type de données COSEM.</string>
+	<key>msgGivenValueIsNotStructure</key>
+	<string>La valeur fournie n'est pas une structure.</string>
+	<key>msgHDLCFrameCreatingError</key>
+	<string>Erreur lors de la création de la trame HDLC.</string>
+	<key>msgHDLCFrameParsingError</key>
+	<string>Erreur lors de l'analyse de la trame HDLC.</string>
+	<key>msgHdlc_NoHdlcFramesToSend</key>
+	<string>Aucune trame HDLC à envoyer</string>
+	<key>msgHdlc_SpaceForPayloadNotNegotiated</key>
+	<string>NegotiatedMaxInfoFieldSizeToSend reçu = 0 - impossible de poursuivre les négociations</string>
+	<key>msgHistoryInformation</key>
+	<string>L'historique est enregistré sur l'appareil et ne concerne que les recharges effectuées depuis cet appareil.</string>
+	<key>msgIOBuffersResetting</key>
+	<string>Réinitialisation des tampons d'E/S.</string>
+	<key>msgIncorrectParameter</key>
+	<string>La valeur « {0} » du paramètre « {1} » n'est pas valide.</string>
+	<key>msgIncorrentCodeLength</key>
+	<string>Longueur de code incorrecte</string>
+	<key>msgInvalidFrame</key>
+	<string>Trame non valide.</string>
+	<key>msgInvalidMeterAcknowledgeLength</key>
+	<string>Longueur de l'accusé de réception du compteur non valide.</string>
+	<key>msgInvalidMeterId</key>
+	<string>Identifiant du compteur non valide.</string>
+	<key>msgInvalidResponseFrame</key>
+	<string>Trame de réponse non valide pour {0}.</string>
+	<key>msgIsNotEnumType</key>
+	<string>Le type système de la valeur n'est pas de type Enum.</string>
+	<key>msgLoadButton</key>
+	<string>Charger</string>
+	<key>msgLocalizationAndBluetoothRequest</key>
+	<string>L'application APATOKEN requiert les autorisations de localisation et de Bluetooth pour détecter les appareils à proximité.</string>
+	<key>msgLocalizationRequest</key>
+	<string>Autorisez {0} à accéder à la localisation de cet appareil pour rechercher les appareils Bluetooth disponibles.</string>
+	<key>msgMeterAcknowledge</key>
+	<string>Aucun accusé de réception du compteur.</string>
+	<key>msgMethodAccessError</key>
+	<string>Erreur d'accès à la méthode {0} sur {1}.</string>
+	<key>msgMethodAttributeMismatch</key>
+	<string>Il s'agit de la méthode, pas d'un attribut !</string>
+	<key>msgMissingCreditInfo</key>
+	<string>Aucune information sur l'énergie restante</string>
+	<key>msgNoAssociatedBluetoothDevice</key>
+	<string>Aucun appareil Bluetooth associé</string>
+	<key>msgNoBluetoothDeviceSelected</key>
+	<string>Aucun appareil Bluetooth sélectionné</string>
+	<key>msgNoBondedBluetoothDevices</key>
+	<string>Aucun appareil Bluetooth appairé.</string>
+	<key>msgNoClipboardContent</key>
+	<string>Aucun contenu dans le presse-papiers</string>
+	<key>msgNoData</key>
+	<string>Aucune donnée dans {0}.</string>
+	<key>msgNoDeviceFound</key>
+	<string>Aucun compteur trouvé</string>
+	<key>msgNoDlmsMeterId</key>
+	<string>Aucun compteur DLMS !</string>
+	<key>msgNoFilesManager</key>
+	<string>Aucun gestionnaire de fichiers.</string>
+	<key>msgNoHDLCFooter</key>
+	<string>Pied de trame HDLC absent.</string>
+	<key>msgNoHDLCHeader</key>
+	<string>En-tête de trame HDLC absent.</string>
+	<key>msgNoHeader</key>
+	<string>Aucun en-tête.</string>
+	<key>msgNoLLC</key>
+	<string>Pas de LLC dans la trame.</string>
+	<key>msgNoMeterId</key>
+	<string>Aucun identifiant de compteur.</string>
+	<key>msgNoPossibilityToDefineValueTypes</key>
+	<string>Il n'est pas possible de définir les types de valeurs.</string>
+	<key>msgNoResponse</key>
+	<string>Aucune réponse du compteur.</string>
+	<key>msgNoResponseFromMeter</key>
+	<string>Aucune réponse du compteur.</string>
+	<key>msgNoTag</key>
+	<string>Balise « {0} » absente.</string>
+	<key>msgNoTile</key>
+	<string>Aucune tuile.</string>
+	<key>msgNoXmlAttribute</key>
+	<string>Aucun attribut {0}.</string>
+	<key>msgNoXmlNode</key>
+	<string>Nœud « {0} » absent.</string>
+	<key>msgNodeCosemValueTypeIsNotSimple</key>
+	<string>Le type de données COSEM dans « SimpleValue » n'est pas simple.</string>
+	<key>msgNodeHasNoAttributes</key>
+	<string>Le nœud n'a pas d'attributs.</string>
+	<key>msgNonZeroValue</key>
+	<string>Les paramètres {0} doivent être une valeur non nulle.</string>
+	<key>msgNone</key>
+	<string>Aucun</string>
+	<key>msgNotAllPermissionsGranted</key>
+	<string>Toutes les autorisations n'ont pas été accordées. L'application ne pourra pas rechercher les appareils Bluetooth à proximité.</string>
+	<key>msgNotEnoughDataAvailable</key>
+	<string>Données disponibles insuffisantes.</string>
+	<key>msgNotImplemented</key>
+	<string>{0} n'est pas implémenté.</string>
+	<key>msgOneOfTheFollowingValueNodesShouldBeDefined</key>
+	<string>Un des nœuds « Array », « Structure », « SimpleValue » ou « NullValue » doit être défini.</string>
+	<key>msgOperationFailed</key>
+	<string>Échec de l'opération.</string>
+	<key>msgOperationSucceeded</key>
+	<string>Opération réussie.</string>
+	<key>msgPortIsClosed</key>
+	<string>Le port de communication est fermé.</string>
+	<key>msgPortIsOpen</key>
+	<string>Le port de communication est ouvert.</string>
+	<key>msgPortOpeningError</key>
+	<string>Erreur d'ouverture du port.</string>
+	<key>msgPortParametersInitialization</key>
+	<string>Initialisation des paramètres du port de communication.</string>
+	<key>msgProbablyWrongKeys</key>
+	<string>Clés probablement erronées.</string>
+	<key>msgProfileBufferCannotBeExtractedFromString</key>
+	<string>Le tampon de profil ne peut pas être extrait de la représentation textuelle.</string>
+	<key>msgRequestNotSupported</key>
+	<string>Requête non prise en charge.</string>
+	<key>msgSaveChangedSettingsQ</key>
+	<string>Voulez-vous enregistrer les modifications ?</string>
+	<key>msgSelectedFileIsNotExpectedType</key>
+	<string>Le fichier sélectionné n'est pas du type attendu !</string>
+	<key>msgSettingsNotSaved</key>
+	<string>Paramètres non enregistrés.</string>
+	<key>msgSettingsSaveError</key>
+	<string>Erreur lors de l'enregistrement des paramètres.</string>
+	<key>msgSettingsSaved</key>
+	<string>Paramètres enregistrés.</string>
+	<key>msgSimpleDataTypeExpected</key>
+	<string>Un type de données simple était attendu.</string>
+	<key>msgSizeOfGivenCosemTypeCouldNotBeDefined</key>
+	<string>La taille du type COSEM {0} fourni n'a pas pu être définie.</string>
+	<key>msgStayCloseToTheMeter</key>
+	<string>Veuillez vous assurer que vous êtes à proximité du compteur.</string>
+	<key>msgTimeReadingUnderProgress</key>
+	<string>Lecture de l'heure sur le compteur...</string>
+	<key>msgToEnterCodeDeviceMustBeSelected</key>
+	<string>Un appareil doit être sélectionné avant de saisir le code.</string>
+	<key>msgToReadCreditsDeviceMustBeSelected</key>
+	<string>Sélectionnez l'appareil avant de lire le niveau d'énergie restant.</string>
+	<key>msgTokenEnteredButNotAccepted</key>
+	<string>Jeton saisi, mais rejeté par le compteur.</string>
+	<key>msgTokenEnteringUnderProgress</key>
+	<string>Saisie du jeton. Veuillez patienter...</string>
+	<key>msgTooShortToken</key>
+	<string>Le code doit contenir 20 chiffres.</string>
+	<key>msgTransferError</key>
+	<string>Erreur de transfert.</string>
+	<key>msgTransfer_ApplicationContextNameNotSupported</key>
+	<string>Nom de contexte d'application non pris en charge.</string>
+	<key>msgTransportProtocolNotDefinedInXml</key>
+	<string>Le protocole de transport n'est pas défini dans le nœud xml.</string>
+	<key>msgTurningOnBluetoothUnderProgress</key>
+	<string>Activation du Bluetooth. Veuillez patienter...</string>
+	<key>msgTurningOnLocalBluetoothRadioUnderProgress</key>
+	<string>Activation de la radio Bluetooth locale. Veuillez patienter...</string>
+	<key>msgUncompatibleCosemTypes</key>
+	<string>Les types COSEM de la valeur fournie et de la valeur de méthode ne sont pas compatibles.</string>
+	<key>msgUncompatibleValue</key>
+	<string>La représentation {0} de la valeur fournie n'est pas compatible avec le schéma.</string>
+	<key>msgUncompatibleValueType</key>
+	<string>La valeur fournie doit être compatible avec le type {0}.</string>
+	<key>msgUncorrectHDLCFrameParameter</key>
+	<string>La valeur « {0} » du paramètre de trame HDLC « {1} » n'est pas valide.</string>
+	<key>msgUnknownCosemType</key>
+	<string>Type COSEM inconnu.</string>
+	<key>msgUnknownCosemTypeSize</key>
+	<string>Impossible de définir la taille du type COSEM {0} fourni.</string>
+	<key>msgUnknownError</key>
+	<string>Erreur inconnue.</string>
+	<key>msgUnknownErrorReason</key>
+	<string>Cause de l'erreur inconnue.</string>
+	<key>msgUnknownPhysicalUnit</key>
+	<string>Unité physique inconnue.</string>
+	<key>msgUnknownSystemType</key>
+	<string>Aucun type système pour le type COSEM {0} fourni.</string>
+	<key>msgUnknownValueTypeInXmlNode</key>
+	<string>Impossible d'analyser la représentation Xml en représentation DLMS de l'attribut car le type de la ou des valeurs est inconnu. Vous devez corriger la valeur de l'attribut au format xml en définissant l'attribut « Type » dans le(s) nœud(s) « SimpleValue ».</string>
+	<key>msgUnknownXmlNodeName</key>
+	<string>Nom de nœud inconnu : « {0} ».</string>
+	<key>msgUnsuccessfulConvertionToDlmsRepresentation</key>
+	<string>Échec de l'obtention de la représentation binaire.</string>
+	<key>msgUnsuccessfulConvertionToStringRepresentation</key>
+	<string>Échec de l'obtention de la représentation textuelle.</string>
+	<key>msgUnsuccessfulConvertionToXmlRepresentation</key>
+	<string>Échec de l'obtention de la représentation xml.</string>
+	<key>msgUnsuccessfulDataReceiving</key>
+	<string>Une erreur s'est produite lors de la lecture des données depuis le port de communication.</string>
+	<key>msgUnsuccessfulDataSending</key>
+	<string>Une erreur s'est produite lors de l'envoi des données via le port de communication.</string>
+	<key>msgUnsuccessfulGettingOfLocalTimeOffset</key>
+	<string>Échec de la récupération de la différence de fuseau horaire.</string>
+	<key>msgUnsuccessfulIOBuffersResetting</key>
+	<string>Une erreur s'est produite lors de la réinitialisation des tampons d'E/S.</string>
+	<key>msgUnsuccessfulPDUProcessing</key>
+	<string>Échec du traitement du PDU.</string>
+	<key>msgUnsuccessfulPortClosing</key>
+	<string>Une erreur s'est produite lors de la fermeture du port de communication.</string>
+	<key>msgUnsuccessfulPortOpening</key>
+	<string>Une erreur s'est produite lors de l'ouverture du port de communication.</string>
+	<key>msgUnsuccessfulReadingOfPortParametersFromFile</key>
+	<string>Échec de la lecture des paramètres du port série depuis le fichier. Les paramètres seront initialisés avec les valeurs par défaut.</string>
+	<key>msgUnsuccessfulReadingOfTcpIpParametersFromFile</key>
+	<string>Échec de la lecture des paramètres du port TCP depuis le fichier. Les paramètres seront initialisés avec les valeurs par défaut.</string>
+	<key>msgUnsuccessfulTokenEntering</key>
+	<string>Échec de la saisie du jeton.</string>
+	<key>msgValidationResultFailure</key>
+	<string>Valide, mais non pris en charge par le compteur.</string>
+	<key>msgValueOutOfRange</key>
+	<string>La valeur doit être dans la plage {0}.</string>
+	<key>msgValueOutOfRange1</key>
+	<string>La valeur doit être dans la plage {0}.</string>
+	<key>msgWrongArguments</key>
+	<string>Arguments incorrects pour {0}.</string>
+	<key>msgWrongAttributeCosemType</key>
+	<string>Type d'attribut COSEM incorrect.</string>
+	<key>msgWrongAttributeId</key>
+	<string>Aucun attribut n° « {0} ». Le numéro maximum disponible est {1}.</string>
+	<key>msgWrongAttributeName</key>
+	<string>Nom d'attribut incorrect. Aucun attribut portant le nom « {0} ».</string>
+	<key>msgWrongAttributeType</key>
+	<string>Type d'attribut incorrect.</string>
+	<key>msgWrongAttributeValue</key>
+	<string>Valeur d'attribut incorrecte.</string>
+	<key>msgWrongBCDString</key>
+	<string>Format de chaîne BCD incorrect : {0}.</string>
+	<key>msgWrongBinaryRepresentation</key>
+	<string>Représentation binaire incorrecte.</string>
+	<key>msgWrongCharInObisCode</key>
+	<string>Caractère inapproprié dans le code obis : {0}. Valeurs autorisées : ['C', 'F', 'L', 'P'].</string>
+	<key>msgWrongClientNameInXml</key>
+	<string>Nom de client incorrect dans le nœud xml.</string>
+	<key>msgWrongContextNameInXml</key>
+	<string>Nom de contexte incorrect dans le nœud xml.</string>
+	<key>msgWrongDataType</key>
+	<string>Type de données incompatible.</string>
+	<key>msgWrongDateTimeCosemType</key>
+	<string>Le type COSEM fourni doit être l'un des suivants : TIME, DATE, DATE-TIME.</string>
+	<key>msgWrongDateTimeString</key>
+	<string>Format de chaîne COSEM {0} incorrect.</string>
+	<key>msgWrongEUILength</key>
+	<string>Le champ « DID » représente un EUI-48 : la longueur de sa représentation sous forme de chaîne doit donc être égale à 6.</string>
+	<key>msgWrongHDLCFrame</key>
+	<string>Trame HDLC incorrecte.</string>
+	<key>msgWrongHDLCFrameCRC</key>
+	<string>CRC de la trame HDLC incorrect.</string>
+	<key>msgWrongHDLCFrameLength</key>
+	<string>Longueur de trame HDLC incorrecte.</string>
+	<key>msgWrongHDLCHeaderCRC</key>
+	<string>CRC de l'en-tête de trame HDLC incorrect.</string>
+	<key>msgWrongLength</key>
+	<string>Longueur incorrecte.</string>
+	<key>msgWrongMemberId</key>
+	<string>Il n'existe pas de {0} avec l'identifiant fourni {1}. Le nombre de {2}s est égal à {3} : l'identifiant maximum possible est donc {4}.</string>
+	<key>msgWrongMemberName</key>
+	<string>Il n'existe pas de {0} portant le nom « {1} » fourni.</string>
+	<key>msgWrongMemberValue</key>
+	<string>Valeur de {0} incorrecte.</string>
+	<key>msgWrongMemberValueType</key>
+	<string>Type de {0} incorrect. Il devrait être {1}.</string>
+	<key>msgWrongMethodCosemType</key>
+	<string>Type de méthode COSEM incorrect.</string>
+	<key>msgWrongMethodId</key>
+	<string>Aucune méthode n° « {0} ». Le numéro maximum disponible est {1}.</string>
+	<key>msgWrongMethodName</key>
+	<string>Nom de méthode incorrect. Aucune méthode portant le nom « {0} ».</string>
+	<key>msgWrongMethodType</key>
+	<string>Type de méthode incorrect.</string>
+	<key>msgWrongMethodValue</key>
+	<string>Valeur de méthode incorrecte.</string>
+	<key>msgWrongNumberOfArrayItems</key>
+	<string>Nombre d'éléments du tableau incorrect.</string>
+	<key>msgWrongNumberOfBytes</key>
+	<string>Nombre d'octets incorrect.</string>
+	<key>msgWrongNumberOfCaptureObjects</key>
+	<string>Nombre d'objets de capture incorrect.</string>
+	<key>msgWrongNumberOfChars</key>
+	<string>Nombre de caractères incorrect.</string>
+	<key>msgWrongNumberOfCharsInHexString</key>
+	<string>La clé binaire ne peut pas avoir un nombre impair de chiffres : {0}.</string>
+	<key>msgWrongNumberOfStructureFields</key>
+	<string>Nombre de champs de structure incorrect.</string>
+	<key>msgWrongObisString</key>
+	<string>Représentation textuelle du code obis incorrecte.</string>
+	<key>msgWrongPDU</key>
+	<string>PDU incorrect</string>
+	<key>msgWrongPasswordLengthInXml</key>
+	<string>Longueur de mot de passe incorrecte dans le nœud xml.</string>
+	<key>msgWrongPasswordTypeNameInXml</key>
+	<string>Nom de type de mot de passe incorrect dans le nœud xml.</string>
+	<key>msgWrongResponseFromMeter</key>
+	<string>Réponse incorrecte du compteur.</string>
+	<key>msgWrongStatusLength</key>
+	<string>Format de valeur incorrect. La longueur de l'état doit être de 8 bits.</string>
+	<key>msgWrongStringLength</key>
+	<string>La longueur de la chaîne « {0} » doit être égale à {1}.</string>
+	<key>msgWrongStringRepresentation</key>
+	<string>Représentation textuelle incorrecte.</string>
+	<key>msgWrongValue</key>
+	<string>Valeur incorrecte.</string>
+	<key>msgWrongValueFormat</key>
+	<string>Format de valeur incorrect. La valeur fournie doit être de type {0}.</string>
+	<key>msgWrongValueOfIP6Address</key>
+	<string>Valeur d'adresse IPv6 incorrecte.</string>
+	<key>msgWrongValueOfMACAddress</key>
+	<string>Valeur d'adresse MAC incorrecte.</string>
+	<key>msgWrongValueType</key>
+	<string>Type de valeur incorrect.</string>
+	<key>msgWrongWrapperFrameHeaderLength</key>
+	<string>Longueur d'en-tête de trame WRAPPER incorrecte.</string>
+	<key>msgWrongWrapperFrameLength</key>
+	<string>Longueur de trame WRAPPER incorrecte.</string>
+	<key>msgWrongWrapperHeaderLength</key>
+	<string>En-tête WRAPPER trop court.</string>
+	<key>msgWrongXmlRepresentation</key>
+	<string>Représentation xml incorrecte.</string>
+	<key>mshUnknownFormatOfDate</key>
+	<string>Format de date inconnu.</string>
+	<key>txtAfterPrepaidRecharge</key>
+	<string>Après recharge prépayée</string>
+	<key>txtAlertInfo</key>
+	<string>Information</string>
+	<key>txtAllFilesAccessGranted</key>
+	<string>Accès à tous les fichiers accordé.</string>
+	<key>txtAllow</key>
+	<string>Autoriser</string>
+	<key>txtApatorLimiterQueueCommandTypeDelete</key>
+	<string>Supprimer</string>
+	<key>txtApatorLimiterQueueCommandTypeInstant</key>
+	<string>Instantané</string>
+	<key>txtApatorLimiterQueueStatusAdjusted</key>
+	<string>Ajusté</string>
+	<key>txtApatorLimiterQueueStatusExecuted</key>
+	<string>Exécuté</string>
+	<key>txtApatorLimiterQueueStatusOmitted</key>
+	<string>Ignoré</string>
+	<key>txtApatorLimiterQueueStatusScheduled</key>
+	<string>Planifié</string>
+	<key>txtArrayIsIncomplete</key>
+	<string>Le tableau est incomplet - il manque {0} éléments.</string>
+	<key>txtAttribute</key>
+	<string>attribut</string>
+	<key>txtAvailableDevices</key>
+	<string>Appareils disponibles</string>
+	<key>txtCancel</key>
+	<string>Annuler</string>
+	<key>txtChannelArib</key>
+	<string>ARIB (canaux 4-7)</string>
+	<key>txtChannelEight</key>
+	<string>Canal 8</string>
+	<key>txtChannelFccBand</key>
+	<string>Bande FCC (canaux 3-8)</string>
+	<key>txtChannelFive</key>
+	<string>Canal 5</string>
+	<key>txtChannelFour</key>
+	<string>Canal 4</string>
+	<key>txtChannelFullBand</key>
+	<string>Bande complète</string>
+	<key>txtChannelOne</key>
+	<string>Canal 111</string>
+	<key>txtChannelSeven</key>
+	<string>Canal 7</string>
+	<key>txtChannelSix</key>
+	<string>Canal 6</string>
+	<key>txtChannelThree</key>
+	<string>Canal 3</string>
+	<key>txtChannelTwo</key>
+	<string>Canal 2</string>
+	<key>txtChannelsSixToEight</key>
+	<string>Canaux 6-8</string>
+	<key>txtChargesHistory</key>
+	<string>Historique des recharges</string>
+	<key>txtClose</key>
+	<string>Fermer</string>
+	<key>txtCode</key>
+	<string>Code</string>
+	<key>txtCodeStatus</key>
+	<string>État du code</string>
+	<key>txtCreditValue</key>
+	<string>Valeur de l'énergie restante</string>
+	<key>txtCurrentCredits</key>
+	<string>Énergie restante</string>
+	<key>txtDate</key>
+	<string>Date</string>
+	<key>txtDeny</key>
+	<string>Refuser</string>
+	<key>txtDetails</key>
+	<string>Détails</string>
+	<key>txtDeviceAddress</key>
+	<string>Adresse du compteur :</string>
+	<key>txtDeviceId</key>
+	<string>Identifiant de l'appareil</string>
+	<key>txtDeviceInternalMemory</key>
+	<string>Mémoire interne</string>
+	<key>txtDeviceName</key>
+	<string>Numéro du compteur : </string>
+	<key>txtDisabledLocalization</key>
+	<string>Services de localisation désactivés</string>
+	<key>txtDualCharging</key>
+	<string>Recharge bizone</string>
+	<key>txtEnterToken</key>
+	<string>Saisir le jeton d'énergie</string>
+	<key>txtEntityCertificationAuthority</key>
+	<string>Autorité de certification</string>
+	<key>txtEntityClient</key>
+	<string>Client</string>
+	<key>txtEntityOther</key>
+	<string>Autre</string>
+	<key>txtEntityServer</key>
+	<string>Serveur</string>
+	<key>txtError</key>
+	<string>Erreur</string>
+	<key>txtErrorOpeningTCPIP</key>
+	<string>Erreur d'ouverture de connexion TCP/IP</string>
+	<key>txtExit</key>
+	<string>Quitter</string>
+	<key>txtExternalStorageWritePermissionDisabled</key>
+	<string>Autorisation d'écriture désactivée</string>
+	<key>txtFileChooser</key>
+	<string>Sélection de fichiers</string>
+	<key>txtGeolocalizationEnableRequest</key>
+	<string>L'application {0} demande l'activation de la géolocalisation pour rechercher les appareils Bluetooth.</string>
+	<key>txtGeolocalizationPermissionRequest</key>
+	<string>L'application {0} demande l'autorisation de géolocalisation pour rechercher les appareils Bluetooth.</string>
+	<key>txtGeolocalizationServiceDisabled</key>
+	<string>Service de géolocalisation désactivé</string>
+	<key>txtGeolocalizationServicePermissionDisabled</key>
+	<string>Autorisation du service de géolocalisation désactivée</string>
+	<key>txtGotoApplicationSettings</key>
+	<string>Accéder aux réglages</string>
+	<key>txtHistory</key>
+	<string>Historique</string>
+	<key>txtLocatedOnTheMeterCasing</key>
+	<string>identification située sur son boîtier</string>
+	<key>txtMemoryCard</key>
+	<string>Carte mémoire</string>
+	<key>txtMenuAbout</key>
+	<string>À propos</string>
+	<key>txtMenuSettings</key>
+	<string>Réglages</string>
+	<key>txtMeterNumber</key>
+	<string>numéro du compteur </string>
+	<key>txtMethod</key>
+	<string>méthode</string>
+	<key>txtNo</key>
+	<string>Non</string>
+	<key>txtNoPermissions</key>
+	<string>Accord des autorisations requises dans les réglages de l'application.</string>
+	<key>txtNull</key>
+	<string>NULL</string>
+	<key>txtOk</key>
+	<string>Ok</string>
+	<key>txtPackageName</key>
+	<string>Version</string>
+	<key>txtPackageVersion</key>
+	<string>Version du paquet</string>
+	<key>txtPaste</key>
+	<string>Coller</string>
+	<key>txtPickValue</key>
+	<string>Choisir une valeur</string>
+	<key>txtPlcCommunicationModeFive</key>
+	<string>(6) Communication CPL après la bande recherchée puis communication GSM</string>
+	<key>txtPlcCommunicationModeFour</key>
+	<string>(5) Communication CPL uniquement après la bande recherchée</string>
+	<key>txtPlcCommunicationModeOne</key>
+	<string>(2) Communication CPL uniquement après la phase recherchée</string>
+	<key>txtPlcCommunicationModeThree</key>
+	<string>(4) Communication GSM uniquement</string>
+	<key>txtPlcCommunicationModeTwo</key>
+	<string>(3) Communication CPL après la phase recherchée puis communication GSM</string>
+	<key>txtPlcCommunicationModeZero</key>
+	<string>(1) Communication CPL uniquement sur la phase sélectionnée</string>
+	<key>txtPrepaidRecharge</key>
+	<string>Recharge prépayée</string>
+	<key>txtPublisher</key>
+	<string>Éditeur</string>
+	<key>txtReadCredits</key>
+	<string>Lire</string>
+	<key>txtReadMeter</key>
+	<string>Lecture des données</string>
+	<key>txtReadingAllFilesImpossible</key>
+	<string>La lecture de tous les fichiers n'est pas possible.</string>
+	<key>txtReadings</key>
+	<string>Relevés</string>
+	<key>txtRecharge</key>
+	<string>Recharge prépayée</string>
+	<key>txtRemovableModule</key>
+	<string>Module amovible</string>
+	<key>txtResetCredit</key>
+	<string>Remise à zéro du crédit.</string>
+	<key>txtSampleIdentification</key>
+	<string>Exemple de </string>
+	<key>txtSaveSettings</key>
+	<string>OK</string>
+	<key>txtScanning</key>
+	<string>Recherche de compteurs</string>
+	<key>txtSearchingBluetoothDevicesIsNotPossible</key>
+	<string>La recherche d'appareils Bluetooth n'est pas possible.</string>
+	<key>txtSelect</key>
+	<string>Sélectionner</string>
+	<key>txtSelectDevice</key>
+	<string>Sélectionner un compteur à connecter</string>
+	<key>txtSettings</key>
+	<string>Réglages</string>
+	<key>txtSingleCharging</key>
+	<string>Recharge monozone</string>
+	<key>txtSpeedNotSupported</key>
+	<string>La vitesse de transmission spécifiée n'est pas prise en charge.</string>
+	<key>txtSuiteDigitalSignatureKeyPair</key>
+	<string>Paire de clés de signature numérique</string>
+	<key>txtSuiteKeyAgreementKeyPair</key>
+	<string>Paire de clés d'accord de clés</string>
+	<key>txtSuiteTLS_KeyPair</key>
+	<string>Paire de clés TLS</string>
+	<key>txtTariffZone</key>
+	<string>zone tarifaire</string>
+	<key>txtTotalCredit</key>
+	<string>Quantité totale d'énergie restante</string>
+	<key>txtTypeDigitalSignature</key>
+	<string>Signature numérique</string>
+	<key>txtTypeKeyAgreement</key>
+	<string>Accord de clés</string>
+	<key>txtTypeOther</key>
+	<string>Autre</string>
+	<key>txtTypeTLS</key>
+	<string>TLS</string>
+	<key>txtUnknown</key>
+	<string>Inconnu</string>
+	<key>txtUnlockCommunication</key>
+	<string>Déverrouillage de la communication.</string>
+	<key>txtUploadToken</key>
+	<string>Entrer le jeton</string>
+	<key>txtZone</key>
+	<string>Zone tarifaire</string>
+	<key>yes_button</key>
+	<string>Oui</string>
+</dict>
+</plist>

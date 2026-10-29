@@ -1,0 +1,16 @@
+{
+  "source": "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/ReadingsView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "%@ %lld",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 69
+        }
+      }
+    ]
+  },
+  "version": 1
+}

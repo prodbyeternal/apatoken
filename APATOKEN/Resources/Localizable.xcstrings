@@ -1,0 +1,5398 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "AccessParametersCanTBeNull": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AccessParameters can't be null"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AccessParameters ne peut pas être null"
+          }
+        }
+      }
+    },
+    "ApatorLimiterQueueCommandTypePlanned": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Planned"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Planifié"
+          }
+        }
+      }
+    },
+    "AttributeDescriptorCanTBeNull": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AttributeDescriptor can't be null"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AttributeDescriptor ne peut pas être null"
+          }
+        }
+      }
+    },
+    "CanTBeNull": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "{0} can't be null"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "{0} ne peut pas être null"
+          }
+        }
+      }
+    },
+    "InstanceIdCanTBeNull": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "InstanceId can't be null"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "InstanceId ne peut pas être null"
+          }
+        }
+      }
+    },
+    "MsgAllPermissionsShouldBeGranted": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "All permissions:\n{0} should be granted."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toutes les autorisations :\n{0} doivent être accordées."
+          }
+        }
+      }
+    },
+    "SelectFile": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Select file"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sélectionner un fichier"
+          }
+        }
+      }
+    },
+    "Zone": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "tariff zone"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "zone tarifaire"
+          }
+        }
+      }
+    },
+    "app_name": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "APATOKEN"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "APATOKEN"
+          }
+        }
+      }
+    },
+    "msgAccessError": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Access error."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erreur d'accès."
+          }
+        }
+      }
+    },
+    "msgAllFilesAccessOperationDisabled": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Writing and reading all files are disabled."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L'écriture et la lecture de tous les fichiers sont désactivées."
+          }
+        }
+      }
+    },
+    "msgAllFilesAccessPermissionRequest": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Application {0} ask for all files access permissions."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L'application {0} demande les autorisations d'accès à tous les fichiers."
+          }
+        }
+      }
+    },
+    "msgApplicationContextNameNotSupported": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Application context name is not supported. Wrong authentication method."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nom de contexte d'application non pris en charge. Méthode d'authentification erronée."
+          }
+        }
+      }
+    },
+    "msgAssociatedBluetoothDeviceNotBonded": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Selected Bluetooth device not bonded to local Bluetooth radio."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L'appareil Bluetooth sélectionné n'est pas appairé à la radio Bluetooth locale."
+          }
+        }
+      }
+    },
+    "msgAssociationError": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Association error."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erreur d'association."
+          }
+        }
+      }
+    },
+    "msgAttributeAccessError": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Access error at attribute {0} of {1}."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erreur d'accès à l'attribut {0} sur {1}."
+          }
+        }
+      }
+    },
+    "msgAttributeMethodMismatch": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This is the attribute, not a method!"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il s'agit de l'attribut, pas d'une méthode !"
+          }
+        }
+      }
+    },
+    "msgAuthenticationFailure": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Authentication failure. Wrong password."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Échec d'authentification. Mot de passe erroné."
+          }
+        }
+      }
+    },
+    "msgAuthenticationMechanismNameNotRecognised": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Authentication mechanism name not recognised."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nom de mécanisme d'authentification non reconnu."
+          }
+        }
+      }
+    },
+    "msgAuthenticationMechanismNameNotrecognized": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Authentication mechanism name not recognized."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nom de mécanisme d'authentification non reconnu."
+          }
+        }
+      }
+    },
+    "msgAuthenticationMechanismNameRequired": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Authentication mechanism name required."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nom du mécanisme d'authentification requis."
+          }
+        }
+      }
+    },
+    "msgAuthenticationRequired": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Authentication required."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Authentification requise."
+          }
+        }
+      }
+    },
+    "msgAuthorizationClientError": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Client authorization error - f(StoC)"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erreur d'autorisation du client - f(StoC)"
+          }
+        }
+      }
+    },
+    "msgAuthorizationError": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "HLS authorization error."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erreur d'autorisation HLS."
+          }
+        }
+      }
+    },
+    "msgAuthorizationServerError": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Server authorization error - f(CtoS)"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erreur d'autorisation du serveur - f(CtoS)"
+          }
+        }
+      }
+    },
+    "msgBadDataChecksum": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bad data checksum."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Somme de contrôle des données incorrecte."
+          }
+        }
+      }
+    },
+    "msgBadHeaderChecksum": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bad header checksum."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Somme de contrôle d'en-tête incorrecte."
+          }
+        }
+      }
+    },
+    "msgBasicInfoReadingUnderProgress": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reading basic meter identification..."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lecture de l'identification de base du compteur..."
+          }
+        }
+      }
+    },
+    "msgBleNotSupported": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bluetooth Low Energy is not supported."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bluetooth Low Energy n'est pas pris en charge."
+          }
+        }
+      }
+    },
+    "msgBluetoothDeviceChoseError": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Error occured during choosing Bluetooth device."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Une erreur s'est produite lors du choix de l'appareil Bluetooth."
+          }
+        }
+      }
+    },
+    "msgBluetoothDeviceGettingError": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Error occurred during getting Bluetooth device."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Une erreur s'est produite lors de la récupération de l'appareil Bluetooth."
+          }
+        }
+      }
+    },
+    "msgBluetoothDeviceVerificationError": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Error occurred during verification Bluetooth device."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Une erreur s'est produite lors de la vérification de l'appareil Bluetooth."
+          }
+        }
+      }
+    },
+    "msgBluetoothNotSupported": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bluetooth is not supported."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bluetooth n'est pas pris en charge."
+          }
+        }
+      }
+    },
+    "msgBluetoothRadioNotConnectable": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Local Bluetooth radio not connectable."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La radio Bluetooth locale n'est pas connectable."
+          }
+        }
+      }
+    },
+    "msgBluetoothRadioNotFound": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bluetooth device not found."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Appareil Bluetooth introuvable."
+          }
+        }
+      }
+    },
+    "msgBluetoothRadioNotTurnedOn": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Local Bluetooth radio not turned on."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La radio Bluetooth locale n'est pas activée."
+          }
+        }
+      }
+    },
+    "msgBluetoothRadioVerificationError": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Error occurred during verification local Bluetooth radio."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Une erreur s'est produite lors de la vérification de la radio Bluetooth locale."
+          }
+        }
+      }
+    },
+    "msgBtDeviceUnreachable": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "BT device {0} is unreachable"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L'appareil Bluetooth {0} est inaccessible"
+          }
+        }
+      }
+    },
+    "msgCaptureObjectsAreNotDefined": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Capture objects are not defined."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les objets de capture ne sont pas définis."
+          }
+        }
+      }
+    },
+    "msgClassNotImplemented": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Class with given Id {0} is not implemented."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La classe avec l'identifiant {0} fourni n'est pas implémentée."
+          }
+        }
+      }
+    },
+    "msgClassVersionNotImplemented": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The version {0} of class {1} is not implemented."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La version {0} de la classe {1} n'est pas implémentée."
+          }
+        }
+      }
+    },
+    "msgCodeStatusAboveLimit": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Code status: above the limit."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "État du code : au-dessus de la limite."
+          }
+        }
+      }
+    },
+    "msgCodeStatusBlocked": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Code status: active code entry block."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "État du code : saisie de code bloquée."
+          }
+        }
+      }
+    },
+    "msgCodeStatusError": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Code status: different error."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "État du code : autre erreur."
+          }
+        }
+      }
+    },
+    "msgCodeStatusNotOk": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Code status: bad."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "État du code : incorrect."
+          }
+        }
+      }
+    },
+    "msgCodeStatusOk": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Code status: good."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "État du code : correct."
+          }
+        }
+      }
+    },
+    "msgCodeStatusPrepaidOff": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Code status: prepaid is disabled."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "État du code : prépayé désactivé."
+          }
+        }
+      }
+    },
+    "msgCodeStatusTooOld": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Code status: too old."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "État du code : trop ancien."
+          }
+        }
+      }
+    },
+    "msgCodeStatusUnknown": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Code status: unknown"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "État du code : inconnu"
+          }
+        }
+      }
+    },
+    "msgCodeStatusUsed": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Code status: used."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "État du code : déjà utilisé."
+          }
+        }
+      }
+    },
+    "msgCommPortNotDefinedInXml": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Communication port is not defined in xml node."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le port de communication n'est pas défini dans le nœud xml."
+          }
+        }
+      }
+    },
+    "msgCommunicationWithDeviceNotPossible": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Communication with the device will not be possible."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La communication avec l'appareil ne sera pas possible."
+          }
+        }
+      }
+    },
+    "msgCosemValueTypeIsNotSimple": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The cosem data type {0} is not simple."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le type de données COSEM {0} n'est pas simple."
+          }
+        }
+      }
+    },
+    "msgDataReadUnderProgress": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reading data. Please wait..."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lecture des données. Veuillez patienter..."
+          }
+        }
+      }
+    },
+    "msgDataReadUnsuccessful": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unsuccessful data reading."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Échec de la lecture des données."
+          }
+        }
+      }
+    },
+    "msgDataReadingError": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Read data error."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erreur de lecture des données."
+          }
+        }
+      }
+    },
+    "msgDataSendingError": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Send data error."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erreur d'envoi des données."
+          }
+        }
+      }
+    },
+    "msgDeviceMissing": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Device is not selected."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aucun appareil sélectionné."
+          }
+        }
+      }
+    },
+    "msgDlmsArrayIsToShort": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Array of dlms bytes is too short."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tableau d'octets DLMS trop court."
+          }
+        }
+      }
+    },
+    "msgEmptyDlmsArray": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Empty array of dlms bytes."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tableau d'octets DLMS vide."
+          }
+        }
+      }
+    },
+    "msgEnteredTokenAlreadyUsed": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Token already used."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jeton déjà utilisé."
+          }
+        }
+      }
+    },
+    "msgEnteredTokenIsWrong": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wrong token."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jeton erroné."
+          }
+        }
+      }
+    },
+    "msgEntityDoesNotMatch": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The entity does not match."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L'entité ne correspond pas."
+          }
+        }
+      }
+    },
+    "msgEntryTypeMustBeSimple": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The type of entry in array must be simple."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le type d'entrée du tableau doit être simple."
+          }
+        }
+      }
+    },
+    "msgExpectedVsReceived": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Expected '{0}', received '{1}'."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Attendu « {0} », reçu « {1} »."
+          }
+        }
+      }
+    },
+    "msgExternalStoragePermissionsNotGranted": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Storage access permission not granted. Unable to save or read the prepaid charges history."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Autorisation d'accès au stockage non accordée. Impossible d'enregistrer ou de lire l'historique des recharges prépayées."
+          }
+        }
+      }
+    },
+    "msgFileChoosingUnsuccessful": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The file could not be selected."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le fichier n'a pas pu être sélectionné."
+          }
+        }
+      }
+    },
+    "msgFileNotExist": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The file at the specified path does not exist."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le fichier au chemin spécifié n'existe pas."
+          }
+        }
+      }
+    },
+    "msgGivenCosemTypeCouldNotBeMappedToSystemType": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Given cosem data type {0} couldn't be mapped to system type."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le type de données COSEM {0} n'a pas pu être converti en type système."
+          }
+        }
+      }
+    },
+    "msgGivenSystemTypeCouldNotBeMappedToCosemType": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Given data type {0} couldn't be mapped to cosem data type."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le type de données {0} n'a pas pu être converti en type de données COSEM."
+          }
+        }
+      }
+    },
+    "msgGivenValueIsNotStructure": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Given value is not structure."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La valeur fournie n'est pas une structure."
+          }
+        }
+      }
+    },
+    "msgHDLCFrameCreatingError": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Error creating HDLC frame."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erreur lors de la création de la trame HDLC."
+          }
+        }
+      }
+    },
+    "msgHDLCFrameParsingError": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Error parsing HDLC frame."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erreur lors de l'analyse de la trame HDLC."
+          }
+        }
+      }
+    },
+    "msgHdlc_NoHdlcFramesToSend": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No HDLC frames to send"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aucune trame HDLC à envoyer"
+          }
+        }
+      }
+    },
+    "msgHdlc_SpaceForPayloadNotNegotiated": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Received NegotiatedMaxInfoFieldSizeToSend=0 - unable to continue negotiations"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NegotiatedMaxInfoFieldSizeToSend reçu = 0 - impossible de poursuivre les négociations"
+          }
+        }
+      }
+    },
+    "msgHistoryInformation": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The history is saved on the device and only applies to charges that were made from that device."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L'historique est enregistré sur l'appareil et ne concerne que les recharges effectuées depuis cet appareil."
+          }
+        }
+      }
+    },
+    "msgIOBuffersResetting": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Resetting I/O buffers."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Réinitialisation des tampons d'E/S."
+          }
+        }
+      }
+    },
+    "msgIncorrectParameter": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The value \"{0}\" of parameter \"{1}\" is invalid."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La valeur « {0} » du paramètre « {1} » n'est pas valide."
+          }
+        }
+      }
+    },
+    "msgIncorrentCodeLength": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Incorrect code length"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Longueur de code incorrecte"
+          }
+        }
+      }
+    },
+    "msgInvalidFrame": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Invalid frame."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trame non valide."
+          }
+        }
+      }
+    },
+    "msgInvalidMeterAcknowledgeLength": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Invalid meter acknowledge length."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Longueur de l'accusé de réception du compteur non valide."
+          }
+        }
+      }
+    },
+    "msgInvalidMeterId": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Invalid meter ID."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Identifiant du compteur non valide."
+          }
+        }
+      }
+    },
+    "msgInvalidResponseFrame": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Invalid response frame for {0}."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trame de réponse non valide pour {0}."
+          }
+        }
+      }
+    },
+    "msgIsNotEnumType": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The system type of value is not Enum type."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le type système de la valeur n'est pas de type Enum."
+          }
+        }
+      }
+    },
+    "msgLoadButton": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Load"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Charger"
+          }
+        }
+      }
+    },
+    "msgLocalizationAndBluetoothRequest": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The APATOKEN app requires location and Bluetooth permissions to discover nearby devices."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L'application APATOKEN requiert les autorisations de localisation et de Bluetooth pour détecter les appareils à proximité."
+          }
+        }
+      }
+    },
+    "msgLocalizationRequest": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Allow {0} to access this device\\'s localization to search for available Bluetooth devices."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Autorisez {0} à accéder à la localisation de cet appareil pour rechercher les appareils Bluetooth disponibles."
+          }
+        }
+      }
+    },
+    "msgMeterAcknowledge": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No meter acknowledge."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aucun accusé de réception du compteur."
+          }
+        }
+      }
+    },
+    "msgMethodAccessError": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Access error at method {0} of {1}."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erreur d'accès à la méthode {0} sur {1}."
+          }
+        }
+      }
+    },
+    "msgMethodAttributeMismatch": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This is the method, not an attribute!"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il s'agit de la méthode, pas d'un attribut !"
+          }
+        }
+      }
+    },
+    "msgMissingCreditInfo": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No information on the remaining energy"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aucune information sur l'énergie restante"
+          }
+        }
+      }
+    },
+    "msgNoAssociatedBluetoothDevice": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No associated Bluetooth device"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aucun appareil Bluetooth associé"
+          }
+        }
+      }
+    },
+    "msgNoBluetoothDeviceSelected": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No Bluetooth device selected"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aucun appareil Bluetooth sélectionné"
+          }
+        }
+      }
+    },
+    "msgNoBondedBluetoothDevices": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No bonded Bluetooth devices."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aucun appareil Bluetooth appairé."
+          }
+        }
+      }
+    },
+    "msgNoClipboardContent": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No content in the clipboard"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aucun contenu dans le presse-papiers"
+          }
+        }
+      }
+    },
+    "msgNoData": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No data in {0}."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aucune donnée dans {0}."
+          }
+        }
+      }
+    },
+    "msgNoDeviceFound": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No meters found"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aucun compteur trouvé"
+          }
+        }
+      }
+    },
+    "msgNoDlmsMeterId": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No DLMS meter!"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aucun compteur DLMS !"
+          }
+        }
+      }
+    },
+    "msgNoFilesManager": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No Files Manager."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aucun gestionnaire de fichiers."
+          }
+        }
+      }
+    },
+    "msgNoHDLCFooter": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No HDLC frame footer."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pied de trame HDLC absent."
+          }
+        }
+      }
+    },
+    "msgNoHDLCHeader": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No HDLC frame header."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En-tête de trame HDLC absent."
+          }
+        }
+      }
+    },
+    "msgNoHeader": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No header."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aucun en-tête."
+          }
+        }
+      }
+    },
+    "msgNoLLC": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No LLC in frame."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pas de LLC dans la trame."
+          }
+        }
+      }
+    },
+    "msgNoMeterId": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No meter ID."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aucun identifiant de compteur."
+          }
+        }
+      }
+    },
+    "msgNoPossibilityToDefineValueTypes": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "It's not possible to define value types."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il n'est pas possible de définir les types de valeurs."
+          }
+        }
+      }
+    },
+    "msgNoResponse": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No response from meter."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aucune réponse du compteur."
+          }
+        }
+      }
+    },
+    "msgNoResponseFromMeter": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No response from meter."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aucune réponse du compteur."
+          }
+        }
+      }
+    },
+    "msgNoTag": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No tag '{0}'."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Balise « {0} » absente."
+          }
+        }
+      }
+    },
+    "msgNoTile": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No tile."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aucune tuile."
+          }
+        }
+      }
+    },
+    "msgNoXmlAttribute": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No attribute {0}."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aucun attribut {0}."
+          }
+        }
+      }
+    },
+    "msgNoXmlNode": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No '{0}' node."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nœud « {0} » absent."
+          }
+        }
+      }
+    },
+    "msgNodeCosemValueTypeIsNotSimple": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The cosem data type in \\\"SimpleValue\\\" is not simple."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le type de données COSEM dans « SimpleValue » n'est pas simple."
+          }
+        }
+      }
+    },
+    "msgNodeHasNoAttributes": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Node has no attributes."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le nœud n'a pas d'attributs."
+          }
+        }
+      }
+    },
+    "msgNonZeroValue": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Parameters {0} must be a non zero value."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les paramètres {0} doivent être une valeur non nulle."
+          }
+        }
+      }
+    },
+    "msgNone": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "None"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aucun"
+          }
+        }
+      }
+    },
+    "msgNotAllPermissionsGranted": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not all permissions were granted. The application will not be able to search for nearby Bluetooth devices."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toutes les autorisations n'ont pas été accordées. L'application ne pourra pas rechercher les appareils Bluetooth à proximité."
+          }
+        }
+      }
+    },
+    "msgNotEnoughDataAvailable": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not enough data available."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Données disponibles insuffisantes."
+          }
+        }
+      }
+    },
+    "msgNotImplemented": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "{0} is not implemented."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "{0} n'est pas implémenté."
+          }
+        }
+      }
+    },
+    "msgOneOfTheFollowingValueNodesShouldBeDefined": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "One of nodes: \\\"Array\\\", \\\"Structure\\\", \\\"SimpleValue\\\" or \\\"NullValue\\\" should be defined."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un des nœuds « Array », « Structure », « SimpleValue » ou « NullValue » doit être défini."
+          }
+        }
+      }
+    },
+    "msgOperationFailed": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Operation failed."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Échec de l'opération."
+          }
+        }
+      }
+    },
+    "msgOperationSucceeded": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Operation succeeded."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Opération réussie."
+          }
+        }
+      }
+    },
+    "msgPortIsClosed": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Communication port is closed."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le port de communication est fermé."
+          }
+        }
+      }
+    },
+    "msgPortIsOpen": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Communication port is open."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le port de communication est ouvert."
+          }
+        }
+      }
+    },
+    "msgPortOpeningError": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open port error."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erreur d'ouverture du port."
+          }
+        }
+      }
+    },
+    "msgPortParametersInitialization": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Communication port parameters initialization."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Initialisation des paramètres du port de communication."
+          }
+        }
+      }
+    },
+    "msgProbablyWrongKeys": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Probably wrong keys."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Clés probablement erronées."
+          }
+        }
+      }
+    },
+    "msgProfileBufferCannotBeExtractedFromString": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Profile buffer cannot be extract from textual representation."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le tampon de profil ne peut pas être extrait de la représentation textuelle."
+          }
+        }
+      }
+    },
+    "msgRequestNotSupported": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Request not supported."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Requête non prise en charge."
+          }
+        }
+      }
+    },
+    "msgSaveChangedSettingsQ": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Would You like to save changes?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Voulez-vous enregistrer les modifications ?"
+          }
+        }
+      }
+    },
+    "msgSelectedFileIsNotExpectedType": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Selected file is not expected type!"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le fichier sélectionné n'est pas du type attendu !"
+          }
+        }
+      }
+    },
+    "msgSettingsNotSaved": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Settings not saved."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paramètres non enregistrés."
+          }
+        }
+      }
+    },
+    "msgSettingsSaveError": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Error during saving settings."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erreur lors de l'enregistrement des paramètres."
+          }
+        }
+      }
+    },
+    "msgSettingsSaved": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Settings saved."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paramètres enregistrés."
+          }
+        }
+      }
+    },
+    "msgSimpleDataTypeExpected": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Simple data type was expected."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un type de données simple était attendu."
+          }
+        }
+      }
+    },
+    "msgSizeOfGivenCosemTypeCouldNotBeDefined": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The size of given cosem type {0} couldn't be defined."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La taille du type COSEM {0} fourni n'a pas pu être définie."
+          }
+        }
+      }
+    },
+    "msgStayCloseToTheMeter": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Please make sure you are near the meter."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Veuillez vous assurer que vous êtes à proximité du compteur."
+          }
+        }
+      }
+    },
+    "msgTimeReadingUnderProgress": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reading time from meter..."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lecture de l'heure sur le compteur..."
+          }
+        }
+      }
+    },
+    "msgToEnterCodeDeviceMustBeSelected": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A device must be selected before entering the code."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un appareil doit être sélectionné avant de saisir le code."
+          }
+        }
+      }
+    },
+    "msgToReadCreditsDeviceMustBeSelected": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Select the device before reading the remaining energy level."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sélectionnez l'appareil avant de lire le niveau d'énergie restant."
+          }
+        }
+      }
+    },
+    "msgTokenEnteredButNotAccepted": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Token entered, but rejected by meter."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jeton saisi, mais rejeté par le compteur."
+          }
+        }
+      }
+    },
+    "msgTokenEnteringUnderProgress": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Entering token. Please wait..."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saisie du jeton. Veuillez patienter..."
+          }
+        }
+      }
+    },
+    "msgTooShortToken": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The code should be 20 digits long."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le code doit contenir 20 chiffres."
+          }
+        }
+      }
+    },
+    "msgTransferError": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Transfer error."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erreur de transfert."
+          }
+        }
+      }
+    },
+    "msgTransfer_ApplicationContextNameNotSupported": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Application context name is not supported."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nom de contexte d'application non pris en charge."
+          }
+        }
+      }
+    },
+    "msgTransportProtocolNotDefinedInXml": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Transport protocol isn't defined in xml node."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le protocole de transport n'est pas défini dans le nœud xml."
+          }
+        }
+      }
+    },
+    "msgTurningOnBluetoothUnderProgress": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turning on Bluetooth. Please wait..."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Activation du Bluetooth. Veuillez patienter..."
+          }
+        }
+      }
+    },
+    "msgTurningOnLocalBluetoothRadioUnderProgress": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turning on local Bluetooth radio. Please wait..."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Activation de la radio Bluetooth locale. Veuillez patienter..."
+          }
+        }
+      }
+    },
+    "msgUncompatibleCosemTypes": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The cosem types of given value and method value are not compatible."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les types COSEM de la valeur fournie et de la valeur de méthode ne sont pas compatibles."
+          }
+        }
+      }
+    },
+    "msgUncompatibleValue": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Given {0} representation of value was not compatible with scheme."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La représentation {0} de la valeur fournie n'est pas compatible avec le schéma."
+          }
+        }
+      }
+    },
+    "msgUncompatibleValueType": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Given value should be compatible with type {0}."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La valeur fournie doit être compatible avec le type {0}."
+          }
+        }
+      }
+    },
+    "msgUncorrectHDLCFrameParameter": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The value \"{0}\" of HDLC frame parameter \"{1}\" is invalid."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La valeur « {0} » du paramètre de trame HDLC « {1} » n'est pas valide."
+          }
+        }
+      }
+    },
+    "msgUnknownCosemType": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unknown cosem type."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Type COSEM inconnu."
+          }
+        }
+      }
+    },
+    "msgUnknownCosemTypeSize": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "It's not possible to define the size of given cosem type {0}."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossible de définir la taille du type COSEM {0} fourni."
+          }
+        }
+      }
+    },
+    "msgUnknownError": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unknown error."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erreur inconnue."
+          }
+        }
+      }
+    },
+    "msgUnknownErrorReason": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unknown error reason."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cause de l'erreur inconnue."
+          }
+        }
+      }
+    },
+    "msgUnknownPhysicalUnit": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unknown physical unit."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unité physique inconnue."
+          }
+        }
+      }
+    },
+    "msgUnknownSystemType": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No system type for given cosem type {0}."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aucun type système pour le type COSEM {0} fourni."
+          }
+        }
+      }
+    },
+    "msgUnknownValueTypeInXmlNode": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Coudln't parse Xml rep to Dlms rep of attribute because the type of values(s) is unknown. You need to correct attribute value in xml format by defining \\\"Type\\\" attribute in \\\"SimpleValue\\\" node(s)."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impossible d'analyser la représentation Xml en représentation DLMS de l'attribut car le type de la ou des valeurs est inconnu. Vous devez corriger la valeur de l'attribut au format xml en définissant l'attribut « Type » dans le(s) nœud(s) « SimpleValue »."
+          }
+        }
+      }
+    },
+    "msgUnknownXmlNodeName": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unknown node name: \\\"{0}\\\"."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nom de nœud inconnu : « {0} »."
+          }
+        }
+      }
+    },
+    "msgUnsuccessfulConvertionToDlmsRepresentation": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Getting of binary representation was unsuccessful."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Échec de l'obtention de la représentation binaire."
+          }
+        }
+      }
+    },
+    "msgUnsuccessfulConvertionToStringRepresentation": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Getting of textual representation was unsuccessful."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Échec de l'obtention de la représentation textuelle."
+          }
+        }
+      }
+    },
+    "msgUnsuccessfulConvertionToXmlRepresentation": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Getting of xml representation was unsuccessful."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Échec de l'obtention de la représentation xml."
+          }
+        }
+      }
+    },
+    "msgUnsuccessfulDataReceiving": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Error occurred during reading data from communication port."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Une erreur s'est produite lors de la lecture des données depuis le port de communication."
+          }
+        }
+      }
+    },
+    "msgUnsuccessfulDataSending": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Error occurred during sending data through communication port."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Une erreur s'est produite lors de l'envoi des données via le port de communication."
+          }
+        }
+      }
+    },
+    "msgUnsuccessfulGettingOfLocalTimeOffset": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Failed to retrieve the time zone difference."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Échec de la récupération de la différence de fuseau horaire."
+          }
+        }
+      }
+    },
+    "msgUnsuccessfulIOBuffersResetting": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Error occurred during resetting I/O buffers."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Une erreur s'est produite lors de la réinitialisation des tampons d'E/S."
+          }
+        }
+      }
+    },
+    "msgUnsuccessfulPDUProcessing": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unsuccessful PDU processing."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Échec du traitement du PDU."
+          }
+        }
+      }
+    },
+    "msgUnsuccessfulPortClosing": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Error occurred during closing communication port."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Une erreur s'est produite lors de la fermeture du port de communication."
+          }
+        }
+      }
+    },
+    "msgUnsuccessfulPortOpening": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Error occurred during opening communication port."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Une erreur s'est produite lors de l'ouverture du port de communication."
+          }
+        }
+      }
+    },
+    "msgUnsuccessfulReadingOfPortParametersFromFile": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unsuccessful reading of serial port parameters from file. Parameters will be initialized by default values."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Échec de la lecture des paramètres du port série depuis le fichier. Les paramètres seront initialisés avec les valeurs par défaut."
+          }
+        }
+      }
+    },
+    "msgUnsuccessfulReadingOfTcpIpParametersFromFile": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unsuccessful reading of tcp port parameters from file. Parameters will be initialized by default values."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Échec de la lecture des paramètres du port TCP depuis le fichier. Les paramètres seront initialisés avec les valeurs par défaut."
+          }
+        }
+      }
+    },
+    "msgUnsuccessfulTokenEntering": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unsuccessful token entering."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Échec de la saisie du jeton."
+          }
+        }
+      }
+    },
+    "msgValidationResultFailure": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Correct, but not supported by the meter."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Valide, mais non pris en charge par le compteur."
+          }
+        }
+      }
+    },
+    "msgValueOutOfRange": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Value should be in range {0}."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La valeur doit être dans la plage {0}."
+          }
+        }
+      }
+    },
+    "msgValueOutOfRange1": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Value should be in range {0}."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La valeur doit être dans la plage {0}."
+          }
+        }
+      }
+    },
+    "msgWrongArguments": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wrong arguments for {0}."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arguments incorrects pour {0}."
+          }
+        }
+      }
+    },
+    "msgWrongAttributeCosemType": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wrong cosem attribute type."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Type d'attribut COSEM incorrect."
+          }
+        }
+      }
+    },
+    "msgWrongAttributeId": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No attibute no. \\\"{0}\\\". Maximum available number is {1}."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aucun attribut n° « {0} ». Le numéro maximum disponible est {1}."
+          }
+        }
+      }
+    },
+    "msgWrongAttributeName": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wrong attribute name. There is no attribute with name \\\"{0}\\\"."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nom d'attribut incorrect. Aucun attribut portant le nom « {0} »."
+          }
+        }
+      }
+    },
+    "msgWrongAttributeType": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wrong attribute type."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Type d'attribut incorrect."
+          }
+        }
+      }
+    },
+    "msgWrongAttributeValue": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wrong attribute value."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Valeur d'attribut incorrecte."
+          }
+        }
+      }
+    },
+    "msgWrongBCDString": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wrong format of BCD string: {0}."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Format de chaîne BCD incorrect : {0}."
+          }
+        }
+      }
+    },
+    "msgWrongBinaryRepresentation": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wrong binary representation."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Représentation binaire incorrecte."
+          }
+        }
+      }
+    },
+    "msgWrongCharInObisCode": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unappropriate char in obis code: {0}. Allowed values: ['C', 'F', 'L', 'P']."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Caractère inapproprié dans le code obis : {0}. Valeurs autorisées : ['C', 'F', 'L', 'P']."
+          }
+        }
+      }
+    },
+    "msgWrongClientNameInXml": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bad client name in xml node."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nom de client incorrect dans le nœud xml."
+          }
+        }
+      }
+    },
+    "msgWrongContextNameInXml": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bad context name in xml node."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nom de contexte incorrect dans le nœud xml."
+          }
+        }
+      }
+    },
+    "msgWrongDataType": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Incompatible data type."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Type de données incompatible."
+          }
+        }
+      }
+    },
+    "msgWrongDateTimeCosemType": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Given cosem type should be one of the following: TIME, DATE, DATE-TIME."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le type COSEM fourni doit être l'un des suivants : TIME, DATE, DATE-TIME."
+          }
+        }
+      }
+    },
+    "msgWrongDateTimeString": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wrong format of cosem {0} string."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Format de chaîne COSEM {0} incorrect."
+          }
+        }
+      }
+    },
+    "msgWrongEUILength": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The \\\"DID\\\" field represents EUI-48, so the length of its string representation should equal 6."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le champ « DID » représente un EUI-48 : la longueur de sa représentation sous forme de chaîne doit donc être égale à 6."
+          }
+        }
+      }
+    },
+    "msgWrongHDLCFrame": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wrong HDLC frame."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trame HDLC incorrecte."
+          }
+        }
+      }
+    },
+    "msgWrongHDLCFrameCRC": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wrong HDLC frame crc."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CRC de la trame HDLC incorrect."
+          }
+        }
+      }
+    },
+    "msgWrongHDLCFrameLength": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wrong HDLC frame length."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Longueur de trame HDLC incorrecte."
+          }
+        }
+      }
+    },
+    "msgWrongHDLCHeaderCRC": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wrong HDLC frame header crc."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CRC de l'en-tête de trame HDLC incorrect."
+          }
+        }
+      }
+    },
+    "msgWrongLength": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wrong length."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Longueur incorrecte."
+          }
+        }
+      }
+    },
+    "msgWrongMemberId": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "There is no {0} with provided id {1}. The number of {2}s is equal to {3}, so the maximum possible id is {4}."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il n'existe pas de {0} avec l'identifiant fourni {1}. Le nombre de {2}s est égal à {3} : l'identifiant maximum possible est donc {4}."
+          }
+        }
+      }
+    },
+    "msgWrongMemberName": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "There is no {0} with provided name \\\"{1}\\\"."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il n'existe pas de {0} portant le nom « {1} » fourni."
+          }
+        }
+      }
+    },
+    "msgWrongMemberValue": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wrong {0} value."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Valeur de {0} incorrecte."
+          }
+        }
+      }
+    },
+    "msgWrongMemberValueType": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wrong {0} type. It should be {1}."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Type de {0} incorrect. Il devrait être {1}."
+          }
+        }
+      }
+    },
+    "msgWrongMethodCosemType": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wrong cosem method type."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Type de méthode COSEM incorrect."
+          }
+        }
+      }
+    },
+    "msgWrongMethodId": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No method no. \\\"{0}\\\". Maximum available number is {1}."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aucune méthode n° « {0} ». Le numéro maximum disponible est {1}."
+          }
+        }
+      }
+    },
+    "msgWrongMethodName": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wrong method name. There is no method with name \\\"{0}\\\"."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nom de méthode incorrect. Aucune méthode portant le nom « {0} »."
+          }
+        }
+      }
+    },
+    "msgWrongMethodType": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wrong method type."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Type de méthode incorrect."
+          }
+        }
+      }
+    },
+    "msgWrongMethodValue": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wrong method value."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Valeur de méthode incorrecte."
+          }
+        }
+      }
+    },
+    "msgWrongNumberOfArrayItems": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wrong number of array items."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nombre d'éléments du tableau incorrect."
+          }
+        }
+      }
+    },
+    "msgWrongNumberOfBytes": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wrong number of bytes."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nombre d'octets incorrect."
+          }
+        }
+      }
+    },
+    "msgWrongNumberOfCaptureObjects": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wrong number of capture objects."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nombre d'objets de capture incorrect."
+          }
+        }
+      }
+    },
+    "msgWrongNumberOfChars": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wrong number of chars."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nombre de caractères incorrect."
+          }
+        }
+      }
+    },
+    "msgWrongNumberOfCharsInHexString": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The binary key cannot have an odd number of digits: {0}."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La clé binaire ne peut pas avoir un nombre impair de chiffres : {0}."
+          }
+        }
+      }
+    },
+    "msgWrongNumberOfStructureFields": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wrong number of structure fields."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nombre de champs de structure incorrect."
+          }
+        }
+      }
+    },
+    "msgWrongObisString": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wrong textual representation of obis code."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Représentation textuelle du code obis incorrecte."
+          }
+        }
+      }
+    },
+    "msgWrongPDU": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wrong PDU"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "PDU incorrect"
+          }
+        }
+      }
+    },
+    "msgWrongPasswordLengthInXml": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bad password length in xml node."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Longueur de mot de passe incorrecte dans le nœud xml."
+          }
+        }
+      }
+    },
+    "msgWrongPasswordTypeNameInXml": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bad password type name in xml node."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nom de type de mot de passe incorrect dans le nœud xml."
+          }
+        }
+      }
+    },
+    "msgWrongResponseFromMeter": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wrong response from meter."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Réponse incorrecte du compteur."
+          }
+        }
+      }
+    },
+    "msgWrongStatusLength": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wrong value format. The length of status should be 8 bits."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Format de valeur incorrect. La longueur de l'état doit être de 8 bits."
+          }
+        }
+      }
+    },
+    "msgWrongStringLength": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The length of \\\"{0}\\\" string should equal {1}."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La longueur de la chaîne « {0} » doit être égale à {1}."
+          }
+        }
+      }
+    },
+    "msgWrongStringRepresentation": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wrong textual representation."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Représentation textuelle incorrecte."
+          }
+        }
+      }
+    },
+    "msgWrongValue": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wrong value."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Valeur incorrecte."
+          }
+        }
+      }
+    },
+    "msgWrongValueFormat": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wrong value format. Given value should be of type {0}."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Format de valeur incorrect. La valeur fournie doit être de type {0}."
+          }
+        }
+      }
+    },
+    "msgWrongValueOfIP6Address": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wrong value of IPv6 address."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Valeur d'adresse IPv6 incorrecte."
+          }
+        }
+      }
+    },
+    "msgWrongValueOfMACAddress": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wrong value of MAC address."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Valeur d'adresse MAC incorrecte."
+          }
+        }
+      }
+    },
+    "msgWrongValueType": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wrong value type."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Type de valeur incorrect."
+          }
+        }
+      }
+    },
+    "msgWrongWrapperFrameHeaderLength": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wrong WRAPPER frame header length."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Longueur d'en-tête de trame WRAPPER incorrecte."
+          }
+        }
+      }
+    },
+    "msgWrongWrapperFrameLength": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wrong WRAPPER frame length."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Longueur de trame WRAPPER incorrecte."
+          }
+        }
+      }
+    },
+    "msgWrongWrapperHeaderLength": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wrapper header too short."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En-tête WRAPPER trop court."
+          }
+        }
+      }
+    },
+    "msgWrongXmlRepresentation": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wrong xml representation."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Représentation xml incorrecte."
+          }
+        }
+      }
+    },
+    "mshUnknownFormatOfDate": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unknown format of date."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Format de date inconnu."
+          }
+        }
+      }
+    },
+    "txtAfterPrepaidRecharge": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "After prepaid recharge"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Après recharge prépayée"
+          }
+        }
+      }
+    },
+    "txtAlertInfo": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Information"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Information"
+          }
+        }
+      }
+    },
+    "txtAllFilesAccessGranted": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "All files access granted."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Accès à tous les fichiers accordé."
+          }
+        }
+      }
+    },
+    "txtAllow": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Allow"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Autoriser"
+          }
+        }
+      }
+    },
+    "txtApatorLimiterQueueCommandTypeDelete": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Delete"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Supprimer"
+          }
+        }
+      }
+    },
+    "txtApatorLimiterQueueCommandTypeInstant": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Instant"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Instantané"
+          }
+        }
+      }
+    },
+    "txtApatorLimiterQueueStatusAdjusted": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adjusted"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ajusté"
+          }
+        }
+      }
+    },
+    "txtApatorLimiterQueueStatusExecuted": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Executed"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Exécuté"
+          }
+        }
+      }
+    },
+    "txtApatorLimiterQueueStatusOmitted": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Omitted"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ignoré"
+          }
+        }
+      }
+    },
+    "txtApatorLimiterQueueStatusScheduled": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scheduled"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Planifié"
+          }
+        }
+      }
+    },
+    "txtArrayIsIncomplete": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Array is incomplete - {0} elements are missing."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le tableau est incomplet - il manque {0} éléments."
+          }
+        }
+      }
+    },
+    "txtAttribute": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "attribute"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "attribut"
+          }
+        }
+      }
+    },
+    "txtAvailableDevices": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Available devices"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Appareils disponibles"
+          }
+        }
+      }
+    },
+    "txtCancel": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancel"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Annuler"
+          }
+        }
+      }
+    },
+    "txtChannelArib": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ARIB (Channels 4-7)"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ARIB (canaux 4-7)"
+          }
+        }
+      }
+    },
+    "txtChannelEight": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Channel 8"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Canal 8"
+          }
+        }
+      }
+    },
+    "txtChannelFccBand": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fcc-Band (Channels 3-8)"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bande FCC (canaux 3-8)"
+          }
+        }
+      }
+    },
+    "txtChannelFive": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Channel 5"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Canal 5"
+          }
+        }
+      }
+    },
+    "txtChannelFour": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Channel 4"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Canal 4"
+          }
+        }
+      }
+    },
+    "txtChannelFullBand": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Full - Band"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bande complète"
+          }
+        }
+      }
+    },
+    "txtChannelOne": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Channel 111"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Canal 111"
+          }
+        }
+      }
+    },
+    "txtChannelSeven": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Channel 7"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Canal 7"
+          }
+        }
+      }
+    },
+    "txtChannelSix": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Channel 6"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Canal 6"
+          }
+        }
+      }
+    },
+    "txtChannelThree": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Channel 3"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Canal 3"
+          }
+        }
+      }
+    },
+    "txtChannelTwo": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Channel 2"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Canal 2"
+          }
+        }
+      }
+    },
+    "txtChannelsSixToEight": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Channels 6-8"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Canaux 6-8"
+          }
+        }
+      }
+    },
+    "txtChargesHistory": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Charges history"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Historique des recharges"
+          }
+        }
+      }
+    },
+    "txtClose": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Close"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fermer"
+          }
+        }
+      }
+    },
+    "txtCode": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Code"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Code"
+          }
+        }
+      }
+    },
+    "txtCodeStatus": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Code status"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "État du code"
+          }
+        }
+      }
+    },
+    "txtCreditValue": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Value of remaining energy"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Valeur de l'énergie restante"
+          }
+        }
+      }
+    },
+    "txtCurrentCredits": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Remaining energy"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Énergie restante"
+          }
+        }
+      }
+    },
+    "txtDate": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Date"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Date"
+          }
+        }
+      }
+    },
+    "txtDeny": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deny"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Refuser"
+          }
+        }
+      }
+    },
+    "txtDetails": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Details"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Détails"
+          }
+        }
+      }
+    },
+    "txtDeviceAddress": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Meter address:"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adresse du compteur :"
+          }
+        }
+      }
+    },
+    "txtDeviceId": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Device id"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Identifiant de l'appareil"
+          }
+        }
+      }
+    },
+    "txtDeviceInternalMemory": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Internal memory"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mémoire interne"
+          }
+        }
+      }
+    },
+    "txtDeviceName": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Meter number: "
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Numéro du compteur : "
+          }
+        }
+      }
+    },
+    "txtDisabledLocalization": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Disabled localization services"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Services de localisation désactivés"
+          }
+        }
+      }
+    },
+    "txtDualCharging": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dual-zone charging"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recharge bizone"
+          }
+        }
+      }
+    },
+    "txtEnterToken": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter token with energy"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saisir le jeton d'énergie"
+          }
+        }
+      }
+    },
+    "txtEntityCertificationAuthority": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Certification authority"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Autorité de certification"
+          }
+        }
+      }
+    },
+    "txtEntityClient": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Client"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Client"
+          }
+        }
+      }
+    },
+    "txtEntityOther": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Other"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Autre"
+          }
+        }
+      }
+    },
+    "txtEntityServer": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Server"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Serveur"
+          }
+        }
+      }
+    },
+    "txtError": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Error"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erreur"
+          }
+        }
+      }
+    },
+    "txtErrorOpeningTCPIP": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TCP/IP connection opening error"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erreur d'ouverture de connexion TCP/IP"
+          }
+        }
+      }
+    },
+    "txtExit": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Exit"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quitter"
+          }
+        }
+      }
+    },
+    "txtExternalStorageWritePermissionDisabled": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Write permission disabled"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Autorisation d'écriture désactivée"
+          }
+        }
+      }
+    },
+    "txtFileChooser": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "File selection"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sélection de fichiers"
+          }
+        }
+      }
+    },
+    "txtGeolocalizationEnableRequest": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Application {0} ask for geolocalization enable to search Bluetooth devices."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L'application {0} demande l'activation de la géolocalisation pour rechercher les appareils Bluetooth."
+          }
+        }
+      }
+    },
+    "txtGeolocalizationPermissionRequest": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Application {0} ask for geolocalization permission to search Bluetooth devices."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L'application {0} demande l'autorisation de géolocalisation pour rechercher les appareils Bluetooth."
+          }
+        }
+      }
+    },
+    "txtGeolocalizationServiceDisabled": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geolicalization service disabled"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Service de géolocalisation désactivé"
+          }
+        }
+      }
+    },
+    "txtGeolocalizationServicePermissionDisabled": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geolicalization service permission disabled"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Autorisation du service de géolocalisation désactivée"
+          }
+        }
+      }
+    },
+    "txtGotoApplicationSettings": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Go to settings"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Accéder aux réglages"
+          }
+        }
+      }
+    },
+    "txtHistory": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "History"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Historique"
+          }
+        }
+      }
+    },
+    "txtLocatedOnTheMeterCasing": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "identification located on its casing"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "identification située sur son boîtier"
+          }
+        }
+      }
+    },
+    "txtMemoryCard": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Memory card"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Carte mémoire"
+          }
+        }
+      }
+    },
+    "txtMenuAbout": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "À propos"
+          }
+        }
+      }
+    },
+    "txtMenuSettings": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Settings"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Réglages"
+          }
+        }
+      }
+    },
+    "txtMeterNumber": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "meter number "
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "numéro du compteur "
+          }
+        }
+      }
+    },
+    "txtMethod": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "method"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "méthode"
+          }
+        }
+      }
+    },
+    "txtNo": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Non"
+          }
+        }
+      }
+    },
+    "txtNoPermissions": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Granting the required permissions in the application settings."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Accord des autorisations requises dans les réglages de l'application."
+          }
+        }
+      }
+    },
+    "txtNull": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NULL"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NULL"
+          }
+        }
+      }
+    },
+    "txtOk": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ok"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ok"
+          }
+        }
+      }
+    },
+    "txtPackageName": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Version"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Version"
+          }
+        }
+      }
+    },
+    "txtPackageVersion": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Package version"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Version du paquet"
+          }
+        }
+      }
+    },
+    "txtPaste": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paste"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Coller"
+          }
+        }
+      }
+    },
+    "txtPickValue": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choose value"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choisir une valeur"
+          }
+        }
+      }
+    },
+    "txtPlcCommunicationModeFive": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(6) PLC communication after searched band next GSM communication"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(6) Communication CPL après la bande recherchée puis communication GSM"
+          }
+        }
+      }
+    },
+    "txtPlcCommunicationModeFour": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(5) Only PLC communication after searched band"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(5) Communication CPL uniquement après la bande recherchée"
+          }
+        }
+      }
+    },
+    "txtPlcCommunicationModeOne": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(2) Only PLC communication after searched phase"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(2) Communication CPL uniquement après la phase recherchée"
+          }
+        }
+      }
+    },
+    "txtPlcCommunicationModeThree": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(4) Only GSM communication"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(4) Communication GSM uniquement"
+          }
+        }
+      }
+    },
+    "txtPlcCommunicationModeTwo": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(3) PLC communication after searched phase next GSM communication"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(3) Communication CPL après la phase recherchée puis communication GSM"
+          }
+        }
+      }
+    },
+    "txtPlcCommunicationModeZero": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(1) Only PLC communication on selected phase"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(1) Communication CPL uniquement sur la phase sélectionnée"
+          }
+        }
+      }
+    },
+    "txtPrepaidRecharge": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prepaid recharge"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recharge prépayée"
+          }
+        }
+      }
+    },
+    "txtPublisher": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Publisher"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Éditeur"
+          }
+        }
+      }
+    },
+    "txtReadCredits": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Read"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lire"
+          }
+        }
+      }
+    },
+    "txtReadMeter": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Data reading"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lecture des données"
+          }
+        }
+      }
+    },
+    "txtReadingAllFilesImpossible": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reading all files is not possible."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La lecture de tous les fichiers n'est pas possible."
+          }
+        }
+      }
+    },
+    "txtReadings": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Readings"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Relevés"
+          }
+        }
+      }
+    },
+    "txtRecharge": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prepaid recharge"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recharge prépayée"
+          }
+        }
+      }
+    },
+    "txtRemovableModule": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Removable module"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Module amovible"
+          }
+        }
+      }
+    },
+    "txtResetCredit": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reset credit."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Remise à zéro du crédit."
+          }
+        }
+      }
+    },
+    "txtSampleIdentification": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Example of "
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Exemple de "
+          }
+        }
+      }
+    },
+    "txtSaveSettings": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OK"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OK"
+          }
+        }
+      }
+    },
+    "txtScanning": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scanning for meters"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recherche de compteurs"
+          }
+        }
+      }
+    },
+    "txtSearchingBluetoothDevicesIsNotPossible": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Searching Bluetooth devices is not possible."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La recherche d'appareils Bluetooth n'est pas possible."
+          }
+        }
+      }
+    },
+    "txtSelect": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Select"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sélectionner"
+          }
+        }
+      }
+    },
+    "txtSelectDevice": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Select a meter to connect"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sélectionner un compteur à connecter"
+          }
+        }
+      }
+    },
+    "txtSettings": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Settings"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Réglages"
+          }
+        }
+      }
+    },
+    "txtSingleCharging": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Single-zone charging"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recharge monozone"
+          }
+        }
+      }
+    },
+    "txtSpeedNotSupported": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The specified transmission speed is not supported."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La vitesse de transmission spécifiée n'est pas prise en charge."
+          }
+        }
+      }
+    },
+    "txtSuiteDigitalSignatureKeyPair": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Digital Signature key pair"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paire de clés de signature numérique"
+          }
+        }
+      }
+    },
+    "txtSuiteKeyAgreementKeyPair": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Key Agreement key pair"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paire de clés d'accord de clés"
+          }
+        }
+      }
+    },
+    "txtSuiteTLS_KeyPair": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TLS key pair"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paire de clés TLS"
+          }
+        }
+      }
+    },
+    "txtTariffZone": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "tariff zone"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "zone tarifaire"
+          }
+        }
+      }
+    },
+    "txtTotalCredit": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Total amount of remaining energy"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quantité totale d'énergie restante"
+          }
+        }
+      }
+    },
+    "txtTypeDigitalSignature": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Digital signature"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Signature numérique"
+          }
+        }
+      }
+    },
+    "txtTypeKeyAgreement": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Key agreement"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Accord de clés"
+          }
+        }
+      }
+    },
+    "txtTypeOther": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Other"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Autre"
+          }
+        }
+      }
+    },
+    "txtTypeTLS": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TLS"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TLS"
+          }
+        }
+      }
+    },
+    "txtUnknown": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unknown"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inconnu"
+          }
+        }
+      }
+    },
+    "txtUnlockCommunication": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unlock communication."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Déverrouillage de la communication."
+          }
+        }
+      }
+    },
+    "txtUploadToken": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter token"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Entrer le jeton"
+          }
+        }
+      }
+    },
+    "txtZone": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tariff zone"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zone tarifaire"
+          }
+        }
+      }
+    },
+    "yes_button": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yes"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oui"
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}

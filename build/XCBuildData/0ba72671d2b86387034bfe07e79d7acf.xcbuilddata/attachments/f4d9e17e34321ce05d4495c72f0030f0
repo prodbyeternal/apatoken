@@ -1,0 +1,199 @@
+{
+  "" : {
+    "diagnostics" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/APATOKEN-primary.dia",
+    "emit-module-dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/APATOKEN-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/APATOKEN-primary-emit-module.dia",
+    "pch" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/APATOKEN-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/APATOKEN-primary.swiftdeps"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/APATOKENApp.swift" : {
+    "const-values" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/APATOKENApp.swiftconstvalues",
+    "dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/APATOKENApp.d",
+    "diagnostics" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/APATOKENApp.dia",
+    "index-unit-output-path" : "/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/APATOKENApp.o",
+    "llvm-bc" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/APATOKENApp.bc",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/APATOKENApp.o",
+    "swift-dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/APATOKENApp.swiftdeps",
+    "swiftmodule" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/APATOKENApp~partial.swiftmodule"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/BLE/DspsBlePort.swift" : {
+    "const-values" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/DspsBlePort.swiftconstvalues",
+    "dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/DspsBlePort.d",
+    "diagnostics" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/DspsBlePort.dia",
+    "index-unit-output-path" : "/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/DspsBlePort.o",
+    "llvm-bc" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/DspsBlePort.bc",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/DspsBlePort.o",
+    "swift-dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/DspsBlePort.swiftdeps",
+    "swiftmodule" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/DspsBlePort~partial.swiftmodule"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Comm/MeterTransaction.swift" : {
+    "const-values" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/MeterTransaction.swiftconstvalues",
+    "dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/MeterTransaction.d",
+    "diagnostics" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/MeterTransaction.dia",
+    "index-unit-output-path" : "/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/MeterTransaction.o",
+    "llvm-bc" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/MeterTransaction.bc",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/MeterTransaction.o",
+    "swift-dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/MeterTransaction.swiftdeps",
+    "swiftmodule" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/MeterTransaction~partial.swiftmodule"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Core/Bytes.swift" : {
+    "const-values" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/Bytes.swiftconstvalues",
+    "dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/Bytes.d",
+    "diagnostics" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/Bytes.dia",
+    "index-unit-output-path" : "/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/Bytes.o",
+    "llvm-bc" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/Bytes.bc",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/Bytes.o",
+    "swift-dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/Bytes.swiftdeps",
+    "swiftmodule" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/Bytes~partial.swiftmodule"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Core/L.swift" : {
+    "const-values" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/L.swiftconstvalues",
+    "dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/L.d",
+    "diagnostics" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/L.dia",
+    "index-unit-output-path" : "/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/L.o",
+    "llvm-bc" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/L.bc",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/L.o",
+    "swift-dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/L.swiftdeps",
+    "swiftmodule" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/L~partial.swiftmodule"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Dlms/CosemApdu.swift" : {
+    "const-values" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/CosemApdu.swiftconstvalues",
+    "dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/CosemApdu.d",
+    "diagnostics" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/CosemApdu.dia",
+    "index-unit-output-path" : "/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/CosemApdu.o",
+    "llvm-bc" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/CosemApdu.bc",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/CosemApdu.o",
+    "swift-dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/CosemApdu.swiftdeps",
+    "swiftmodule" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/CosemApdu~partial.swiftmodule"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Dlms/HdlcTransport.swift" : {
+    "const-values" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/HdlcTransport.swiftconstvalues",
+    "dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/HdlcTransport.d",
+    "diagnostics" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/HdlcTransport.dia",
+    "index-unit-output-path" : "/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/HdlcTransport.o",
+    "llvm-bc" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/HdlcTransport.bc",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/HdlcTransport.o",
+    "swift-dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/HdlcTransport.swiftdeps",
+    "swiftmodule" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/HdlcTransport~partial.swiftmodule"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Dlms/TokenModels.swift" : {
+    "const-values" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/TokenModels.swiftconstvalues",
+    "dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/TokenModels.d",
+    "diagnostics" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/TokenModels.dia",
+    "index-unit-output-path" : "/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/TokenModels.o",
+    "llvm-bc" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/TokenModels.bc",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/TokenModels.o",
+    "swift-dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/TokenModels.swiftdeps",
+    "swiftmodule" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/TokenModels~partial.swiftmodule"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Model/ChargeModel.swift" : {
+    "const-values" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/ChargeModel.swiftconstvalues",
+    "dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/ChargeModel.d",
+    "diagnostics" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/ChargeModel.dia",
+    "index-unit-output-path" : "/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/ChargeModel.o",
+    "llvm-bc" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/ChargeModel.bc",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/ChargeModel.o",
+    "swift-dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/ChargeModel.swiftdeps",
+    "swiftmodule" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/ChargeModel~partial.swiftmodule"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Persist/Stores.swift" : {
+    "const-values" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/Stores.swiftconstvalues",
+    "dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/Stores.d",
+    "diagnostics" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/Stores.dia",
+    "index-unit-output-path" : "/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/Stores.o",
+    "llvm-bc" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/Stores.bc",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/Stores.o",
+    "swift-dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/Stores.swiftdeps",
+    "swiftmodule" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/Stores~partial.swiftmodule"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/DetailsView.swift" : {
+    "const-values" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/DetailsView.swiftconstvalues",
+    "dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/DetailsView.d",
+    "diagnostics" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/DetailsView.dia",
+    "index-unit-output-path" : "/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/DetailsView.o",
+    "llvm-bc" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/DetailsView.bc",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/DetailsView.o",
+    "swift-dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/DetailsView.swiftdeps",
+    "swiftmodule" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/DetailsView~partial.swiftmodule"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/HistoryView.swift" : {
+    "const-values" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/HistoryView.swiftconstvalues",
+    "dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/HistoryView.d",
+    "diagnostics" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/HistoryView.dia",
+    "index-unit-output-path" : "/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/HistoryView.o",
+    "llvm-bc" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/HistoryView.bc",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/HistoryView.o",
+    "swift-dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/HistoryView.swiftdeps",
+    "swiftmodule" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/HistoryView~partial.swiftmodule"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/MainView.swift" : {
+    "const-values" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/MainView.swiftconstvalues",
+    "dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/MainView.d",
+    "diagnostics" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/MainView.dia",
+    "index-unit-output-path" : "/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/MainView.o",
+    "llvm-bc" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/MainView.bc",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/MainView.o",
+    "swift-dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/MainView.swiftdeps",
+    "swiftmodule" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/MainView~partial.swiftmodule"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/ReadingsView.swift" : {
+    "const-values" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/ReadingsView.swiftconstvalues",
+    "dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/ReadingsView.d",
+    "diagnostics" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/ReadingsView.dia",
+    "index-unit-output-path" : "/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/ReadingsView.o",
+    "llvm-bc" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/ReadingsView.bc",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/ReadingsView.o",
+    "swift-dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/ReadingsView.swiftdeps",
+    "swiftmodule" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/ReadingsView~partial.swiftmodule"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/RootView.swift" : {
+    "const-values" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/RootView.swiftconstvalues",
+    "dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/RootView.d",
+    "diagnostics" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/RootView.dia",
+    "index-unit-output-path" : "/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/RootView.o",
+    "llvm-bc" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/RootView.bc",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/RootView.o",
+    "swift-dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/RootView.swiftdeps",
+    "swiftmodule" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/RootView~partial.swiftmodule"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/SettingsView.swift" : {
+    "const-values" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/SettingsView.swiftconstvalues",
+    "dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/SettingsView.d",
+    "diagnostics" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/SettingsView.dia",
+    "index-unit-output-path" : "/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/SettingsView.o",
+    "llvm-bc" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/SettingsView.bc",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/SettingsView.o",
+    "swift-dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/SettingsView.swiftdeps",
+    "swiftmodule" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/SettingsView~partial.swiftmodule"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/Theme.swift" : {
+    "const-values" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/Theme.swiftconstvalues",
+    "dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/Theme.d",
+    "diagnostics" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/Theme.dia",
+    "index-unit-output-path" : "/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/Theme.o",
+    "llvm-bc" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/Theme.bc",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/Theme.o",
+    "swift-dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/Theme.swiftdeps",
+    "swiftmodule" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/Theme~partial.swiftmodule"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/GeneratedAssetSymbols.dia",
+    "index-unit-output-path" : "/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftdeps",
+    "swiftmodule" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/GeneratedAssetSymbols~partial.swiftmodule"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/DerivedSources/GeneratedStringSymbols_Localizable.swift" : {
+    "const-values" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/GeneratedStringSymbols_Localizable.swiftconstvalues",
+    "dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/GeneratedStringSymbols_Localizable.d",
+    "diagnostics" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/GeneratedStringSymbols_Localizable.dia",
+    "index-unit-output-path" : "/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/GeneratedStringSymbols_Localizable.o",
+    "llvm-bc" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/GeneratedStringSymbols_Localizable.bc",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/GeneratedStringSymbols_Localizable.o",
+    "swift-dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/GeneratedStringSymbols_Localizable.swiftdeps",
+    "swiftmodule" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/GeneratedStringSymbols_Localizable~partial.swiftmodule"
+  }
+}

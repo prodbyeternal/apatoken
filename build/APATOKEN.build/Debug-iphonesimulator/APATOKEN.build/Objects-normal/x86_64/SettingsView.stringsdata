@@ -1,0 +1,24 @@
+{
+  "source": "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/SettingsView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "%@ %@%@",
+        "location": {
+          "startingColumn": 14,
+          "startingLine": 171
+        }
+      },
+      {
+        "comment": "",
+        "key": "Port activity log",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 231
+        }
+      }
+    ]
+  },
+  "version": 1
+}
