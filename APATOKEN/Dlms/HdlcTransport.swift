@@ -459,9 +459,9 @@ final class HdlcTransport {
         let preCount = frames.count
         let wrapped = dataToSend.clone()
         // ByteBuffer.AddLLC: E6 E6 00 at buffer start.
-        wrapped.insert(0, 0)
+        wrapped.insert(0, 230)
         wrapped.insert(1, 230)
-        wrapped.insert(2, 230)
+        wrapped.insert(2, 0)
         addFramesToSend(.i, wrapped)
         try await doTransactionLoop()
         framesToSend.removeAll()

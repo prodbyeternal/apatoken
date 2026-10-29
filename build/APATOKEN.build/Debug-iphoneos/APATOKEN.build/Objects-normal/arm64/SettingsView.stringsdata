@@ -7,7 +7,7 @@
         "key": "%@ %@%@",
         "location": {
           "startingColumn": 14,
-          "startingLine": 171
+          "startingLine": 173
         }
       },
       {
@@ -15,7 +15,23 @@
         "key": "Port activity log",
         "location": {
           "startingColumn": 22,
-          "startingLine": 231
+          "startingLine": 233
+        }
+      },
+      {
+        "comment": "",
+        "key": "Copied",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 243
+        }
+      },
+      {
+        "comment": "",
+        "key": "Copy",
+        "location": {
+          "startingColumn": 50,
+          "startingLine": 243
         }
       }
     ]

@@ -1,6 +1,7 @@
 import Combine
 import SwiftUI
 import CoreBluetooth
+import UIKit
 
 // MARK: - BluetoothDeviceScanner (BluetoothPopup.DoDiscovery mirror)
 
@@ -100,6 +101,7 @@ struct SettingsView: View {
     @State private var alert: AlertPresentation?
     @State private var scanner = BluetoothDeviceScanner()
     @State private var portLogText = ""
+    @State private var copyFlash = false
 
     var body: some View {
             ScrollView {
@@ -232,21 +234,35 @@ struct SettingsView: View {
                     .font(ApaFont.semibold(14))
                 Spacer()
                 Button {
+                    UIPasteboard.general.string = PortLog.shared.text()
+                    copyFlash = true
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+                        copyFlash = false
+                    }
+                } label: {
+                    Label(copyFlash ? "Copied" : "Copy", systemImage: copyFlash ? "checkmark" : "doc.on.doc")
+                        .font(.system(size: 12))
+                }
+                .buttonStyle(.borderless)
+                Button {
                     PortLog.shared.clear()
                     refreshPortLog()
                 } label: {
                     Image(systemName: "arrow.clockwise")
                         .font(.system(size: 13))
                 }
+                .buttonStyle(.borderless)
             }
-            Text(portLogText.isEmpty ? "(empty)" : portLogText)
-                .font(.system(size: 10).monospaced())
-                .foregroundStyle(ApaColor.gray)
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .lineLimit(30)
-                .padding(8)
-                .background(Color(uiColor: .systemBackground).opacity(0.65))
-                .cornerRadius(8)
+            ScrollView {
+                Text(portLogText.isEmpty ? "(empty)" : portLogText)
+                    .font(.system(size: 10).monospaced())
+                    .foregroundStyle(ApaColor.gray)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(8)
+            }
+            .frame(height: 220)
+            .background(Color(uiColor: .systemBackground).opacity(0.65))
+            .cornerRadius(8)
         }
         .padding(.horizontal, 16)
         .padding(.bottom, 10)
