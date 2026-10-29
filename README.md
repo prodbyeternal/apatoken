@@ -60,7 +60,7 @@ ikony SF Symbols, **jasny i ciemny motyw zgodny z ustawieniami systemu**.
 
 | | Opis |
 |---|---|
-| ➖ Ikona aplikacji | Wklejana po buildzie (ograniczenie `actool` w tym SDK — patrz sekcja Budowanie) |
+| ➖ Ikona aplikacji | `actool` nie generuje `Assets.car` z powodu niezgodności SDK 26.2 ↔ runtime 26.3 (patrz sekcja Budowanie); ikony native i ich warianty (Light/Dark/Tinted) są gotowe w `Assets.xcassets/AppIcon.appiconset`, ale być może graftowane po buildzie |
 | ➖ Eksport historii | Brak udostępniania CSV z poziomu UI; plik zapisywany lokalnie w Application Support |
 | ➖ Adres urządzenia | Na iOS to UUID `CBPeripheral`, a nie MAC jak na Androidzie — wybór licznika nie przenosi się między platformami |
 | ➖ Wersja systemu | Wymagany **iOS 26.2 lub nowszy** |
@@ -82,10 +82,11 @@ xcodebuild -project APATOKEN.xcodeproj -target APATOKEN \
 
 Produkcja buildu: `build/Debug-iphoneos/iAPATOKEN.app`.
 
-> **Uwaga — ikona:** w tym zestawie SDK `actool` nie kompiluje prawdziwej zawartości
-> katalogu zasobów, dlatego ikony są doklejane do `.app` po buildzie
-> (`AppIcon29x29@2x/3x`, `AppIcon40x40@2x/3x`, `AppIcon60x60@2x/3x`, `AppIcon1024`)
-> wraz z wpisem `CFBundleIcons` w `Info.plist` (PlistBuddy).
+> **Uwaga — ikona:** w tym zestawie SDK 26.2 `actool` nie generuje `Assets.car`
+> (niezgodność SDK 26.2 ↔ runtime 26.3). Zawartość `Assets.xcassets/AppIcon.appiconset`
+> jest poprawna (Light/Dark/Tinted warianty, 21 plików), ale ikony są doklejane do `.app`
+> po buildzie z gotowych eksportów z Icon Composer (`graft_icons/`)
+> i rejestrowane w `Info.plist` jako `CFBundleIcons`.
 
 **Pakowanie IPA:**
 

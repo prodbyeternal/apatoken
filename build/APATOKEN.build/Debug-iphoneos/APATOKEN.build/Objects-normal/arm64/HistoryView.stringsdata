@@ -1,5 +1,64 @@
 {
-  "source": "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/HistoryView.swift",
-  "tables": {},
+  "source": "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/History/HistoryView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Filter by meter",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 191
+        }
+      },
+      {
+        "comment": "",
+        "key": "Filter by meter",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 238
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@ kWh / %@ kWh",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 308
+        }
+      },
+      {
+        "comment": "",
+        "key": "Energy Token Purchase",
+        "location": {
+          "startingColumn": 21,
+          "startingLine": 351
+        }
+      },
+      {
+        "comment": "",
+        "key": "Charging Type",
+        "location": {
+          "startingColumn": 21,
+          "startingLine": 356
+        }
+      },
+      {
+        "comment": "",
+        "key": "After Recharge",
+        "location": {
+          "startingColumn": 21,
+          "startingLine": 365
+        }
+      },
+      {
+        "comment": "",
+        "key": "Energy Delivered",
+        "location": {
+          "startingColumn": 21,
+          "startingLine": 370
+        }
+      }
+    ]
+  },
   "version": 1
 }

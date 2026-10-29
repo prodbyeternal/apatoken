@@ -34,12 +34,16 @@ enum SettingsManager {
     }
 
     static func getLanguageTag() -> String {
-        defaults.string(forKey: "LanguageTag") ?? "en-US"
+        defaults.string(forKey: "LanguageTag") ?? "en"
     }
 
     static func setLanguage(_ languageName: String, _ languageTag: String) {
         defaults.set(languageName, forKey: "LanguageName")
         defaults.set(languageTag, forKey: "LanguageTag")
+        // Notify observers to trigger UI refresh
+        DispatchQueue.main.async {
+            NotificationCenter.default.post(name: .languageChanged, object: nil)
+        }
     }
 
     static func getMeterBaudRate() -> Int {

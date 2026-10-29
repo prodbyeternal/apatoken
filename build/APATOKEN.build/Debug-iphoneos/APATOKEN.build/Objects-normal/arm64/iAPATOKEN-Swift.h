@@ -304,21 +304,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 #if defined(__OBJC__)
 
-@class CBCentralManager;
-@class CBPeripheral;
-@class NSString;
-@class NSNumber;
-/// Scans with CoreBluetooth while a sheet (BluetoothPopup mirror) is open.
-/// Devices are filtered exactly like the Android LE scan: name uppercase
-/// starts with “APA” and does not contain “-”; deduplication via the
-/// <em>foundDevices key (name.Substring(3) + “</em>” + address).
-SWIFT_CLASS("_TtC9iAPATOKEN22BluetoothDeviceScanner")
-@interface BluetoothDeviceScanner : NSObject <CBCentralManagerDelegate, CBPeripheralDelegate>
-- (void)centralManagerDidUpdateState:(CBCentralManager * _Nonnull)central;
-- (void)centralManager:(CBCentralManager * _Nonnull)central didDiscoverPeripheral:(CBPeripheral * _Nonnull)peripheral advertisementData:(NSDictionary<NSString *, id> * _Nonnull)advertisementData RSSI:(NSNumber * _Nonnull)RSSI;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
 /// CoreBluetooth-backed communication port implementing the semantics
 /// of <code>PluginSerialPortGattClient</code> + <code>BluetoothCommunicationPortPluginSpc</code>:
 /// SPS service 194247d0-…, RX/TX notification pipe, serial-parameter
@@ -330,6 +315,10 @@ SWIFT_CLASS("_TtC9iAPATOKEN11DspsBlePort")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@class CBCentralManager;
+@class CBPeripheral;
+@class NSString;
+@class NSNumber;
 @class CBService;
 @class CBDescriptor;
 @class CBCharacteristic;
@@ -345,6 +334,16 @@ SWIFT_CLASS("_TtC9iAPATOKEN11DspsBlePort")
 - (void)peripheral:(CBPeripheral * _Nonnull)peripheral didDiscoverDescriptorsForCharacteristic:(CBCharacteristic * _Nonnull)characteristic error:(NSError * _Nullable)error;
 - (void)peripheral:(CBPeripheral * _Nonnull)peripheral didUpdateValueForCharacteristic:(CBCharacteristic * _Nonnull)characteristic error:(NSError * _Nullable)error;
 - (void)peripheral:(CBPeripheral * _Nonnull)peripheral didWriteValueForCharacteristic:(CBCharacteristic * _Nonnull)characteristic error:(NSError * _Nullable)error;
+@end
+
+SWIFT_CLASS("_TtC9iAPATOKEN20MeterPickerViewModel")
+@interface MeterPickerViewModel : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@interface MeterPickerViewModel (SWIFT_EXTENSION(iAPATOKEN)) <CBCentralManagerDelegate>
+- (void)centralManagerDidUpdateState:(CBCentralManager * _Nonnull)central;
+- (void)centralManager:(CBCentralManager * _Nonnull)central didDiscoverPeripheral:(CBPeripheral * _Nonnull)peripheral advertisementData:(NSDictionary<NSString *, id> * _Nonnull)advertisementData RSSI:(NSNumber * _Nonnull)RSSI;
 @end
 
 #endif

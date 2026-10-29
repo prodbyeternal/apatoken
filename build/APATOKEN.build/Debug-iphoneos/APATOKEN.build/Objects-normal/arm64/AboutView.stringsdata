@@ -1,0 +1,48 @@
+{
+  "source": "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/About/AboutView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "v1.1 • %@ Ramune",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 33
+        }
+      },
+      {
+        "comment": "",
+        "key": "Authors",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 42
+        }
+      },
+      {
+        "comment": "",
+        "key": "OpenSans by Steve Mattione",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 77
+        }
+      },
+      {
+        "comment": "",
+        "key": "Open APATOR S.A.",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 90
+        }
+      },
+      {
+        "comment": "",
+        "key": "Open GitHub",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 99
+        }
+      }
+    ]
+  },
+  "version": 1
+}

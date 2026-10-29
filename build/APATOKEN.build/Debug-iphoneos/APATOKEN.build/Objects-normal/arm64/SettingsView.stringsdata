@@ -1,37 +1,117 @@
 {
-  "source": "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/SettingsView.swift",
+  "source": "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/Settings/SettingsView.swift",
   "tables": {
     "Localizable": [
       {
         "comment": "",
-        "key": "%@ %@%@",
+        "key": "Meter",
         "location": {
-          "startingColumn": 14,
-          "startingLine": 173
+          "startingColumn": 26,
+          "startingLine": 17
         }
       },
       {
         "comment": "",
-        "key": "Port activity log",
+        "key": "Select a paired APATOR meter for token operations.",
         "location": {
-          "startingColumn": 23,
-          "startingLine": 233
+          "startingColumn": 26,
+          "startingLine": 21
         }
       },
       {
         "comment": "",
-        "key": "Copied",
+        "key": "Port Log",
         "location": {
-          "startingColumn": 39,
+          "startingColumn": 31,
+          "startingLine": 27
+        }
+      },
+      {
+        "comment": "",
+        "key": "Tools",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 30
+        }
+      },
+      {
+        "comment": "",
+        "key": "Display",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 39
+        }
+      },
+      {
+        "comment": "",
+        "key": "About",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 56
+        }
+      },
+      {
+        "comment": "",
+        "key": "Meter",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 101
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@ • v%@",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 223
+        }
+      },
+      {
+        "comment": "",
+        "key": "Port Log",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 297
+        }
+      },
+      {
+        "comment": "",
+        "key": "Refresh",
+        "location": {
+          "startingColumn": 27,
           "startingLine": 244
+        }
+      },
+      {
+        "comment": "",
+        "key": "Copied!",
+        "location": {
+          "startingColumn": 41,
+          "startingLine": 254
         }
       },
       {
         "comment": "",
         "key": "Copy",
         "location": {
-          "startingColumn": 50,
-          "startingLine": 244
+          "startingColumn": 53,
+          "startingLine": 254
+        }
+      },
+      {
+        "comment": "",
+        "key": "Clear",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 262
+        }
+      },
+      {
+        "comment": "",
+        "key": "No log entries yet",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 275
         }
       }
     ]

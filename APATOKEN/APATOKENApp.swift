@@ -11,7 +11,7 @@ struct APATOKENApp: App {
 
     var body: some Scene {
         WindowGroup {
-            RootView()
+            AppRootView()
                 .environmentObject(AppState())
         }
     }

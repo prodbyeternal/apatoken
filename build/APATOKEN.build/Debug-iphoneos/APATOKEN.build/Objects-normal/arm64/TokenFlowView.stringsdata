@@ -1,0 +1,72 @@
+{
+  "source": "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/Token/TokenFlowView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Token Number",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 146
+        }
+      },
+      {
+        "comment": "",
+        "key": "Enter 20-digit token",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 151
+        }
+      },
+      {
+        "comment": "",
+        "key": "Paste",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 169
+        }
+      },
+      {
+        "comment": "",
+        "key": "Clear",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 178
+        }
+      },
+      {
+        "comment": "",
+        "key": "Apply Token",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 200
+        }
+      },
+      {
+        "comment": "",
+        "key": "Meter",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 268
+        }
+      },
+      {
+        "comment": "",
+        "key": "Token Applied!",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 307
+        }
+      },
+      {
+        "comment": "",
+        "key": "Electricity has been added to your meter.",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 310
+        }
+      }
+    ]
+  },
+  "version": 1
+}
