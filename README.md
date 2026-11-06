@@ -47,14 +47,9 @@ ikony SF Symbols, **jasny i ciemny motyw zgodny z ustawieniami systemu**.
 | ✅ Obsługa błędnego kodu | Nieprawidłowy kod poprawnie odrzucany przez licznik z czytelnym komunikatem |
 | ✅ Historia doładowań | Lokalny plik `history.csv`, grupowanie po liczniku, widok szczegółów |
 | ✅ Dziennik portu (debug) | Podgląd ruchu BLE/HDLC w Ustawieniach, z kopiowaniem do schowka |
-| ✅ Motyw systemowy | Jasny i ciemny wygląd, adaptacyjna paleta |
-| ✅ Lokalizacja | Angielski i francuski, czcionki Open Sans |
-
-### W toku
-
-| Funkcja | Opis |
-|---|---|
-| ⚠️ Doładowanie prawidłowym kodem | Cała ścieżka sukcesu jest zaimplementowana (zapis do historii, komunikat z kwotą), ale **niepotwierdzona jeszcze ważnym kodem** na liczniku |
+| ✅ Motyw systemowy | Jasny i ciemny wygląd, adaptacyjna paleta, razem z wyglądem Liquid Glass (iOS 26+) |
+| ✅ Lokalizacja | Angielski, francuski, polski, czcionki Open Sans |
+| ✅ Doładowanie prawidłowym kodem | Cała ścieżka sukcesu jest zaimplementowana (zapis do historii, komunikat z kwotą) i potwierdzona ważnym kodem na prawdziwym liczniku |
 
 ### Ograniczenia
 
