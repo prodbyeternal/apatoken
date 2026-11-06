@@ -8,7 +8,7 @@
 
 Port aplikacji **APATOKEN (Android / .NET MAUI)** — komunikacja DLMS/HDLC przez Bluetooth Low Energy.
 
-`SwiftUI` · `CoreBluetooth` · `iOS 26.2+` · `EN / FR`
+`SwiftUI` · `CoreBluetooth` · `iOS 26.2+` · `EN / FR / PL`
 
 </div>
 
