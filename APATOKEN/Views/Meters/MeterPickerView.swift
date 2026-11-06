@@ -3,6 +3,7 @@ import SwiftUI
 // MARK: - Meter picker view (sheet)
 
 struct MeterPickerView: View {
+    @ObservedObject private var session = MeterSession.shared
     @StateObject private var viewModel: MeterPickerViewModel
     @Environment(\.dismiss) private var dismiss
     var onSelected: ((MeterPickerViewModel.DiscoveredBLEDevice?) -> Void)?
@@ -16,6 +17,7 @@ struct MeterPickerView: View {
     var body: some View {
         NavigationStack {
             VStack(spacing: 6) {
+                if session.testing { TestingBanner().padding(.horizontal) }
                 Text(L.ui.txtAvailableDevices)
                     .font(.headline)
                     .padding(.top, 16)
@@ -36,13 +38,17 @@ struct MeterPickerView: View {
 
                 Divider()
 
+                if let error = viewModel.error { Text(ErrorText.message(error)).foregroundStyle(.red) }
+                if viewModel.devices.isEmpty { Text(L.ui.txtNoDevicesFound).font(.footnote).foregroundStyle(.secondary).padding() }
+
                 ScrollView {
                     LazyVStack(spacing: 0) {
                         ForEach(viewModel.devices) { device in
                             Button {
-                                viewModel.connect(to: device)
-                                onSelected?(device)
-                                dismiss()
+                                if viewModel.connect(to: device) {
+                                    onSelected?(device)
+                                    dismiss()
+                                }
                             } label: {
                                 VStack(alignment: .leading, spacing: 2) {
                                     Text(device.shortName)
@@ -57,6 +63,7 @@ struct MeterPickerView: View {
                                 .padding(.horizontal, 16)
                             }
                             .buttonStyle(.plain)
+                            .disabled(session.busy)
 
                             Divider()
                                 .padding(.leading, 16)
@@ -84,6 +91,7 @@ struct MeterPickerView: View {
         }
         .presentationDetents([.medium])
         .presentationDragIndicator(.automatic)
+        .dynamicLocalization()
     }
 }
 

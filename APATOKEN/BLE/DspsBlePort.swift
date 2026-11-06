@@ -177,7 +177,7 @@ private extension DspsBlePort {
         } catch let error as CommsError {
             throw CommunicationPortError(L.message.msgUnsuccessfulPortOpening, cause: error)
         } catch {
-            throw CommunicationPortError(L.message.msgUnsuccessfulPortOpening, cause: error as? CommsError ?? CommsError("\(error)"))
+            throw CommunicationPortError(L.message.msgUnsuccessfulPortOpening, cause: error as? CommsError ?? CommsError(L.message.msgUnknownError))
         }
     }
 
@@ -441,9 +441,9 @@ private extension DspsBlePort {
             _ = partialHex
             PortLog.shared.add("read ▸ FAIL \(isTimeoutError(error) ? "TIMEOUT" : "error") (\(numberOfBytes)B)")
             if isTimeoutError(error) {
-                throw TimeoutError(L.message.msgUnsuccessfulDataReceiving, cause: error as? CommsError ?? CommsError("\(error)"))
+                throw TimeoutError(L.message.msgUnsuccessfulDataReceiving, cause: error as? CommsError ?? CommsError(L.message.msgUnknownError))
             }
-            throw CommunicationPortError(L.message.msgUnsuccessfulDataReceiving, cause: error as? CommsError ?? CommsError("\(error)"))
+            throw CommunicationPortError(L.message.msgUnsuccessfulDataReceiving, cause: error as? CommsError ?? CommsError(L.message.msgUnknownError))
         }
     }
 
@@ -452,7 +452,7 @@ private extension DspsBlePort {
         result.reserveCapacity(numberOfBytes)
         if numberOfBytes == 3 {
             if !DspsBlePort.wait(byteReceivedEvent, readTimeoutMs) {
-                throw TimeoutError("No RX data in queue")
+                throw TimeoutError(L.message.msgNoResponse)
             }
             _ = byteReceivedEvent.wait(timeout: .now()) // consume one signal
         }
@@ -470,7 +470,7 @@ private extension DspsBlePort {
                 Thread.sleep(forTimeInterval: 0.1)
             }
             if remaining < 1 {
-                throw TimeoutError("No complete RX data in queue")
+                throw TimeoutError(L.message.msgNotEnoughDataAvailable)
             }
         }
         return result
@@ -542,7 +542,7 @@ private extension DspsBlePort {
         if withResponse {
             if !DspsBlePort.wait(byteSentEvent, DspsBlePort.byteSentTimeoutMs) {
                 PortLog.shared.add("write ▸ no ack 2s (\(writeErrorMessage))")
-                throw CommsError(writeErrorMessage.isEmpty ? "write failed" : writeErrorMessage)
+                throw CommsError(L.message.msgUnsuccessfulDataSending)
             }
         }
     }

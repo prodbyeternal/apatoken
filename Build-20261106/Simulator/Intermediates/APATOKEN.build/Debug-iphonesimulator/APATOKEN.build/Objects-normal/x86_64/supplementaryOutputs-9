@@ -1,0 +1,23 @@
+{
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/History/HistoryView.swift" : {
+    "const-values" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Simulator/Intermediates/APATOKEN.build/Debug-iphonesimulator/APATOKEN.build/Objects-normal/x86_64/HistoryView.swiftconstvalues",
+    "dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Simulator/Intermediates/APATOKEN.build/Debug-iphonesimulator/APATOKEN.build/Objects-normal/x86_64/HistoryView.d",
+    "diagnostics" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Simulator/Intermediates/APATOKEN.build/Debug-iphonesimulator/APATOKEN.build/Objects-normal/x86_64/HistoryView.dia",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Simulator/Intermediates/APATOKEN.build/Debug-iphonesimulator/APATOKEN.build/Objects-normal/x86_64/HistoryView.o",
+    "swift-dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Simulator/Intermediates/APATOKEN.build/Debug-iphonesimulator/APATOKEN.build/Objects-normal/x86_64/HistoryView.swiftdeps"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/Meters/MeterPickerView.swift" : {
+    "const-values" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Simulator/Intermediates/APATOKEN.build/Debug-iphonesimulator/APATOKEN.build/Objects-normal/x86_64/MeterPickerView.swiftconstvalues",
+    "dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Simulator/Intermediates/APATOKEN.build/Debug-iphonesimulator/APATOKEN.build/Objects-normal/x86_64/MeterPickerView.d",
+    "diagnostics" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Simulator/Intermediates/APATOKEN.build/Debug-iphonesimulator/APATOKEN.build/Objects-normal/x86_64/MeterPickerView.dia",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Simulator/Intermediates/APATOKEN.build/Debug-iphonesimulator/APATOKEN.build/Objects-normal/x86_64/MeterPickerView.o",
+    "swift-dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Simulator/Intermediates/APATOKEN.build/Debug-iphonesimulator/APATOKEN.build/Objects-normal/x86_64/MeterPickerView.swiftdeps"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/Meters/MeterPickerViewModel.swift" : {
+    "const-values" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Simulator/Intermediates/APATOKEN.build/Debug-iphonesimulator/APATOKEN.build/Objects-normal/x86_64/MeterPickerViewModel.swiftconstvalues",
+    "dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Simulator/Intermediates/APATOKEN.build/Debug-iphonesimulator/APATOKEN.build/Objects-normal/x86_64/MeterPickerViewModel.d",
+    "diagnostics" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Simulator/Intermediates/APATOKEN.build/Debug-iphonesimulator/APATOKEN.build/Objects-normal/x86_64/MeterPickerViewModel.dia",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Simulator/Intermediates/APATOKEN.build/Debug-iphonesimulator/APATOKEN.build/Objects-normal/x86_64/MeterPickerViewModel.o",
+    "swift-dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Simulator/Intermediates/APATOKEN.build/Debug-iphonesimulator/APATOKEN.build/Objects-normal/x86_64/MeterPickerViewModel.swiftdeps"
+  }
+}

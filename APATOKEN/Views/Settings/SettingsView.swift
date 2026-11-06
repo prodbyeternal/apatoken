@@ -1,313 +1,120 @@
 import SwiftUI
 
-// MARK: - Settings view
-
 struct SettingsView: View {
-    @EnvironmentObject private var app: AppState
+    @ObservedObject private var session = MeterSession.shared
+    @State private var showMeterPicker = false
+    @State private var error: Error?
 
     var body: some View {
         NavigationStack {
             List {
-                // MARK: - Device section
                 Section {
-                    MeterSelectionRow {
-                        app.goToSettings()
-                    }
-                } header: {
-                    Text("Meter")
-                        .textCase(.uppercase)
-                        .font(.caption)
-                } footer: {
-                    Text("Select a paired APATOR meter for token operations.")
-                }
+                    MeterSelectorButton(meterName: session.meterName, hasMeter: session.hasMeter) { showMeterPicker = true }
+                        .disabled(session.busy)
+                } header: { Text(L.ui.txtSectionMeter) } footer: { Text(L.ui.txtSelectPairedMeter) }
 
-                // MARK: - Tools section
                 Section {
-                    NavigationLink(destination: PortLogView()) {
-                        Label("Port Log", systemImage: "antenna.radiowaves.left.and.right")
+                    Toggle(isOn: Binding(get: { session.testing }, set: { enabled in
+                        do { try session.setTesting(enabled); error = nil } catch { self.error = error }
+                    })) { Label(L.text("txtTestingMode"), systemImage: "testtube.2") }
+                    .accessibilityIdentifier("testingModeToggle")
+                    .disabled(session.busy)
+                    if session.testing {
+                        NavigationLink { TestingToolsView() } label: {
+                            Label(L.text("txtTestingTools"), systemImage: "slider.horizontal.3")
+                        }
                     }
-                } header: {
-                    Text("Tools")
-                        .textCase(.uppercase)
-                        .font(.caption)
-                }
+                } header: { Text(L.text("txtTestingMode")) } footer: { Text(L.text("msgTestingModeDescription")) }
 
-                // MARK: - Language section
-                Section {
+                Section(L.ui.txtSectionTools) {
+                    NavigationLink { PortLogView() } label: { Label(L.ui.txtPortLog, systemImage: "antenna.radiowaves.left.and.right") }
+                }
+                Section(L.ui.txtSectionDisplay) {
                     LanguageSelectionRow()
-                } header: {
-                    Text("Display")
-                        .textCase(.uppercase)
-                        .font(.caption)
                 }
-
-                // MARK: - About section
-                Section {
-                    NavigationLink {
-                        AboutView()
-                    } label: {
-                        AboutRow(
-                            title: L.ui.txtAboutIAPATOKEN,
-                            version: "1.1",
-                            publisher: "APATOR S.A."
-                        )
+                Section(L.ui.txtSectionAbout) {
+                    NavigationLink { AboutView() } label: {
+                        VStack(alignment: .leading, spacing: 4) {
+                            Text(L.ui.txtAboutIAPATOKEN)
+                            Text(AppVersion.description).font(.footnote).foregroundStyle(.secondary)
+                        }
                     }
-                } header: {
-                    Text("About")
-                        .textCase(.uppercase)
-                        .font(.caption)
                 }
+                if let error { Text(ErrorText.message(error)).foregroundStyle(.red) }
             }
-            .listStyle(.insetGrouped)
             .navigationTitle(L.ui.txtMenuSettings)
-            .background(Color(UIColor.systemGroupedBackground))
+            .sheet(isPresented: $showMeterPicker) { MeterPickerView() }
         }
         .dynamicLocalization()
     }
 }
 
-// MARK: - Meter selection row
-
-struct MeterSelectionRow: View {
-    @State private var deviceName: String = ""
-    @State private var deviceAddress: String = ""
-
-    let onSelect: () -> Void
-
-    var body: some View {
-        Button(action: onSelect) {
-            HStack(spacing: 12) {
-                ZStack {
-                    Circle()
-                        .fill(deviceName.isEmpty ? Color(UIColor.secondarySystemGroupedBackground) : Color.accentColor)
-                        .frame(width: 44, height: 44)
-                        .overlay(
-                            Circle()
-                                .stroke(Color(UIColor.separator), lineWidth: 0.5)
-                        )
-
-                    if deviceName.isEmpty {
-                        Image(systemName: "questionmark")
-                            .font(.system(size: 14, weight: .semibold))
-                            .foregroundStyle(Color.secondary)
-                    } else {
-                        Image(systemName: "powermeter")
-                            .font(.system(size: 16, weight: .medium))
-                            .foregroundStyle(.white)
-                    }
-                }
-
-                VStack(alignment: .leading, spacing: 2) {
-                    Text("Meter")
-                        .font(.caption)
-                        .textCase(.uppercase)
-                        .foregroundStyle(Color.secondary)
-
-                    Text(deviceName.isEmpty ? "Not configured" : deviceName)
-                        .font(.system(size: 16, weight: .medium))
-                        .foregroundStyle(deviceName.isEmpty ? Color.secondary : Color.primary)
-
-                    if !deviceAddress.isEmpty {
-                        Text(deviceAddress)
-                            .font(.caption)
-                            .foregroundStyle(Color(UIColor.tertiarySystemFill))
-                    }
-                }
-
-                Spacer()
-
-                Image(systemName: "chevron.right")
-                    .font(.system(size: 13, weight: .semibold))
-                    .foregroundStyle(Color(UIColor.tertiarySystemFill))
-            }
-        }
-        .buttonStyle(.plain)
-        .onAppear {
-            loadDevice()
-        }
-    }
-
-    private func loadDevice() {
-        deviceName = SettingsManager.getBluetoothDeviceName()
-        deviceAddress = SettingsManager.getBluetoothDeviceAddress()
-    }
-}
-
-// MARK: - Language selection row
-
 struct LanguageSelectionRow: View {
-    @StateObject private var loc = LocalizationManager.shared
-    @State private var languages: [(name: String, tag: String)] = []
-    @State private var showLanguagePicker = false
-
+    @State private var loc = LocalizationManager.shared
     var body: some View {
-        Button {
-            showLanguagePicker = true
+        NavigationLink {
+            List {
+                ForEach(LocalizationManager.languages, id: \.tag) { language in
+                    Button {
+                        withAnimation(.easeInOut(duration: 0.2)) { loc.currentLanguage = language.tag }
+                    } label: {
+                        HStack {
+                            Text(language.name).foregroundStyle(.primary)
+                            Spacer()
+                            if language.tag == loc.currentLanguage { Image(systemName: "checkmark").foregroundStyle(Color.accentColor) }
+                        }
+                    }
+                    .accessibilityIdentifier("language-" + language.tag)
+                }
+            }
+            .navigationTitle(L.ui.txtLanguage)
+            .dynamicLocalization()
         } label: {
             HStack {
                 Label(L.ui.txtLanguage, systemImage: "globe")
                 Spacer()
-                Text(currentLanguageName)
-                    .font(.subheadline)
-                    .foregroundStyle(Color.secondary)
-                Image(systemName: "chevron.right")
-                    .font(.caption)
-                    .foregroundStyle(Color(UIColor.tertiarySystemFill))
+                Text(loc.languageName).foregroundStyle(.secondary)
             }
         }
-        .buttonStyle(.plain)
-        .sheet(isPresented: $showLanguagePicker) {
-            NavigationStack {
-                List {
-                    ForEach(Array(languages.enumerated()), id: \.offset) { index, language in
-                        HStack {
-                            Text(language.name)
-                            Spacer()
-                            if language.tag == loc.currentLanguage {
-                                Image(systemName: "checkmark")
-                                    .foregroundStyle(Color.accentColor)
-                            }
-                        }
-                        .contentShape(Rectangle())
-                        .onTapGesture {
-                            loc.currentLanguage = language.tag
-                            loadLanguages()
-                            showLanguagePicker = false
-                        }
-                    }
-                }
-                .listStyle(.plain)
-                .navigationTitle(L.ui.txtLanguage)
-                .navigationBarTitleDisplayMode(.inline)
-                .toolbar {
-                    ToolbarItem(placement: .cancellationAction) {
-                        Button(L.ui.txtClose) {
-                            showLanguagePicker = false
-                        }
-                    }
-                }
-            }
-            .presentationDetents([.medium])
-        }
-        .onAppear {
-            loadLanguages()
-        }
-    }
-
-    private var currentLanguageName: String {
-        let currentTag = loc.currentLanguage
-        return languages.first { $0.tag == currentTag }?.name ?? "English"
-    }
-
-    private func loadLanguages() {
-        languages = [
-            (name: "English", tag: "en"),
-            (name: "Polski", tag: "pl"),
-            (name: "Français", tag: "fr"),
-        ]
+        .accessibilityIdentifier("languageSettings")
     }
 }
-
-// MARK: - About row
-
-struct AboutRow: View {
-    let title: String
-    let version: String
-    let publisher: String
-
-    var body: some View {
-        VStack(alignment: .leading, spacing: 4) {
-            Text(title)
-                .font(.system(size: 16, weight: .medium))
-
-            Text("\(publisher) • v\(version)")
-                .font(.footnote)
-                .foregroundStyle(Color.secondary)
-        }
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .padding(.vertical, 8)
-    }
-}
-
-// MARK: - Port log view
 
 struct PortLogView: View {
-    @State private var logText: String = ""
-    @State private var copySuccess = false
+    @State private var logText = ""
+    @State private var copied = false
+    @ObservedObject private var session = MeterSession.shared
 
     var body: some View {
         VStack(spacing: 16) {
-            HStack {
-                Button {
-                    logText = PortLog.shared.text()
-                } label: {
-                    Label("Refresh", systemImage: "arrow.clockwise")
-                }
-
-                Button {
-                    UIPasteboard.general.string = logText
-                    copySuccess = true
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 1.2) {
-                        copySuccess = false
-                    }
-                } label: {
-                    Label(copySuccess ? "Copied!" : "Copy", systemImage: copySuccess ? "checkmark" : "doc.on.doc")
-                }
-                .disabled(logText.isEmpty)
-
-                Button(role: .destructive) {
-                    PortLog.shared.clear()
-                    logText = PortLog.shared.text()
-                } label: {
-                    Label("Clear", systemImage: "trash")
-                }
-                .disabled(logText.isEmpty)
-
-                Spacer()
+            if session.testing {
+                TestingBanner()
+                Text(L.text("msgTestNoBluetooth")).font(.footnote).foregroundStyle(.secondary)
             }
-
-            if logText.isEmpty {
-                VStack(spacing: 16) {
-                    Image(systemName: "doc.text.magnifyingglass")
-                        .font(.system(size: 48))
-                        .foregroundStyle(Color(UIColor.tertiarySystemFill))
-
-                    Text("No log entries yet")
-                        .font(.subheadline)
-                        .foregroundStyle(Color.secondary)
+            HStack {
+                Button { refresh() } label: { Label(L.text("txtRefresh"), systemImage: "arrow.clockwise") }
+                Button { UIPasteboard.general.string = logText; copied = true } label: {
+                    Label(copied ? L.text("txtCopied") : L.text("txtCopy"), systemImage: copied ? "checkmark" : "doc.on.doc")
                 }
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .disabled(logText.isEmpty)
+                Button(role: .destructive) { PortLog.shared.clear(); refresh() } label: { Label(L.ui.txtClear, systemImage: "trash") }
+                    .disabled(logText.isEmpty)
+            }
+            if logText.isEmpty {
+                ContentUnavailableView(L.text("txtNoLogEntries"), systemImage: "doc.text.magnifyingglass")
             } else {
-                ScrollViewReader { proxy in
-                    ScrollView {
-                        Text(logText)
-                            .font(.system(size: 10, design: .monospaced))
-                            .foregroundStyle(Color.secondary)
-                            .frame(maxWidth: .infinity, alignment: .leading)
-                            .padding(12)
-                            .id("log_bottom")
-                    }
-                    .onAppear {
-                        proxy.scrollTo("log_bottom", anchor: .bottom)
-                    }
+                ScrollView {
+                    Text(logText).font(.system(.caption2, design: .monospaced))
+                        .textSelection(.enabled).frame(maxWidth: .infinity, alignment: .leading)
                 }
             }
         }
         .padding()
-        .navigationTitle("Port Log")
-        .background(Color(UIColor.systemGroupedBackground))
-        .onAppear {
-            logText = PortLog.shared.text()
-        }
-        .onReceive(NotificationCenter.default.publisher(for: PortLog.changedNotification)) { _ in
-            logText = PortLog.shared.text()
-        }
+        .navigationTitle(L.ui.txtPortLog)
+        .onAppear { refresh() }
+        .onReceive(NotificationCenter.default.publisher(for: PortLog.changedNotification)) { _ in refresh() }
+        .dynamicLocalization()
     }
-}
 
-#Preview {
-    NavigationStack {
-        SettingsView()
-            .environmentObject(AppState())
-    }
+    private func refresh() { logText = session.testing ? "" : PortLog.shared.text(); copied = false }
 }

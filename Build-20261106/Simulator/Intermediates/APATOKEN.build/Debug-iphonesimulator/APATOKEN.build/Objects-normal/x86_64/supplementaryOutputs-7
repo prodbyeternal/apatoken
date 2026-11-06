@@ -1,0 +1,23 @@
+{
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/About/AboutView.swift" : {
+    "const-values" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Simulator/Intermediates/APATOKEN.build/Debug-iphonesimulator/APATOKEN.build/Objects-normal/x86_64/AboutView.swiftconstvalues",
+    "dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Simulator/Intermediates/APATOKEN.build/Debug-iphonesimulator/APATOKEN.build/Objects-normal/x86_64/AboutView.d",
+    "diagnostics" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Simulator/Intermediates/APATOKEN.build/Debug-iphonesimulator/APATOKEN.build/Objects-normal/x86_64/AboutView.dia",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Simulator/Intermediates/APATOKEN.build/Debug-iphonesimulator/APATOKEN.build/Objects-normal/x86_64/AboutView.o",
+    "swift-dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Simulator/Intermediates/APATOKEN.build/Debug-iphonesimulator/APATOKEN.build/Objects-normal/x86_64/AboutView.swiftdeps"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/AppRoot/AppRootView.swift" : {
+    "const-values" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Simulator/Intermediates/APATOKEN.build/Debug-iphonesimulator/APATOKEN.build/Objects-normal/x86_64/AppRootView.swiftconstvalues",
+    "dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Simulator/Intermediates/APATOKEN.build/Debug-iphonesimulator/APATOKEN.build/Objects-normal/x86_64/AppRootView.d",
+    "diagnostics" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Simulator/Intermediates/APATOKEN.build/Debug-iphonesimulator/APATOKEN.build/Objects-normal/x86_64/AppRootView.dia",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Simulator/Intermediates/APATOKEN.build/Debug-iphonesimulator/APATOKEN.build/Objects-normal/x86_64/AppRootView.o",
+    "swift-dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Simulator/Intermediates/APATOKEN.build/Debug-iphonesimulator/APATOKEN.build/Objects-normal/x86_64/AppRootView.swiftdeps"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/Components/Animations.swift" : {
+    "const-values" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Simulator/Intermediates/APATOKEN.build/Debug-iphonesimulator/APATOKEN.build/Objects-normal/x86_64/Animations.swiftconstvalues",
+    "dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Simulator/Intermediates/APATOKEN.build/Debug-iphonesimulator/APATOKEN.build/Objects-normal/x86_64/Animations.d",
+    "diagnostics" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Simulator/Intermediates/APATOKEN.build/Debug-iphonesimulator/APATOKEN.build/Objects-normal/x86_64/Animations.dia",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Simulator/Intermediates/APATOKEN.build/Debug-iphonesimulator/APATOKEN.build/Objects-normal/x86_64/Animations.o",
+    "swift-dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Simulator/Intermediates/APATOKEN.build/Debug-iphonesimulator/APATOKEN.build/Objects-normal/x86_64/Animations.swiftdeps"
+  }
+}

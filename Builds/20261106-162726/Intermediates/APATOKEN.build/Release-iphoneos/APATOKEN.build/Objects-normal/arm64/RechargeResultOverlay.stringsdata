@@ -1,0 +1,16 @@
+{
+  "source": "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/Components/RechargeResultOverlay.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "kWh",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 63
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,23 @@
+{
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/BLE/DspsBlePort.swift" : {
+    "const-values" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/DspsBlePort.swiftconstvalues",
+    "dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/DspsBlePort.d",
+    "diagnostics" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/DspsBlePort.dia",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/DspsBlePort.o",
+    "swift-dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/DspsBlePort.swiftdeps"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Comm/MeterTransaction.swift" : {
+    "const-values" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/MeterTransaction.swiftconstvalues",
+    "dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/MeterTransaction.d",
+    "diagnostics" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/MeterTransaction.dia",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/MeterTransaction.o",
+    "swift-dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/MeterTransaction.swiftdeps"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Core/BundleImage.swift" : {
+    "const-values" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/BundleImage.swiftconstvalues",
+    "dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/BundleImage.d",
+    "diagnostics" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/BundleImage.dia",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/BundleImage.o",
+    "swift-dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/BundleImage.swiftdeps"
+  }
+}

@@ -48,7 +48,7 @@ final class CosemProtocol {
         let apdu = GetRequestNormal.bytes(classId: classId, obis: obisBytes, attributeId: attributeId)
         let results = try await processRequest([apdu], isGetRequestTxn: true)
         if results.count == 0 {
-            throw CommsError("No request results in response")
+            throw CommsError(L.message.msgNoData)
         }
         let requestResult = results[0]
         requestResult.memberObis = obisBytes
@@ -63,7 +63,7 @@ final class CosemProtocol {
         let apdu = ActionRequestNormal.bytes(classId: classId, obis: obisBytes, methodId: methodId, parameters: parameters)
         let results = try await processRequest([apdu], isGetRequestTxn: false)
         if results.count == 0 {
-            throw CommsError("No request results in response.")
+            throw CommsError(L.message.msgNoData)
         }
         let requestResult = results[0]
         requestResult.memberObis = obisBytes
@@ -138,7 +138,8 @@ final class CosemProtocol {
                                 continuation.resume(throwing: error)
                                 return
                             } catch {
-                                continuation.resume(throwing: CommsError("\(error)"))
+                                PortLog.shared.add("transaction error: \(error)")
+                                continuation.resume(throwing: CommsError(L.message.msgUnknownError))
                                 return
                             }
                         }
@@ -147,7 +148,7 @@ final class CosemProtocol {
 
                 if recv.count == 0 {
                     // C# would throw IndexOutOfRangeException on recv[0].
-                    throw TransportProtocolError("Index was outside the bounds of the array.")
+                    throw TransportProtocolError(L.message.msgNotEnoughDataAvailable)
                 }
                 responseFrames.append(recv.clone())
                 let firstByte = recv[0]
@@ -250,10 +251,11 @@ enum MeterCommunication {
     static func enterTokenAndReadCreditsInkWh(client: DlmsClient, obises: [String], token: String) async throws -> TokenTransactionResult {
         do {
             let result = try await enterTokenAndReadCreditsInkWhInner(client: client, obises: obises, token: token)
-            try await disconnectInFinal(client)
+            // An accepted token remains accepted even if closing the connection fails.
+            try? await disconnectInFinal(client)
             return TokenTransactionResult(deliveryStatus: result.deliveryStatus, credits: result.credits)
         } catch {
-            let wrapped = CommsError(L.message.msgUnsuccessfulTokenEntering, cause: error as? CommsError ?? CommsError("\(error)"))
+            let wrapped = CommsError(L.message.msgUnsuccessfulTokenEntering, cause: error as? CommsError ?? CommsError(L.message.msgUnknownError))
             try await disconnectInFinal(client)
             throw wrapped
         }
@@ -273,9 +275,14 @@ enum MeterCommunication {
         var credits: [Decimal] = []
         if tokenDeliveryStatus.statusCode == .tokenExecutionResultOk {
             let scaler: Int8 = -1
-            for obise in obises {
-                let raw = try await readCreditValue(client: client, obis: obise)
-                credits.append(scaleValue(raw, scaler: scaler))
+            do {
+                for obise in obises {
+                    let raw = try await readCreditValue(client: client, obis: obise)
+                    credits.append(scaleValue(raw, scaler: scaler))
+                }
+            } catch {
+                // Return the confirmed delivery so it can be recorded, with unavailable balances.
+                credits = []
             }
         }
         return (tokenDeliveryStatus, credits)
@@ -294,10 +301,10 @@ enum MeterCommunication {
                 let raw = try await readCreditValue(client: client, obis: obise)
                 list.append(scaleValue(raw, scaler: scaler))
             }
-            try await disconnectInFinal(client)
+            try? await disconnectInFinal(client)
             return list
         } catch {
-            let wrapped = CommsError(L.message.msgUnsuccessfulTokenEntering, cause: error as? CommsError ?? CommsError("\(error)"))
+            let wrapped = CommsError(L.message.msgDataReadUnsuccessful, cause: error as? CommsError ?? CommsError(L.message.msgUnknownError))
             try await disconnectInFinal(client)
             throw wrapped
         }
@@ -412,7 +419,8 @@ enum MeterCommunication {
             }
             throw error
         } catch {
-            throw CommsError("\(error)")
+            PortLog.shared.add("token error: \(error)")
+            throw CommsError(L.message.msgUnknownError)
         }
     }
 
@@ -427,7 +435,8 @@ enum MeterCommunication {
             }
             throw error
         } catch {
-            throw CommsError("\(error)")
+            PortLog.shared.add("reading error: \(error)")
+            throw CommsError(L.message.msgUnknownError)
         }
     }
 }

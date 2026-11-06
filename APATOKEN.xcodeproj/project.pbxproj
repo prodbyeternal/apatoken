@@ -6,8 +6,21 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A10000000000000000000011 = {isa = PBXBuildFile; fileRef = A10000000000000000000001; };
+		A10000000000000000000012 = {isa = PBXBuildFile; fileRef = A10000000000000000000002; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A10000000000000000000041 = {isa = PBXContainerItemProxy; containerPortal = ECE0A35D30927A8B0035A2A7; proxyType = 1; remoteGlobalIDString = ECE0A36430927A8B0035A2A7; remoteInfo = APATOKEN; };
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		ECE0A36530927A8B0035A2A7 /* APATOKEN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APATOKEN.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A10000000000000000000001 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APATOKENTests.swift; sourceTree = "<group>"; };
+		A10000000000000000000002 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APATOKENUITests.swift; sourceTree = "<group>"; };
+		A10000000000000000000003 = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = APATOKENTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A10000000000000000000004 = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = APATOKENUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECE0A36530927A8B0035A2A7 /* APATOKEN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = APATOKEN.app; path = iAPATOKEN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -29,9 +42,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A10000000000000000000020 = {isa = PBXGroup; children = (A10000000000000000000001, A10000000000000000000002,); path = Tests; sourceTree = "<group>"; };
 		ECE0A35C30927A8B0035A2A7 = {
 			isa = PBXGroup;
 			children = (
+				A10000000000000000000020,
 				ECE0A36730927A8B0035A2A7 /* APATOKEN */,
 				ECE0A36630927A8B0035A2A7 /* Products */,
 			);
@@ -40,6 +55,8 @@
 		ECE0A36630927A8B0035A2A7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				A10000000000000000000003,
+				A10000000000000000000004,
 				ECE0A36530927A8B0035A2A7 /* APATOKEN.app */,
 			);
 			name = Products;
@@ -48,6 +65,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A10000000000000000000051 = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A10000000000000000000071;
+			buildPhases = (A10000000000000000000031,);
+			buildRules = ();
+			dependencies = (A10000000000000000000042,);
+			name = APATOKENTests;
+			productName = APATOKENTests;
+			productReference = A10000000000000000000003;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A10000000000000000000052 = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A10000000000000000000072;
+			buildPhases = (A10000000000000000000032,);
+			buildRules = ();
+			dependencies = (A10000000000000000000042,);
+			name = APATOKENUITests;
+			productName = APATOKENUITests;
+			productReference = A10000000000000000000004;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		ECE0A36430927A8B0035A2A7 /* APATOKEN */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = ECE0A37030927A8F0035A2A7 /* Build configuration list for PBXNativeTarget "APATOKEN" */;
@@ -91,6 +130,8 @@
 			knownRegions = (
 				en,
 				Base,
+				pl,
+				fr,
 			);
 			mainGroup = ECE0A35C30927A8B0035A2A7;
 			minimizedProjectReferenceProxies = 1;
@@ -100,6 +141,8 @@
 			projectRoot = "";
 			targets = (
 				ECE0A36430927A8B0035A2A7 /* APATOKEN */,
+				A10000000000000000000051,
+				A10000000000000000000052,
 			);
 		};
 /* End PBXProject section */
@@ -115,6 +158,8 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A10000000000000000000031 = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A10000000000000000000011,); runOnlyForDeploymentPostprocessing = 0; };
+		A10000000000000000000032 = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A10000000000000000000012,); runOnlyForDeploymentPostprocessing = 0; };
 		ECE0A36130927A8B0035A2A7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -124,7 +169,40 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		A10000000000000000000042 = {isa = PBXTargetDependency; target = ECE0A36430927A8B0035A2A7; targetProxy = A10000000000000000000041; };
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		A10000000000000000000061 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iAPATOKEN.app/iAPATOKEN";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				PRODUCT_BUNDLE_IDENTIFIER = eternal.APATOKENTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+			};
+			name = Debug;
+		};
+		A10000000000000000000062 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				TEST_TARGET_NAME = APATOKEN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				PRODUCT_BUNDLE_IDENTIFIER = eternal.APATOKENUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+			};
+			name = Debug;
+		};
 		ECE0A36E30927A8F0035A2A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -251,9 +329,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = "";
 				ASSETCATALOG_NOT_PRESENT = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2026110601;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Config/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = iAPATOKEN;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "APATOKEN uses Bluetooth to communicate with prepaid electricity meters.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -265,17 +345,16 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = eternal.loveshisgirlfriend.APATOKEN;
 				PRODUCT_NAME = iAPATOKEN;
-				INFOPLIST_KEY_CFBundleDisplayName = iAPATOKEN;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -287,9 +366,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = "";
 				ASSETCATALOG_NOT_PRESENT = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2026110601;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Config/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = iAPATOKEN;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "APATOKEN uses Bluetooth to communicate with prepaid electricity meters.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -301,17 +382,16 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = eternal.loveshisgirlfriend.APATOKEN;
 				PRODUCT_NAME = iAPATOKEN;
-				INFOPLIST_KEY_CFBundleDisplayName = iAPATOKEN;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -319,6 +399,8 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A10000000000000000000071 = {isa = XCConfigurationList; buildConfigurations = (A10000000000000000000061,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Debug; };
+		A10000000000000000000072 = {isa = XCConfigurationList; buildConfigurations = (A10000000000000000000062,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Debug; };
 		ECE0A36030927A8B0035A2A7 /* Build configuration list for PBXProject "APATOKEN" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

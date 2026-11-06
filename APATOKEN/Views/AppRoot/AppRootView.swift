@@ -4,7 +4,8 @@ import SwiftUI
 
 struct AppRootView: View {
     @EnvironmentObject private var app: AppState
-    @ObservedObject private var loc = LocalizationManager.shared
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    @ObservedObject private var session = MeterSession.shared
 
     var body: some View {
         TabView(selection: $app.selection) {
@@ -33,7 +34,26 @@ struct AppRootView: View {
                 }
         }
         .accentColor(Color.accentColor)
+        .background(KeyboardDismissOnTap())
         .environmentObject(app)
+        .disabled(session.rechargePresentation != nil)
+        .accessibilityHidden(session.rechargePresentation != nil)
+        .overlay {
+            ZStack {
+                if let presentation = session.rechargePresentation {
+                    Color.black.opacity(0.5).ignoresSafeArea()
+                        .accessibilityHidden(true)
+                        .transition(.opacity)
+                    RechargeResultOverlay(presentation: presentation) {
+                        withAnimation(reduceMotion ? nil : .spring(response: 0.4, dampingFraction: 0.85)) {
+                            session.rechargePresentation = nil
+                        }
+                    }
+                    .transition(reduceMotion ? .opacity : .move(edge: .bottom).combined(with: .opacity))
+                    .zIndex(10)
+                }
+            }
+        }
         .dynamicLocalization()
     }
 }

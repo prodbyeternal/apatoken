@@ -2,13 +2,14 @@ import Foundation
 
 /// Model for a meter reading entry stored in history.
 struct ReadingModel: Identifiable, Codable, Equatable {
-    let id = UUID()
+    let id: UUID
     let meter: String
     let date: Date
     let zone1: String
     let zone2: String
 
     init(meter: String, date: Date, zone1: String, zone2: String) {
+        self.id = UUID()
         self.meter = meter
         self.date = date
         self.zone1 = zone1
@@ -39,23 +40,18 @@ enum ReadingHistoryManager {
     @discardableResult
     static func add(_ model: ReadingModel) -> Bool {
         do {
-            let line = convertModelToString(model) + "\n"
-            let path = getFilePath()
-            if !FileManager.default.fileExists(atPath: path.path) {
-                try Data().write(to: path)
-            }
-            let handle = try FileHandle(forWritingTo: path)
-            defer { try? handle.close() }
-            _ = try handle.seekToEnd()
-            try handle.write(contentsOf: Data(line.utf8))
+            try save(model)
             return true
         } catch {
             return false
         }
     }
 
-    static func readAll() -> [ReadingModel] {
-        let path = getFilePath()
+    static func save(_ model: ReadingModel, at path: URL = getFilePath()) throws {
+        try HistoryFile.append(convertModelToString(model), to: path)
+    }
+
+    static func readAll(at path: URL = getFilePath()) -> [ReadingModel] {
         guard FileManager.default.fileExists(atPath: path.path) else {
             return []
         }
@@ -79,8 +75,8 @@ enum ReadingHistoryManager {
 
     private static func convertStringToModel(_ row: String) -> ReadingModel? {
         let fields = row.split(separator: ";", omittingEmptySubsequences: false).map(String.init)
-        guard fields.count >= 4, fields[0].count >= 8 else { return nil }
-        let meter = String(fields[0].suffix(8))
+        guard fields.count >= 4, !fields[0].isEmpty else { return nil }
+        let meter = fields[0]
         let date = dateTimeFormatter.date(from: fields[1]) ?? Date()
         return ReadingModel(meter: meter, date: date, zone1: fields[2], zone2: fields[3])
     }

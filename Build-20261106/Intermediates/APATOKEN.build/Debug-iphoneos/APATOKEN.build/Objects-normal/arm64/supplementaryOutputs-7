@@ -1,0 +1,23 @@
+{
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/AppRoot/AppRootView.swift" : {
+    "const-values" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Intermediates/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/AppRootView.swiftconstvalues",
+    "dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Intermediates/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/AppRootView.d",
+    "diagnostics" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Intermediates/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/AppRootView.dia",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Intermediates/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/AppRootView.o",
+    "swift-dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Intermediates/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/AppRootView.swiftdeps"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/Components/Animations.swift" : {
+    "const-values" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Intermediates/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/Animations.swiftconstvalues",
+    "dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Intermediates/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/Animations.d",
+    "diagnostics" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Intermediates/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/Animations.dia",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Intermediates/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/Animations.o",
+    "swift-dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Intermediates/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/Animations.swiftdeps"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/Components/RechargeResultOverlay.swift" : {
+    "const-values" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Intermediates/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/RechargeResultOverlay.swiftconstvalues",
+    "dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Intermediates/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/RechargeResultOverlay.d",
+    "diagnostics" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Intermediates/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/RechargeResultOverlay.dia",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Intermediates/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/RechargeResultOverlay.o",
+    "swift-dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Intermediates/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/RechargeResultOverlay.swiftdeps"
+  }
+}

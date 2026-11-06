@@ -25,22 +25,6 @@
           "startingColumn": 30,
           "startingLine": 77
         }
-      },
-      {
-        "comment": "",
-        "key": "Open APATOR S.A.",
-        "location": {
-          "startingColumn": 26,
-          "startingLine": 90
-        }
-      },
-      {
-        "comment": "",
-        "key": "Open GitHub",
-        "location": {
-          "startingColumn": 26,
-          "startingLine": 99
-        }
       }
     ]
   },

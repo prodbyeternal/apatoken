@@ -1,0 +1,23 @@
+{
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Model/SimulatedEnvironment.swift" : {
+    "const-values" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Simulator/Intermediates/APATOKEN.build/Debug-iphonesimulator/APATOKEN.build/Objects-normal/x86_64/SimulatedEnvironment.swiftconstvalues",
+    "dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Simulator/Intermediates/APATOKEN.build/Debug-iphonesimulator/APATOKEN.build/Objects-normal/x86_64/SimulatedEnvironment.d",
+    "diagnostics" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Simulator/Intermediates/APATOKEN.build/Debug-iphonesimulator/APATOKEN.build/Objects-normal/x86_64/SimulatedEnvironment.dia",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Simulator/Intermediates/APATOKEN.build/Debug-iphonesimulator/APATOKEN.build/Objects-normal/x86_64/SimulatedEnvironment.o",
+    "swift-dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Simulator/Intermediates/APATOKEN.build/Debug-iphonesimulator/APATOKEN.build/Objects-normal/x86_64/SimulatedEnvironment.swiftdeps"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Persist/Stores.swift" : {
+    "const-values" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Simulator/Intermediates/APATOKEN.build/Debug-iphonesimulator/APATOKEN.build/Objects-normal/x86_64/Stores.swiftconstvalues",
+    "dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Simulator/Intermediates/APATOKEN.build/Debug-iphonesimulator/APATOKEN.build/Objects-normal/x86_64/Stores.d",
+    "diagnostics" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Simulator/Intermediates/APATOKEN.build/Debug-iphonesimulator/APATOKEN.build/Objects-normal/x86_64/Stores.dia",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Simulator/Intermediates/APATOKEN.build/Debug-iphonesimulator/APATOKEN.build/Objects-normal/x86_64/Stores.o",
+    "swift-dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Simulator/Intermediates/APATOKEN.build/Debug-iphonesimulator/APATOKEN.build/Objects-normal/x86_64/Stores.swiftdeps"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Utils/IconHelper.swift" : {
+    "const-values" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Simulator/Intermediates/APATOKEN.build/Debug-iphonesimulator/APATOKEN.build/Objects-normal/x86_64/IconHelper.swiftconstvalues",
+    "dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Simulator/Intermediates/APATOKEN.build/Debug-iphonesimulator/APATOKEN.build/Objects-normal/x86_64/IconHelper.d",
+    "diagnostics" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Simulator/Intermediates/APATOKEN.build/Debug-iphonesimulator/APATOKEN.build/Objects-normal/x86_64/IconHelper.dia",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Simulator/Intermediates/APATOKEN.build/Debug-iphonesimulator/APATOKEN.build/Objects-normal/x86_64/IconHelper.o",
+    "swift-dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Simulator/Intermediates/APATOKEN.build/Debug-iphonesimulator/APATOKEN.build/Objects-normal/x86_64/IconHelper.swiftdeps"
+  }
+}

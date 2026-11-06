@@ -1,0 +1,23 @@
+{
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Core/LocalizationManager.swift" : {
+    "const-values" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Simulator/Intermediates/APATOKEN.build/Debug-iphonesimulator/APATOKEN.build/Objects-normal/x86_64/LocalizationManager.swiftconstvalues",
+    "dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Simulator/Intermediates/APATOKEN.build/Debug-iphonesimulator/APATOKEN.build/Objects-normal/x86_64/LocalizationManager.d",
+    "diagnostics" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Simulator/Intermediates/APATOKEN.build/Debug-iphonesimulator/APATOKEN.build/Objects-normal/x86_64/LocalizationManager.dia",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Simulator/Intermediates/APATOKEN.build/Debug-iphonesimulator/APATOKEN.build/Objects-normal/x86_64/LocalizationManager.o",
+    "swift-dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Simulator/Intermediates/APATOKEN.build/Debug-iphonesimulator/APATOKEN.build/Objects-normal/x86_64/LocalizationManager.swiftdeps"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Dlms/CosemApdu.swift" : {
+    "const-values" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Simulator/Intermediates/APATOKEN.build/Debug-iphonesimulator/APATOKEN.build/Objects-normal/x86_64/CosemApdu.swiftconstvalues",
+    "dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Simulator/Intermediates/APATOKEN.build/Debug-iphonesimulator/APATOKEN.build/Objects-normal/x86_64/CosemApdu.d",
+    "diagnostics" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Simulator/Intermediates/APATOKEN.build/Debug-iphonesimulator/APATOKEN.build/Objects-normal/x86_64/CosemApdu.dia",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Simulator/Intermediates/APATOKEN.build/Debug-iphonesimulator/APATOKEN.build/Objects-normal/x86_64/CosemApdu.o",
+    "swift-dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Simulator/Intermediates/APATOKEN.build/Debug-iphonesimulator/APATOKEN.build/Objects-normal/x86_64/CosemApdu.swiftdeps"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Dlms/HdlcTransport.swift" : {
+    "const-values" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Simulator/Intermediates/APATOKEN.build/Debug-iphonesimulator/APATOKEN.build/Objects-normal/x86_64/HdlcTransport.swiftconstvalues",
+    "dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Simulator/Intermediates/APATOKEN.build/Debug-iphonesimulator/APATOKEN.build/Objects-normal/x86_64/HdlcTransport.d",
+    "diagnostics" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Simulator/Intermediates/APATOKEN.build/Debug-iphonesimulator/APATOKEN.build/Objects-normal/x86_64/HdlcTransport.dia",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Simulator/Intermediates/APATOKEN.build/Debug-iphonesimulator/APATOKEN.build/Objects-normal/x86_64/HdlcTransport.o",
+    "swift-dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Simulator/Intermediates/APATOKEN.build/Debug-iphonesimulator/APATOKEN.build/Objects-normal/x86_64/HdlcTransport.swiftdeps"
+  }
+}

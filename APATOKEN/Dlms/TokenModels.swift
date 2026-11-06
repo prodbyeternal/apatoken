@@ -74,7 +74,7 @@ final class TokenDeliveryStatus {
         if bytes.isEmpty || bytes[0] == 0 {
             // StructureAttribute null path: C# then null-refs on
             // tokenDeliveryStatus.StatusCode.
-            throw CommsError("Object reference not set to an instance of an object.")
+            throw CommsError(L.message.msgNoData)
         }
         let tag = bytes[0]
         let source = ByteBuffer(bytes)
@@ -92,9 +92,7 @@ final class TokenDeliveryStatus {
         guard member1Tag == CosemDataType.enumData.rawValue else {
             throw CommsError("\(L.message.msgWrongDataType) \(L.fmt(L.message.msgExpectedVsReceived, CosemDataType.enumData.name, cosemTypeName(member1Tag)))")
         }
-        guard try ByteBuffer.cosemComplexTypeSize(bytes, index: &source.bytesOffset) == 1 else {
-            throw CommsError(L.message.msgSimpleDataTypeExpected)
-        }
+        // ENUM8 is a simple type - no length prefix, value is 1 byte immediately after tag
         let statusValue = try source.parseUInt8()
         // member 2: BIT_STRING (tag 4) – length prefix is in BITS.
         let member2Tag = try source.parseUInt8()
@@ -122,6 +120,20 @@ struct TokenDescriptor {
     private(set) var rateId: UInt8
     private(set) var chargeRate1: Int32
     private(set) var chargeRate2: Int32
+
+    /// Preserve tenths for history; the legacy description uses whole kWh.
+    var energyByZone: (Decimal, Decimal)? {
+        guard let bytes = TypeConverter.convertHexStringToBytes(dataValueHex), bytes.count >= 10 else { return nil }
+        func amount(_ start: Int) -> Decimal {
+            let raw = bytes[start..<(start + 4)].reduce(UInt32(0)) { ($0 << 8) | UInt32($1) }
+            return Decimal(Int32(bitPattern: raw)) / 10
+        }
+        switch codeType {
+        case .oneRate: return rateId == 2 ? (0, amount(2)) : (amount(2), 0)
+        case .bothRates: return (amount(2), amount(6))
+        default: return nil
+        }
+    }
 
     init(dataValue: [UInt8]) {
         dataValueHex = dataValue.map { String(format: "%02X", $0) }.joined()

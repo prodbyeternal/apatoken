@@ -1,8 +1,8 @@
 import Foundation
 
 /// ChargeModel (APAToken.Models).
-final class ChargeModel: Equatable, Hashable, Identifiable {
-    let id = UUID()
+final class ChargeModel: Codable, Equatable, Hashable, Identifiable {
+    let id: UUID
     var meter: String
     var mac: String
     var date: Date
@@ -14,6 +14,7 @@ final class ChargeModel: Equatable, Hashable, Identifiable {
 
     init(meter: String, mac: String, date: Date, code: String,
          total1: String, total2: String, value1: String, value2: String) {
+        self.id = UUID()
         self.meter = meter
         self.mac = mac
         self.date = date
@@ -56,7 +57,7 @@ enum ChargeConverter {
 
     static func dateText(_ model: ChargeModel?) -> String {
         guard let model else { return "" }
-        return detailsDateFormatter.string(from: model.date)
+        return EnergyText.date(model.date)
     }
 
     /// CodeConverter: first 4 digits + stars for the middle (whitespace
@@ -91,16 +92,16 @@ enum ChargeConverter {
         let zero1 = isZero(model.value1)
         let zero2 = isZero(model.value2)
         if !zero1 && !zero2 {
-            return "\(model.value1) kWh\n\(model.value2) kWh"
+            return EnergyText.kWh(model.value1) + " / " + EnergyText.kWh(model.value2)
         }
         if zero1 {
-            return "\(model.value2) kWh"
+            return EnergyText.kWh(model.value2)
         }
-        return "\(model.value1) kWh"
+        return EnergyText.kWh(model.value1)
     }
 
     /// IsZero({"0", "0,0", "0.0"}).
-    private static func isZero(_ value: String) -> Bool {
+    static func isZero(_ value: String) -> Bool {
         value == "0" || value == "0,0" || value == "0.0"
     }
 }

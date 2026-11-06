@@ -1,423 +1,183 @@
 import SwiftUI
-import Combine
-
-// MARK: - History view model
-
-@MainActor
-final class HistoryViewModel: ObservableObject {
-    @Published var charges: [ChargeModel] = []
-    @Published var readings: [ReadingModel] = []
-    @Published var meters: [String] = []
-    @Published var selectedMeterIndex = 0
-    @Published var selectedCharge: ChargeModel?
-    @Published var selectedTab: Int = 0 // 0 = Charges, 1 = Readings
-
-    var selectedMeterName: String {
-        meters.indices.contains(selectedMeterIndex) ? meters[selectedMeterIndex] : ""
-    }
-
-    var filteredCharges: [ChargeModel] {
-        if selectedMeterName.isEmpty || selectedMeterName == "All" {
-            return charges
-        }
-        return charges.filter { $0.meter == selectedMeterName }
-    }
-
-    var filteredReadings: [ReadingModel] {
-        if selectedMeterName.isEmpty || selectedMeterName == "All" {
-            return readings
-        }
-        return readings.filter { $0.meter == selectedMeterName }
-    }
-
-    func loadHistory() {
-        charges = HistoryManager.readAll()
-        readings = ReadingHistoryManager.readAll()
-        updateMeters()
-    }
-
-    private func updateMeters() {
-        var uniqueMeters: [String] = []
-        for charge in charges {
-            if !uniqueMeters.contains(charge.meter) {
-                uniqueMeters.append(charge.meter)
-            }
-        }
-        for reading in readings {
-            if !uniqueMeters.contains(reading.meter) {
-                uniqueMeters.append(reading.meter)
-            }
-        }
-        meters = ["All"] + uniqueMeters
-        if meters.count > 1 {
-            selectedMeterIndex = 0
-        }
-    }
-}
-
-// MARK: - History view (iOS 26 style)
 
 struct HistoryListView: View {
-    @StateObject private var viewModel = HistoryViewModel()
+    @ObservedObject private var session = MeterSession.shared
+    @State private var selectedTab = 0
+    @State private var meterFilter = ""
+    @State private var selectedCharge: ChargeModel?
+    @State private var selectedReading: ReadingModel?
 
     var body: some View {
+        let charges = session.charges
+        let readings = session.readings
+        let meters = Array(Set(charges.map(\.meter) + readings.map(\.meter))).sorted()
+        let filteredCharges = charges.filter { meterFilter.isEmpty || $0.meter == meterFilter }
+        let filteredReadings = readings.filter { meterFilter.isEmpty || $0.meter == meterFilter }
+
         NavigationStack {
             VStack(spacing: 0) {
-                // Subtab selector
-                HistorySegmentedControl(selectedTab: $viewModel.selectedTab)
-
-                VStack(spacing: 0) {
-                    if viewModel.selectedTab == 0 {
-                        // Charges tab
-                        if viewModel.charges.isEmpty {
-                            HistoryEmptyStateView()
-                        } else {
-                            ChargesList(viewModel: viewModel)
-                        }
-                    } else {
-                        // Readings tab
-                        if viewModel.readings.isEmpty {
-                            HistoryEmptyStateView()
-                        } else {
-                            ReadingsList(viewModel: viewModel)
+                VStack(spacing: 12) {
+                    if session.testing { TestingBanner() }
+                    Picker(L.ui.txtHistory, selection: $selectedTab.animation(.easeInOut(duration: 0.2))) {
+                        Text(L.ui.txtCharges).tag(0)
+                        Text(L.ui.txtReadings).tag(1)
+                    }
+                    .pickerStyle(.segmented)
+                    .accessibilityIdentifier("historyTabs")
+                    if !meters.isEmpty {
+                        HStack {
+                            Image(systemName: "line.3.horizontal.decrease")
+                            Picker(L.text("txtFilterByMeter"), selection: $meterFilter) {
+                                Text(L.ui.txtAll).tag("")
+                                ForEach(meters, id: \.self) { Text($0).tag($0) }
+                            }
+                            .pickerStyle(.menu)
+                            .accessibilityIdentifier("historyFilter")
+                            Spacer()
+                            Text("\(selectedTab == 0 ? filteredCharges.count : filteredReadings.count)")
+                                .font(.subheadline.monospacedDigit()).foregroundStyle(.secondary)
                         }
                     }
                 }
+                .padding(.horizontal, 20).padding(.bottom, 12)
+
+                if selectedTab == 0 && filteredCharges.isEmpty || selectedTab == 1 && filteredReadings.isEmpty {
+                    ContentUnavailableView {
+                        Label(L.text("txtNoHistory"), systemImage: "clock")
+                    } description: { Text(L.message.msgHistoryInformation) }
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                } else {
+                    List {
+                        if selectedTab == 0 {
+                            ForEach(filteredCharges) { charge in
+                                Button { selectedCharge = charge } label: { HistoryRowView(charge: charge) }
+                                    .buttonStyle(.plain)
+                            }
+                        } else {
+                            ForEach(filteredReadings) { reading in
+                                Button { selectedReading = reading } label: {
+                                    HStack(spacing: 14) {
+                                        HistoryBadge(symbol: "gauge.with.dots.needle.33percent", color: .blue)
+                                        VStack(alignment: .leading, spacing: 6) {
+                                            Text(reading.meter).font(.headline)
+                                            Text(EnergyText.date(reading.date)).font(.caption).foregroundStyle(.secondary)
+                                            Text(EnergyText.kWh(reading.zone1) + " / " + EnergyText.kWh(reading.zone2))
+                                                .font(.subheadline.monospacedDigit())
+                                        }
+                                        Spacer()
+                                        Image(systemName: "chevron.right").font(.caption).foregroundStyle(.tertiary)
+                                    }
+                                    .padding(.vertical, 6)
+                                }
+                                .buttonStyle(.plain)
+                            }
+                        }
+                    }
+                    .listStyle(.insetGrouped)
+                    .contentMargins(.top, 0)
+                }
             }
-            .background(Color(UIColor.systemGroupedBackground))
+            .background(Color(uiColor: .systemGroupedBackground))
             .navigationTitle(L.ui.txtHistory)
-            .navigationBarTitleDisplayMode(.large)
-            .toolbar {
-                ToolbarItem(placement: .primaryAction) {
-                    if !viewModel.charges.isEmpty {
-                        Menu {
-                            Button(L.ui.txtPickValue) {
-                                // Meter filter sheet would go here
-                            }
-                        } label: {
-                            Image(systemName: "line.3.horizontal.decrease.circle")
-                        }
-                    }
-                }
-            }
-            .sheet(item: $viewModel.selectedCharge) { charge in
-                NavigationStack {
-                    HistoryDetailView(charge: charge)
-                }
-            }
-            .onAppear {
-                viewModel.loadHistory()
-            }
-            .dynamicLocalization()
+            .sheet(item: $selectedCharge) { charge in NavigationStack { HistoryDetailView(charge: charge) }.dynamicLocalization() }
+            .sheet(item: $selectedReading) { reading in NavigationStack { ReadingDetailView(reading: reading) }.dynamicLocalization() }
+            .onChange(of: session.testing) { meterFilter = ""; selectedCharge = nil; selectedReading = nil }
+            .onChange(of: meters) { if !meters.contains(meterFilter) { meterFilter = "" } }
+            .onAppear { session.retryPendingHistory() }
         }
+        .dynamicLocalization()
     }
 }
 
-// MARK: - Segmented control for subtabs
-
-struct HistorySegmentedControl: View {
-    @Binding var selectedTab: Int
-
+struct HistoryBadge: View {
+    let symbol: String
+    let color: Color
     var body: some View {
-        HStack(spacing: 0) {
-            Button {
-                withAnimation(.spring(response: 0.3, dampingFraction: 0.7)) {
-                    selectedTab = 0
-                }
-            } label: {
-                VStack(spacing: 6) {
-                    Text(L.ui.txtCharges)
-                        .font(.system(size: 14, weight: .medium))
-                        .foregroundStyle(selectedTab == 0 ? Color.primary : Color.secondary)
-
-                    Rectangle()
-                        .frame(height: 2)
-                        .frame(maxWidth: .infinity)
-                        .foregroundStyle(selectedTab == 0 ? Color.accentColor : Color.clear)
-                }
-            }
-            .buttonStyle(.plain)
-
-            Button {
-                withAnimation(.spring(response: 0.3, dampingFraction: 0.7)) {
-                    selectedTab = 1
-                }
-            } label: {
-                VStack(spacing: 6) {
-                    Text(L.ui.txtReadings)
-                        .font(.system(size: 14, weight: .medium))
-                        .foregroundStyle(selectedTab == 1 ? Color.primary : Color.secondary)
-
-                    Rectangle()
-                        .frame(height: 2)
-                        .frame(maxWidth: .infinity)
-                        .foregroundStyle(selectedTab == 1 ? Color.accentColor : Color.clear)
-                }
-            }
-            .buttonStyle(.plain)
-        }
-        .padding(.horizontal, 16)
-        .padding(.vertical, 8)
-        .background(Color(UIColor.secondarySystemGroupedBackground))
+        Image(systemName: symbol).font(.title3.weight(.semibold))
+            .foregroundStyle(color).frame(width: 44, height: 44)
+            .background(color.opacity(0.12), in: RoundedRectangle(cornerRadius: 14))
     }
 }
-
-// MARK: - Charges list
-
-struct ChargesList: View {
-    @ObservedObject var viewModel: HistoryViewModel
-
-    var body: some View {
-        List {
-            // Meter filter section
-            if viewModel.meters.count > 1 {
-                Section {
-                    Menu {
-                        ForEach(Array(viewModel.meters.enumerated()), id: \.offset) { index, meter in
-                            Button(meter) {
-                                viewModel.selectedMeterIndex = index
-                            }
-                            .tag(index)
-                        }
-                    } label: {
-                        HStack {
-                            Image(systemName: "powermeter")
-                            Text(viewModel.selectedMeterName.isEmpty ? "All" : viewModel.selectedMeterName)
-                            Spacer()
-                            Image(systemName: "chevron.right")
-                        }
-                    }
-                } header: {
-                    Text("Filter by meter")
-                        .font(.caption)
-                }
-            }
-
-            // Charge rows
-            Section {
-                ForEach(viewModel.filteredCharges) { charge in
-                    Button {
-                        viewModel.selectedCharge = charge
-                    } label: {
-                        HistoryRowView(charge: charge)
-                    }
-                    .buttonStyle(.plain)
-                }
-            }
-        }
-        .listStyle(.insetGrouped)
-    }
-}
-
-// MARK: - Readings list
-
-struct ReadingsList: View {
-    @ObservedObject var viewModel: HistoryViewModel
-
-    var body: some View {
-        List {
-            // Meter filter section
-            if viewModel.meters.count > 1 {
-                Section {
-                    Menu {
-                        ForEach(Array(viewModel.meters.enumerated()), id: \.offset) { index, meter in
-                            Button(meter) {
-                                viewModel.selectedMeterIndex = index
-                            }
-                            .tag(index)
-                        }
-                    } label: {
-                        HStack {
-                            Image(systemName: "powermeter")
-                            Text(viewModel.selectedMeterName.isEmpty ? "All" : viewModel.selectedMeterName)
-                            Spacer()
-                            Image(systemName: "chevron.right")
-                        }
-                    }
-                } header: {
-                    Text("Filter by meter")
-                        .font(.caption)
-                }
-            }
-
-            // Reading rows
-            Section {
-                ForEach(viewModel.filteredReadings) { reading in
-                    ReadingsRowView(reading: reading)
-                }
-            }
-        }
-        .listStyle(.insetGrouped)
-    }
-}
-
-// MARK: - History row
 
 struct HistoryRowView: View {
     let charge: ChargeModel
-
     var body: some View {
-        VStack(alignment: .leading, spacing: 6) {
-            // Date
-            Text(ChargeConverter.dateText(charge))
-                .font(.subheadline.weight(.medium))
-                .foregroundStyle(Color.primary)
-
-            // Charging type + values
-            HStack(spacing: 8) {
-                Image(systemName: charge.chargingIcon)
-                    .font(.system(size: 14))
-                    .foregroundStyle(charge.chargingColor)
-
-                Text(ChargeConverter.chargingType(charge))
-                    .font(.caption)
-                    .foregroundStyle(charge.chargingColor)
-
+        HStack(spacing: 14) {
+            HistoryBadge(symbol: "bolt.fill", color: .green)
+            VStack(alignment: .leading, spacing: 6) {
+                Text(charge.meter).font(.headline)
+                Text(EnergyText.date(charge.date)).font(.caption).foregroundStyle(.secondary)
                 Text(ChargeConverter.chargingValues(charge))
-                    .font(.caption.monospaced())
-                    .foregroundStyle(Color.secondary)
+                    .font(.subheadline.weight(.semibold)).monospacedDigit().foregroundStyle(.green)
             }
-            .padding(.top, 2)
-
-            // Code
-            Text(ChargeConverter.codeMask(charge.code))
-                .font(.system(.caption2, design: .monospaced))
-                .foregroundStyle(Color.secondary)
+            Spacer()
+            Image(systemName: "chevron.right").font(.caption).foregroundStyle(.tertiary)
         }
-        .padding(.vertical, 8)
-        .frame(maxWidth: .infinity, alignment: .leading)
+        .padding(.vertical, 6)
     }
 }
-
-// MARK: - Readings history row
-
-struct ReadingsRowView: View {
-    let reading: ReadingModel
-
-    var body: some View {
-        VStack(alignment: .leading, spacing: 6) {
-            Text(reading.date.formatted(date: .abbreviated, time: .shortened))
-                .font(.subheadline.weight(.medium))
-                .foregroundStyle(Color.primary)
-
-            HStack(spacing: 8) {
-                Image(systemName: "powermeter")
-                    .font(.system(size: 14))
-                    .foregroundStyle(Color.blue)
-
-                Text("\(reading.zone1) kWh / \(reading.zone2) kWh")
-                    .font(.caption.monospaced())
-                    .foregroundStyle(Color.secondary)
-            }
-            .padding(.top, 2)
-        }
-        .padding(.vertical, 8)
-        .frame(maxWidth: .infinity, alignment: .leading)
-    }
-}
-
-// MARK: - Empty state
-
-struct HistoryEmptyStateView: View {
-    var body: some View {
-        VStack(spacing: 24) {
-            Image(systemName: "clock.badge.xmark")
-                .font(.system(size: 64))
-                .foregroundStyle(Color(UIColor.tertiarySystemFill))
-
-            VStack(spacing: 8) {
-                Text(L.ui.txtHistory)
-                    .font(.title3.weight(.semibold))
-                    .foregroundStyle(Color.primary)
-
-                Text(L.message.msgHistoryInformation)
-                    .font(.subheadline)
-                    .foregroundStyle(Color.secondary)
-                    .multilineTextAlignment(.center)
-            }
-        }
-        .padding(.horizontal, 32)
-        .padding(.top, -40)
-    }
-}
-
-// MARK: - History detail view
 
 struct HistoryDetailView: View {
     let charge: ChargeModel
+    @Environment(\.dismiss) private var dismiss
+    @State private var copied = false
 
     var body: some View {
         Form {
-            Section("Energy Token Purchase") {
-                DetailRow(label: "Date", value: ChargeConverter.dateText(charge))
-                DetailRow(label: "Token Code", value: ChargeConverter.codeMask(charge.code))
+            Section(L.ui.txtRecharge) {
+                DetailRow(label: L.ui.txtMeterNumber, value: charge.meter)
+                DetailRow(label: L.ui.txtDate, value: EnergyText.date(charge.date))
+                DetailRow(label: L.ui.txtCode, value: ChargeConverter.codeMask(charge.code))
             }
-
-            Section("Charging Type") {
-                HStack {
-                    Image(systemName: charge.chargingIcon)
-                        .foregroundStyle(charge.chargingColor)
-                    Text(ChargeConverter.chargingType(charge))
-                        .foregroundStyle(charge.chargingColor)
+            Section(L.text("txtEnergyDelivered")) {
+                DetailRow(label: L.ui.txtZone + " 1", value: EnergyText.kWh(charge.value1), bold: true)
+                DetailRow(label: L.ui.txtZone + " 2", value: EnergyText.kWh(charge.value2), bold: true)
+            }
+            Section(L.ui.txtAfterPrepaidRecharge) {
+                DetailRow(label: L.ui.txtZone + " 1", value: EnergyText.kWh(charge.total1))
+                DetailRow(label: L.ui.txtZone + " 2", value: EnergyText.kWh(charge.total2))
+            }
+            Section {
+                Button(copied ? L.text("txtCopied") : L.text("txtCopyToken")) {
+                    UIPasteboard.general.string = charge.code
+                    copied = true
                 }
-            }
-
-            Section("After Recharge") {
-                DetailRow(label: "Zone 1", value: "\(charge.total1) kWh", bold: true)
-                DetailRow(label: "Zone 2", value: "\(charge.total2) kWh", bold: true)
-            }
-
-            Section("Energy Delivered") {
-                DetailRow(label: "Zone 1", value: "\(charge.value1) kWh")
-                DetailRow(label: "Zone 2", value: "\(charge.value2) kWh")
             }
         }
         .navigationTitle(L.ui.txtDetails)
         .navigationBarTitleDisplayMode(.inline)
-        .toolbar {
-            ToolbarItem(placement: .topBarTrailing) {
-                Button {
-                    UIPasteboard.general.string = charge.code
-                } label: {
-                    Image(systemName: "doc.on.doc")
-                }
+        .toolbar { ToolbarItem(placement: .confirmationAction) { Button(L.text("txtDone")) { dismiss() } } }
+    }
+}
+
+struct ReadingDetailView: View {
+    let reading: ReadingModel
+    @Environment(\.dismiss) private var dismiss
+    var body: some View {
+        Form {
+            Section {
+                DetailRow(label: L.ui.txtMeterNumber, value: reading.meter)
+                DetailRow(label: L.ui.txtDate, value: EnergyText.date(reading.date))
+            }
+            Section(L.ui.txtCurrentCredits) {
+                DetailRow(label: L.ui.txtZone + " 1", value: EnergyText.kWh(reading.zone1), bold: true)
+                DetailRow(label: L.ui.txtZone + " 2", value: EnergyText.kWh(reading.zone2), bold: true)
             }
         }
+        .navigationTitle(L.ui.txtReadings)
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbar { ToolbarItem(placement: .confirmationAction) { Button(L.text("txtDone")) { dismiss() } } }
     }
 }
 
 struct DetailRow: View {
     let label: String
     let value: String
-    var bold: Bool = false
-
+    var bold = false
     var body: some View {
-        HStack {
-            Text(label)
-                .foregroundStyle(Color.secondary)
-            Spacer()
-            Text(value)
-                .fontWeight(bold ? .semibold : .regular)
-                .foregroundStyle(Color.primary)
+        LabeledContent(label) {
+            Text(value).fontWeight(bold ? .semibold : .regular).foregroundStyle(.primary)
+                .multilineTextAlignment(.trailing)
         }
-        .font(.callout)
-    }
-}
-
-// MARK: - ChargeModel extensions
-
-private extension ChargeModel {
-    var chargingIcon: String {
-        if ChargeConverter.chargingType(self).contains("Single") {
-            return "bolt.fill.badge.clock"
-        }
-        return "bolt.fill.badge.xmark"
-    }
-
-    var chargingColor: Color {
-        if ChargeConverter.chargingType(self).contains("Single") {
-            return Color.blue
-        }
-        return Color.purple
     }
 }

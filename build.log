@@ -1,0 +1,453 @@
+Command line invocation:
+    /Users/eternal/Downloads/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project APATOKEN.xcodeproj -target APATOKEN -sdk iphoneos -configuration Debug ARCHS=arm64 CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO build
+
+Build settings from command line:
+    ARCHS = arm64
+    CODE_SIGNING_ALLOWED = NO
+    CODE_SIGNING_REQUIRED = NO
+    SDKROOT = iphoneos26.2
+
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (1 target)
+    Target 'APATOKEN' in project 'APATOKEN' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Users/eternal/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Users/eternal/Downloads/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.2.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Users/eternal/Downloads/Xcode.app/Contents/Developer/usr/bin/actool --print-asset-tag-combinations --output-format xml1 /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Assets.xcassets
+
+ExecuteExternalTool /Users/eternal/Downloads/Xcode.app/Contents/Developer/usr/bin/actool --version --output-format xml1
+
+ExecuteExternalTool /Users/eternal/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Users/eternal/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+Build description signature: 5544170de9ed76789bfc2d6f60bc04ed
+Build description path: /Users/eternal/Desktop/APATOKEN/APATOKEN/build/XCBuildData/5544170de9ed76789bfc2d6f60bc04ed.xcbuilddata
+ClangStatCache /Users/eternal/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Users/eternal/Downloads/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.2.sdk /var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/C/com.apple.DeveloperTools/26.3-17C529/Xcode/SDKStatCaches.noindex/iphoneos26.2-23C57-87675ce223a9da9eea388599122a1df5.sdkstatcache
+    cd /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN.xcodeproj
+    /Users/eternal/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Users/eternal/Downloads/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.2.sdk -o /var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/C/com.apple.DeveloperTools/26.3-17C529/Xcode/SDKStatCaches.noindex/iphoneos26.2-23C57-87675ce223a9da9eea388599122a1df5.sdkstatcache
+
+CreateBuildDirectory /Users/eternal/Desktop/APATOKEN/APATOKEN/build
+    cd /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN.xcodeproj
+    builtin-create-build-directory /Users/eternal/Desktop/APATOKEN/APATOKEN/build
+
+CreateBuildDirectory /Users/eternal/Desktop/APATOKEN/APATOKEN/build/ExplicitPrecompiledModules
+    cd /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN.xcodeproj
+    builtin-create-build-directory /Users/eternal/Desktop/APATOKEN/APATOKEN/build/ExplicitPrecompiledModules
+
+CreateBuildDirectory /Users/eternal/Desktop/APATOKEN/APATOKEN/build/Debug-iphoneos
+    cd /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN.xcodeproj
+    builtin-create-build-directory /Users/eternal/Desktop/APATOKEN/APATOKEN/build/Debug-iphoneos
+
+CreateBuildDirectory /Users/eternal/Desktop/APATOKEN/APATOKEN/build/SwiftExplicitPrecompiledModules
+    cd /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN.xcodeproj
+    builtin-create-build-directory /Users/eternal/Desktop/APATOKEN/APATOKEN/build/SwiftExplicitPrecompiledModules
+
+CreateBuildDirectory /Users/eternal/Desktop/APATOKEN/APATOKEN/build/EagerLinkingTBDs/Debug-iphoneos
+    cd /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN.xcodeproj
+    builtin-create-build-directory /Users/eternal/Desktop/APATOKEN/APATOKEN/build/EagerLinkingTBDs/Debug-iphoneos
+
+WriteAuxiliaryFile /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN-a1f8cba80e0d4d33e1602899f0da741e-VFS-iphoneos/all-product-headers.yaml
+    cd /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN.xcodeproj
+    write-file /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN-a1f8cba80e0d4d33e1602899f0da741e-VFS-iphoneos/all-product-headers.yaml
+
+WriteAuxiliaryFile /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/empty-iAPATOKEN.plist (in target 'APATOKEN' from project 'APATOKEN')
+    cd /Users/eternal/Desktop/APATOKEN/APATOKEN
+    write-file /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/empty-iAPATOKEN.plist
+
+WriteAuxiliaryFile /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/iAPATOKEN.DependencyStaticMetadataFileList (in target 'APATOKEN' from project 'APATOKEN')
+    cd /Users/eternal/Desktop/APATOKEN/APATOKEN
+    write-file /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/iAPATOKEN.DependencyStaticMetadataFileList
+
+WriteAuxiliaryFile /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/iAPATOKEN.hmap (in target 'APATOKEN' from project 'APATOKEN')
+    cd /Users/eternal/Desktop/APATOKEN/APATOKEN
+    write-file /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/iAPATOKEN.hmap
+
+WriteAuxiliaryFile /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/iAPATOKEN-all-non-framework-target-headers.hmap (in target 'APATOKEN' from project 'APATOKEN')
+    cd /Users/eternal/Desktop/APATOKEN/APATOKEN
+    write-file /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/iAPATOKEN-all-non-framework-target-headers.hmap
+
+WriteAuxiliaryFile /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/iAPATOKEN-own-target-headers.hmap (in target 'APATOKEN' from project 'APATOKEN')
+    cd /Users/eternal/Desktop/APATOKEN/APATOKEN
+    write-file /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/iAPATOKEN-own-target-headers.hmap
+
+WriteAuxiliaryFile /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/iAPATOKEN-all-target-headers.hmap (in target 'APATOKEN' from project 'APATOKEN')
+    cd /Users/eternal/Desktop/APATOKEN/APATOKEN
+    write-file /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/iAPATOKEN-all-target-headers.hmap
+
+WriteAuxiliaryFile /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/iAPATOKEN.DependencyMetadataFileList (in target 'APATOKEN' from project 'APATOKEN')
+    cd /Users/eternal/Desktop/APATOKEN/APATOKEN
+    write-file /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/iAPATOKEN.DependencyMetadataFileList
+
+WriteAuxiliaryFile /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/iAPATOKEN-project-headers.hmap (in target 'APATOKEN' from project 'APATOKEN')
+    cd /Users/eternal/Desktop/APATOKEN/APATOKEN
+    write-file /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/iAPATOKEN-project-headers.hmap
+
+WriteAuxiliaryFile /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/iAPATOKEN-generated-files.hmap (in target 'APATOKEN' from project 'APATOKEN')
+    cd /Users/eternal/Desktop/APATOKEN/APATOKEN
+    write-file /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/iAPATOKEN-generated-files.hmap
+
+WriteAuxiliaryFile /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/iAPATOKEN.SwiftConstValuesFileList (in target 'APATOKEN' from project 'APATOKEN')
+    cd /Users/eternal/Desktop/APATOKEN/APATOKEN
+    write-file /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/iAPATOKEN.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/iAPATOKEN.SwiftFileList (in target 'APATOKEN' from project 'APATOKEN')
+    cd /Users/eternal/Desktop/APATOKEN/APATOKEN
+    write-file /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/iAPATOKEN.SwiftFileList
+
+WriteAuxiliaryFile /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/iAPATOKEN.LinkFileList (in target 'APATOKEN' from project 'APATOKEN')
+    cd /Users/eternal/Desktop/APATOKEN/APATOKEN
+    write-file /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/iAPATOKEN.LinkFileList
+
+WriteAuxiliaryFile /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/APATOKEN_const_extract_protocols.json (in target 'APATOKEN' from project 'APATOKEN')
+    cd /Users/eternal/Desktop/APATOKEN/APATOKEN
+    write-file /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/APATOKEN_const_extract_protocols.json
+
+WriteAuxiliaryFile /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/APATOKEN-OutputFileMap.json (in target 'APATOKEN' from project 'APATOKEN')
+    cd /Users/eternal/Desktop/APATOKEN/APATOKEN
+    write-file /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/APATOKEN-OutputFileMap.json
+
+MkDir /Users/eternal/Desktop/APATOKEN/APATOKEN/build/Debug-iphoneos/iAPATOKEN.app (in target 'APATOKEN' from project 'APATOKEN')
+    cd /Users/eternal/Desktop/APATOKEN/APATOKEN
+    /bin/mkdir -p /Users/eternal/Desktop/APATOKEN/APATOKEN/build/Debug-iphoneos/iAPATOKEN.app
+
+MkDir /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/assetcatalog_output/thinned (in target 'APATOKEN' from project 'APATOKEN')
+    cd /Users/eternal/Desktop/APATOKEN/APATOKEN
+    /bin/mkdir -p /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/assetcatalog_output/thinned
+
+MkDir /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/assetcatalog_output/unthinned (in target 'APATOKEN' from project 'APATOKEN')
+    cd /Users/eternal/Desktop/APATOKEN/APATOKEN
+    /bin/mkdir -p /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/assetcatalog_output/unthinned
+
+GenerateAssetSymbols /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Assets.xcassets (in target 'APATOKEN' from project 'APATOKEN')
+    cd /Users/eternal/Desktop/APATOKEN/APATOKEN
+    /Users/eternal/Downloads/Xcode.app/Contents/Developer/usr/bin/actool /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Assets.xcassets --compile /Users/eternal/Desktop/APATOKEN/APATOKEN/build/Debug-iphoneos/iAPATOKEN.app --output-format human-readable-text --notices --warnings --export-dependency-info /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/assetcatalog_dependencies --output-partial-info-plist /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/assetcatalog_generated_info.plist --compress-pngs --enable-on-demand-resources YES --development-region en --target-device iphone --target-device ipad --minimum-deployment-target 26.2 --platform iphoneos --bundle-identifier eternal.loveshisgirlfriend.APATOKEN --generate-swift-asset-symbols /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/DerivedSources/GeneratedAssetSymbols.swift --generate-objc-asset-symbols /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/DerivedSources/GeneratedAssetSymbols.h --generate-asset-symbol-index /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/DerivedSources/GeneratedAssetSymbols-Index.plist
+/* com.apple.actool.compilation-results */
+/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/DerivedSources/GeneratedAssetSymbols-Index.plist
+/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/DerivedSources/GeneratedAssetSymbols.h
+/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/DerivedSources/GeneratedAssetSymbols.swift
+
+
+CpResource /Users/eternal/Desktop/APATOKEN/APATOKEN/build/Debug-iphoneos/iAPATOKEN.app/eternal_logo.jpg /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Resources/eternal_logo.jpg (in target 'APATOKEN' from project 'APATOKEN')
+    cd /Users/eternal/Desktop/APATOKEN/APATOKEN
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Resources/eternal_logo.jpg /Users/eternal/Desktop/APATOKEN/APATOKEN/build/Debug-iphoneos/iAPATOKEN.app
+
+CpResource /Users/eternal/Desktop/APATOKEN/APATOKEN/build/Debug-iphoneos/iAPATOKEN.app/apator_logo.jpg /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Resources/apator_logo.jpg (in target 'APATOKEN' from project 'APATOKEN')
+    cd /Users/eternal/Desktop/APATOKEN/APATOKEN
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Resources/apator_logo.jpg /Users/eternal/Desktop/APATOKEN/APATOKEN/build/Debug-iphoneos/iAPATOKEN.app
+
+CpResource /Users/eternal/Desktop/APATOKEN/APATOKEN/build/Debug-iphoneos/iAPATOKEN.app/OpenSans-Semibold.ttf /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Resources/OpenSans-Semibold.ttf (in target 'APATOKEN' from project 'APATOKEN')
+    cd /Users/eternal/Desktop/APATOKEN/APATOKEN
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Resources/OpenSans-Semibold.ttf /Users/eternal/Desktop/APATOKEN/APATOKEN/build/Debug-iphoneos/iAPATOKEN.app
+
+CpResource /Users/eternal/Desktop/APATOKEN/APATOKEN/build/Debug-iphoneos/iAPATOKEN.app/OpenSans-Regular.ttf /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Resources/OpenSans-Regular.ttf (in target 'APATOKEN' from project 'APATOKEN')
+    cd /Users/eternal/Desktop/APATOKEN/APATOKEN
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Resources/OpenSans-Regular.ttf /Users/eternal/Desktop/APATOKEN/APATOKEN/build/Debug-iphoneos/iAPATOKEN.app
+
+CopyStringsFile /Users/eternal/Desktop/APATOKEN/APATOKEN/build/Debug-iphoneos/iAPATOKEN.app/pl.lproj/Localizable.strings /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Resources/pl.lproj/Localizable.strings (in target 'APATOKEN' from project 'APATOKEN')
+    cd /Users/eternal/Desktop/APATOKEN/APATOKEN
+    builtin-copyStrings --validate --outputencoding binary --outfilename Localizable.strings --outdir /Users/eternal/Desktop/APATOKEN/APATOKEN/build/Debug-iphoneos/iAPATOKEN.app/pl.lproj -- /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Resources/pl.lproj/Localizable.strings
+/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Resources/pl.lproj/Localizable.strings:1:1: note: detected encoding of input file as Unicode (UTF-8) (in target 'APATOKEN' from project 'APATOKEN')
+
+CopyStringsFile /Users/eternal/Desktop/APATOKEN/APATOKEN/build/Debug-iphoneos/iAPATOKEN.app/en.lproj/Localizable.strings /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Resources/en.lproj/Localizable.strings (in target 'APATOKEN' from project 'APATOKEN')
+    cd /Users/eternal/Desktop/APATOKEN/APATOKEN
+    builtin-copyStrings --validate --outputencoding binary --outfilename Localizable.strings --outdir /Users/eternal/Desktop/APATOKEN/APATOKEN/build/Debug-iphoneos/iAPATOKEN.app/en.lproj -- /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Resources/en.lproj/Localizable.strings
+/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Resources/en.lproj/Localizable.strings:1:1: note: detected encoding of input file as Unicode (UTF-8) (in target 'APATOKEN' from project 'APATOKEN')
+
+CopyStringsFile /Users/eternal/Desktop/APATOKEN/APATOKEN/build/Debug-iphoneos/iAPATOKEN.app/fr.lproj/Localizable.strings /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Resources/fr.lproj/Localizable.strings (in target 'APATOKEN' from project 'APATOKEN')
+    cd /Users/eternal/Desktop/APATOKEN/APATOKEN
+    builtin-copyStrings --validate --outputencoding binary --outfilename Localizable.strings --outdir /Users/eternal/Desktop/APATOKEN/APATOKEN/build/Debug-iphoneos/iAPATOKEN.app/fr.lproj -- /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Resources/fr.lproj/Localizable.strings
+/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Resources/fr.lproj/Localizable.strings:1:1: note: detected encoding of input file as Unicode (UTF-8) (in target 'APATOKEN' from project 'APATOKEN')
+
+CopyPNGFile /Users/eternal/Desktop/APATOKEN/APATOKEN/build/Debug-iphoneos/iAPATOKEN.app/apatoken_logo.png /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Resources/apatoken_logo.png (in target 'APATOKEN' from project 'APATOKEN')
+    cd /Users/eternal/Desktop/APATOKEN/APATOKEN
+    /Users/eternal/Downloads/Xcode.app/Contents/Developer/usr/bin/copypng -compress -strip-PNG-text /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Resources/apatoken_logo.png /Users/eternal/Desktop/APATOKEN/APATOKEN/build/Debug-iphoneos/iAPATOKEN.app/apatoken_logo.png
+
+CopyPNGFile /Users/eternal/Desktop/APATOKEN/APATOKEN/build/Debug-iphoneos/iAPATOKEN.app/apatoken_instruction.png /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Resources/apatoken_instruction.png (in target 'APATOKEN' from project 'APATOKEN')
+    cd /Users/eternal/Desktop/APATOKEN/APATOKEN
+    /Users/eternal/Downloads/Xcode.app/Contents/Developer/usr/bin/copypng -compress -strip-PNG-text /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Resources/apatoken_instruction.png /Users/eternal/Desktop/APATOKEN/APATOKEN/build/Debug-iphoneos/iAPATOKEN.app/apatoken_instruction.png
+
+CopyPNGFile /Users/eternal/Desktop/APATOKEN/APATOKEN/build/Debug-iphoneos/iAPATOKEN.app/ApaIcon512.png /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Resources/ApaIcon512.png (in target 'APATOKEN' from project 'APATOKEN')
+    cd /Users/eternal/Desktop/APATOKEN/APATOKEN
+    /Users/eternal/Downloads/Xcode.app/Contents/Developer/usr/bin/copypng -compress -strip-PNG-text /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Resources/ApaIcon512.png /Users/eternal/Desktop/APATOKEN/APATOKEN/build/Debug-iphoneos/iAPATOKEN.app/ApaIcon512.png
+
+CompileAssetCatalogVariant thinned /Users/eternal/Desktop/APATOKEN/APATOKEN/build/Debug-iphoneos/iAPATOKEN.app /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Assets.xcassets (in target 'APATOKEN' from project 'APATOKEN')
+    cd /Users/eternal/Desktop/APATOKEN/APATOKEN
+    /Users/eternal/Downloads/Xcode.app/Contents/Developer/usr/bin/actool /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Assets.xcassets --compile /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/assetcatalog_output/thinned --output-format human-readable-text --notices --warnings --export-dependency-info /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/assetcatalog_dependencies_thinned --output-partial-info-plist /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/assetcatalog_generated_info.plist_thinned --compress-pngs --enable-on-demand-resources YES --development-region en --target-device iphone --target-device ipad --minimum-deployment-target 26.2 --platform iphoneos
+/* com.apple.actool.compilation-results */
+/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/assetcatalog_generated_info.plist_thinned
+
+
+SwiftDriver APATOKEN normal arm64 com.apple.xcode.tools.swift.compiler (in target 'APATOKEN' from project 'APATOKEN')
+    cd /Users/eternal/Desktop/APATOKEN/APATOKEN
+    builtin-SwiftDriver -- /Users/eternal/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name iAPATOKEN -Onone -enforce-exclusivity\=checked @/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/iAPATOKEN.SwiftFileList -DDEBUG -enable-bare-slash-regex -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -sdk /Users/eternal/Downloads/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.2.sdk -target arm64-apple-ios26.2 -g -Xfrontend -serialize-debugging-options -enable-testing -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/eternal/Desktop/APATOKEN/APATOKEN/build/Debug-iphoneos -F /Users/eternal/Desktop/APATOKEN/APATOKEN/build/Debug-iphoneos -emit-localized-strings -emit-localized-strings-path /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64 -c -j12 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/C/com.apple.DeveloperTools/26.3-17C529/Xcode/SDKStatCaches.noindex/iphoneos26.2-23C57-87675ce223a9da9eea388599122a1df5.sdkstatcache -output-file-map /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/APATOKEN-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/eternal/Desktop/APATOKEN/APATOKEN/build/SwiftExplicitPrecompiledModules -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/iAPATOKEN.swiftmodule -validate-clang-modules-once -clang-build-session-file /var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/C/org.llvm.clang/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/APATOKEN_const_extract_protocols.json -Xcc -iquote -Xcc /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/iAPATOKEN-generated-files.hmap -Xcc -I/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/iAPATOKEN-own-target-headers.hmap -Xcc -I/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/iAPATOKEN-all-target-headers.hmap -Xcc -iquote -Xcc /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/iAPATOKEN-project-headers.hmap -Xcc -I/Users/eternal/Desktop/APATOKEN/APATOKEN/build/Debug-iphoneos/include -Xcc -I/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/DerivedSources-normal/arm64 -Xcc -I/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/DerivedSources/arm64 -Xcc -I/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/iAPATOKEN-Swift.h -working-directory /Users/eternal/Desktop/APATOKEN/APATOKEN -experimental-emit-module-separately -disable-cmo
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/build/SwiftExplicitPrecompiledModules/DeveloperToolsSupport-85J2X4NO1B6Y5W6BIMD3FXY4E.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/build/SwiftExplicitPrecompiledModules/_Builtin_stdarg-CCY1QVUS32YM1L0PQIXIX0Z2P.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/build/SwiftExplicitPrecompiledModules/_AvailabilityInternal-58EJQZZJP90F20FXI8OX32DSC.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/build/SwiftExplicitPrecompiledModules/_Builtin_stdbool-EFAD0LO7H3JLPQFA3D3NNPL0H.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/build/SwiftExplicitPrecompiledModules/_Builtin_float-CK7M894FUHL4GLAW85IXSD8IT.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/build/SwiftExplicitPrecompiledModules/SwiftShims-A5GT65HA2XBAOJDFAG1HGOY8G.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/build/SwiftExplicitPrecompiledModules/_SwiftConcurrencyShims-1Z4THLH192ZDVYPFB6Z318LIN.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/build/SwiftExplicitPrecompiledModules/ptrauth-OH8QBROLUZNT06LE28K9E4OF.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/build/SwiftExplicitPrecompiledModules/_Builtin_stddef-3HD6OY133GIXY3JVSR4MZWWE7.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/build/SwiftExplicitPrecompiledModules/ptrcheck-5QGQAY5G4J6DQ0E9B4LXU3IAC.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/build/SwiftExplicitPrecompiledModules/_DarwinFoundation1-DIL668QHV02EMUE1F2CLU7M2Z.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/build/SwiftExplicitPrecompiledModules/_DarwinFoundation2-1PWQFCK61LVVOQAT0FHO66R74.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/build/SwiftExplicitPrecompiledModules/_Builtin_limits-BRJQ27QN9DY8HYD3BGZR15TGF.pcm
+
+LinkAssetCatalog /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Assets.xcassets (in target 'APATOKEN' from project 'APATOKEN')
+    cd /Users/eternal/Desktop/APATOKEN/APATOKEN
+    builtin-linkAssetCatalog --thinned /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/assetcatalog_output/thinned --thinned-dependencies /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/assetcatalog_dependencies_thinned --thinned-info-plist-content /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/assetcatalog_generated_info.plist_thinned --unthinned /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/assetcatalog_output/unthinned --unthinned-dependencies /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/assetcatalog_dependencies_unthinned --unthinned-info-plist-content /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/assetcatalog_generated_info.plist_unthinned --output /Users/eternal/Desktop/APATOKEN/APATOKEN/build/Debug-iphoneos/iAPATOKEN.app --plist-output /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/assetcatalog_generated_info.plist
+
+ProcessInfoPlistFile /Users/eternal/Desktop/APATOKEN/APATOKEN/build/Debug-iphoneos/iAPATOKEN.app/Info.plist /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/empty-iAPATOKEN.plist (in target 'APATOKEN' from project 'APATOKEN')
+    cd /Users/eternal/Desktop/APATOKEN/APATOKEN
+    builtin-infoPlistUtility /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/empty-iAPATOKEN.plist -producttype com.apple.product-type.application -genpkginfo /Users/eternal/Desktop/APATOKEN/APATOKEN/build/Debug-iphoneos/iAPATOKEN.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -additionalcontentfile /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/assetcatalog_generated_info.plist -requiredArchitecture arm64 -o /Users/eternal/Desktop/APATOKEN/APATOKEN/build/Debug-iphoneos/iAPATOKEN.app/Info.plist
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/build/SwiftExplicitPrecompiledModules/sys_types-D0EI2K89AHEYWQ9HVMPCOM165.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/build/SwiftExplicitPrecompiledModules/_Builtin_tgmath-URLU210LL21T5HSB02GDVL5Q.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/build/SwiftExplicitPrecompiledModules/_Builtin_stdint-20VIALUTXNC50DPKPFL7771FP.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/build/SwiftExplicitPrecompiledModules/_Builtin_intrinsics-88391RZHI12RFQF2I8POIESIK.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/build/SwiftExplicitPrecompiledModules/_Builtin_stdatomic-6P13A0GXVZDJBPC94JRORBU9Z.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/build/SwiftExplicitPrecompiledModules/_DarwinFoundation3-51WZN63PM5YMPTW6Z33FZ11K5.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/build/SwiftExplicitPrecompiledModules/_Builtin_inttypes-29CAQYMZJWNUSDHJHU8I8SVJ3.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/build/SwiftExplicitPrecompiledModules/Darwin-5CSCJV8L5L3V85OFC27GB0UMQ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/build/SwiftExplicitPrecompiledModules/simd-ZSKF6KHSVYQ7BOOCZHRL2XH9.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/build/SwiftExplicitPrecompiledModules/MachO-F4R92CJVNXTKWG22FMJ8UF3JY.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/build/SwiftExplicitPrecompiledModules/ObjectiveC-AOFFT33K0UN4EXIK4FFF2ZCR2.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/build/SwiftExplicitPrecompiledModules/os_object-3KO8TKZ73YYKCK13IMMWSUV76.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/build/SwiftExplicitPrecompiledModules/os_workgroup-4DAOHWVX2TOWTKWW6Y5SZEVQZ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/build/SwiftExplicitPrecompiledModules/Dispatch-7LEU8WW2QSXZ6OBVA1BFFEX0P.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/build/SwiftExplicitPrecompiledModules/CoreFoundation-5730XX4RQAK6B6G0A95DQBD3V.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/build/SwiftExplicitPrecompiledModules/XPC-1LJZF36XV88RG5NLC7A71VTY6.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/build/SwiftExplicitPrecompiledModules/os-BD7CPYQDZU1BTDZQW6U2VUVI3.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/build/SwiftExplicitPrecompiledModules/Spatial-DUKV3DVEKLHP42LY9T078H8SM.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/build/SwiftExplicitPrecompiledModules/CFNetwork-CNF2MV6VK847PIS4FAI3QDHW1.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/build/SwiftExplicitPrecompiledModules/Security-45T4J9W81DUO7LF7VL8QIKVM7.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/build/SwiftExplicitPrecompiledModules/CoreGraphics-3MFNLSSM780MBCJA9M2RVEKMF.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/build/SwiftExplicitPrecompiledModules/Foundation-2HKPDAREMX9CKM53OQQ5GM8ZY.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/build/SwiftExplicitPrecompiledModules/CoreText-EED1RYFQFIPEYXKEMWDBB98ZU.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/build/SwiftExplicitPrecompiledModules/ImageIO-3FGI831I9XKUGVGUA998RBAAW.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/build/SwiftExplicitPrecompiledModules/Symbols-DEO94FOZW8XT9QWECL6WM5XFR.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/build/SwiftExplicitPrecompiledModules/FileProvider-1ZUXOLK3XSLFHOZGIR5Z9MOMX.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/build/SwiftExplicitPrecompiledModules/OSLog-67YML9UCG9FZ7YOC8P4LJG27B.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/build/SwiftExplicitPrecompiledModules/CoreBluetooth-D5QEZ5B387PD979HIZH52B1IY.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/build/SwiftExplicitPrecompiledModules/UIUtilities-JNL6W6TLJTTBTMXM5YNH0HAR.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/build/SwiftExplicitPrecompiledModules/Accessibility-DC9REOIFX37YSVDPRRVCH9IVO.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/build/SwiftExplicitPrecompiledModules/CoreTransferable-D4JLCWWQGL13PJ8E1I5XX63UL.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/build/SwiftExplicitPrecompiledModules/DataDetection-5EBMFIKZPC1M4AAERGEGN26X5.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/build/SwiftExplicitPrecompiledModules/IOSurface-C2TI2JITJSRA8G59AX3VB6H7R.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/build/SwiftExplicitPrecompiledModules/UserNotifications-5XQ0L5TNCOB9HY4GEEZFSUQEL.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/build/SwiftExplicitPrecompiledModules/UniformTypeIdentifiers-BCEO0IOSOK1ZGK7H8FR8XSKMK.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/build/SwiftExplicitPrecompiledModules/CoreData-YLDCC2QQGDMBY3D38RJD4IOX.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/build/SwiftExplicitPrecompiledModules/OpenGLES-CHK8W6YN4380L7OH3OSK50CGR.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/build/SwiftExplicitPrecompiledModules/Metal-E6ZSQTWDQFMGDW1H24IZFGM4F.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/build/SwiftExplicitPrecompiledModules/CoreVideo-C8BC9N1QFV8SHA0JV1X1FCC4D.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/build/SwiftExplicitPrecompiledModules/CoreImage-8QWOZ5UBCPO7RHEIJ8CJT0VMK.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/build/SwiftExplicitPrecompiledModules/QuartzCore-2ADDXBKDGWEUJ604R4EAUUO68.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/build/SwiftExplicitPrecompiledModules/SwiftUICore-5N7E3Z1O7LA06MFMOSJ893VSH.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/build/SwiftExplicitPrecompiledModules/UIKit-EPDPCTIXEDHTDLQBI5P8EO7DL.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/build/SwiftExplicitPrecompiledModules/SwiftUI-9RN1D4Q8MT4MV1T00Q2LKIHQB.pcm
+
+SwiftCompile normal arm64 Compiling\ HistoryView.swift,\ MeterPickerView.swift /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/History/HistoryView.swift /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/Meters/MeterPickerView.swift (in target 'APATOKEN' from project 'APATOKEN')
+
+SwiftCompile normal arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/History/HistoryView.swift (in target 'APATOKEN' from project 'APATOKEN')
+    cd /Users/eternal/Desktop/APATOKEN/APATOKEN
+    
+
+SwiftCompile normal arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/Meters/MeterPickerView.swift (in target 'APATOKEN' from project 'APATOKEN')
+    cd /Users/eternal/Desktop/APATOKEN/APATOKEN
+    
+
+SwiftCompile normal arm64 Compiling\ AboutView.swift,\ AppRootView.swift /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/About/AboutView.swift /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/AppRoot/AppRootView.swift (in target 'APATOKEN' from project 'APATOKEN')
+Failed frontend command:
+/Users/eternal/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift-frontend -frontend -c /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/BLE/DspsBlePort.swift /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Comm/MeterTransaction.swift /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Core/Bytes.swift /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Core/L.swift /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Core/LocalizationManager.swift /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Dlms/CosemApdu.swift /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Dlms/HdlcTransport.swift /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Dlms/TokenModels.swift /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Model/ChargeModel.swift /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Model/ReadingModel.swift /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Persist/Stores.swift /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Utils/IconHelper.swift -primary-file /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/About/AboutView.swift -primary-file /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/AppRoot/AppRootView.swift /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/Components/Animations.swift /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/Credits/CreditsView.swift /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/History/HistoryView.swift /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/Meters/MeterPickerView.swift /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/Meters/MeterPickerViewModel.swift /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/Settings/SettingsView.swift /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/Token/TokenFlowView.swift /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/Theme.swift /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/APATOKENApp.swift /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/DerivedSources/GeneratedAssetSymbols.swift -emit-dependencies-path /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/AboutView.d -emit-const-values-path /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/AboutView.swiftconstvalues -emit-reference-dependencies-path /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/AboutView.swiftdeps -serialize-diagnostics-path /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/AboutView.dia -emit-dependencies-path /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/AppRootView.d -emit-const-values-path /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/AppRootView.swiftconstvalues -emit-reference-dependencies-path /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/AppRootView.swiftdeps -serialize-diagnostics-path /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/AppRootView.dia -emit-localized-strings -emit-localized-strings-path /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64 -target arm64-apple-ios26.2 -module-can-import-version DeveloperToolsSupport 23.0.4 23.0.4 -module-can-import-version SwiftUI 7.2.5.1 7.2.5 -module-can-import-version UIKit 9126.2.4.1 9126.2.4 -load-resolved-plugin /Users/eternal/Downloads/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/swift/host/plugins/libFoundationMacros.dylib\#/Users/eternal/Downloads/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server\#FoundationMacros -load-resolved-plugin /Users/eternal/Downloads/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/swift/host/plugins/libObservationMacros.dylib\#/Users/eternal/Downloads/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server\#ObservationMacros -load-resolved-plugin /Users/eternal/Downloads/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/swift/host/plugins/libPreviewsMacros.dylib\#/Users/eternal/Downloads/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server\#PreviewsMacros -load-resolved-plugin /Users/eternal/Downloads/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/swift/host/plugins/libSwiftMacros.dylib\#/Users/eternal/Downloads/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server\#SwiftMacros -load-resolved-plugin /Users/eternal/Downloads/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/lib/swift/host/plugins/libSwiftUIMacros.dylib\#/Users/eternal/Downloads/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/swift-plugin-server\#SwiftUIMacros -disable-implicit-swift-modules -Xcc -fno-implicit-modules -Xcc -fno-implicit-module-maps -explicit-swift-module-map-file /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/iAPATOKEN-dependencies-1.json -Xllvm -aarch64-use-tbi -enable-objc-interop -stack-check -sdk /Users/eternal/Downloads/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.2.sdk -I /Users/eternal/Desktop/APATOKEN/APATOKEN/build/Debug-iphoneos -F /Users/eternal/Desktop/APATOKEN/APATOKEN/build/Debug-iphoneos -no-color-diagnostics -Xcc -fno-color-diagnostics -enable-testing -g -debug-info-format\=dwarf -dwarf-version\=5 -module-cache-path /Users/eternal/Desktop/APATOKEN/APATOKEN/build/SwiftExplicitPrecompiledModules -swift-version 5 -enforce-exclusivity\=checked -Onone -D DEBUG -serialize-debugging-options -const-gather-protocols-file /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/APATOKEN_const_extract_protocols.json -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -empty-abi-descriptor -validate-clang-modules-once -clang-build-session-file /var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/C/org.llvm.clang/ModuleCache.noindex/Session.modulevalidation -Xcc -working-directory -Xcc /Users/eternal/Desktop/APATOKEN/APATOKEN -enable-anonymous-context-mangled-names -file-compilation-dir /Users/eternal/Desktop/APATOKEN/APATOKEN -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -Xcc -ivfsstatcache -Xcc /var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/C/com.apple.DeveloperTools/26.3-17C529/Xcode/SDKStatCaches.noindex/iphoneos26.2-23C57-87675ce223a9da9eea388599122a1df5.sdkstatcache -Xcc -I/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/swift-overrides.hmap -Xcc -iquote -Xcc /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/iAPATOKEN-generated-files.hmap -Xcc -I/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/iAPATOKEN-own-target-headers.hmap -Xcc -I/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/iAPATOKEN-all-target-headers.hmap -Xcc -iquote -Xcc /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/iAPATOKEN-project-headers.hmap -Xcc -I/Users/eternal/Desktop/APATOKEN/APATOKEN/build/Debug-iphoneos/include -Xcc -I/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/DerivedSources-normal/arm64 -Xcc -I/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/DerivedSources/arm64 -Xcc -I/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/DerivedSources -Xcc -DDEBUG\=1 -no-auto-bridging-header-chaining -module-name iAPATOKEN -frontend-parseable-output -disable-clang-spi -target-sdk-version 26.2 -target-sdk-name iphoneos26.2 -clang-target arm64-apple-ios26.2 -in-process-plugin-server-path /Users/eternal/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/libSwiftInProcPluginServer.dylib -o /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/AboutView.o -o /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/AppRootView.o -index-unit-output-path /APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/AboutView.o -index-unit-output-path /APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/AppRootView.o
+
+SwiftCompile normal arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/About/AboutView.swift (in target 'APATOKEN' from project 'APATOKEN')
+    cd /Users/eternal/Desktop/APATOKEN/APATOKEN
+    
+/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/About/AboutView.swift:14:8: error: invalid redeclaration of 'BundleImage'
+struct BundleImage: View {
+       ^
+/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/Token/TokenFlowView.swift:250:8: note: 'BundleImage' previously declared here
+struct BundleImage: View {
+       ^
+/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/Token/TokenFlowView.swift:250:8: note: 'BundleImage' previously declared here
+struct BundleImage: View {
+       ^
+
+SwiftCompile normal arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/AppRoot/AppRootView.swift (in target 'APATOKEN' from project 'APATOKEN')
+    cd /Users/eternal/Desktop/APATOKEN/APATOKEN
+    
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ iAPATOKEN (in target 'APATOKEN' from project 'APATOKEN')
+EmitSwiftModule normal arm64 (in target 'APATOKEN' from project 'APATOKEN')
+    cd /Users/eternal/Desktop/APATOKEN/APATOKEN
+    
+
+SwiftCompile normal arm64 Compiling\ TokenFlowView.swift,\ Theme.swift /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/Token/TokenFlowView.swift /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/Theme.swift (in target 'APATOKEN' from project 'APATOKEN')
+SwiftCompile normal arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/Token/TokenFlowView.swift (in target 'APATOKEN' from project 'APATOKEN')
+    cd /Users/eternal/Desktop/APATOKEN/APATOKEN
+    
+
+SwiftCompile normal arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/Theme.swift (in target 'APATOKEN' from project 'APATOKEN')
+    cd /Users/eternal/Desktop/APATOKEN/APATOKEN
+    
+
+SwiftCompile normal arm64 Compiling\ Stores.swift,\ IconHelper.swift /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Persist/Stores.swift /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Utils/IconHelper.swift (in target 'APATOKEN' from project 'APATOKEN')
+SwiftCompile normal arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Persist/Stores.swift (in target 'APATOKEN' from project 'APATOKEN')
+    cd /Users/eternal/Desktop/APATOKEN/APATOKEN
+    
+
+SwiftCompile normal arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Utils/IconHelper.swift (in target 'APATOKEN' from project 'APATOKEN')
+    cd /Users/eternal/Desktop/APATOKEN/APATOKEN
+    
+
+SwiftCompile normal arm64 Compiling\ HdlcTransport.swift,\ TokenModels.swift /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Dlms/HdlcTransport.swift /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Dlms/TokenModels.swift (in target 'APATOKEN' from project 'APATOKEN')
+
+SwiftCompile normal arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Dlms/HdlcTransport.swift (in target 'APATOKEN' from project 'APATOKEN')
+    cd /Users/eternal/Desktop/APATOKEN/APATOKEN
+    
+
+SwiftCompile normal arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Dlms/TokenModels.swift (in target 'APATOKEN' from project 'APATOKEN')
+    cd /Users/eternal/Desktop/APATOKEN/APATOKEN
+    
+
+SwiftCompile normal arm64 Compiling\ LocalizationManager.swift,\ CosemApdu.swift /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Core/LocalizationManager.swift /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Dlms/CosemApdu.swift (in target 'APATOKEN' from project 'APATOKEN')
+SwiftCompile normal arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Core/LocalizationManager.swift (in target 'APATOKEN' from project 'APATOKEN')
+    cd /Users/eternal/Desktop/APATOKEN/APATOKEN
+    
+
+SwiftCompile normal arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Dlms/CosemApdu.swift (in target 'APATOKEN' from project 'APATOKEN')
+    cd /Users/eternal/Desktop/APATOKEN/APATOKEN
+    
+
+SwiftCompile normal arm64 Compiling\ Animations.swift,\ CreditsView.swift /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/Components/Animations.swift /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/Credits/CreditsView.swift (in target 'APATOKEN' from project 'APATOKEN')
+
+SwiftCompile normal arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/Components/Animations.swift (in target 'APATOKEN' from project 'APATOKEN')
+    cd /Users/eternal/Desktop/APATOKEN/APATOKEN
+    
+
+SwiftCompile normal arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/Credits/CreditsView.swift (in target 'APATOKEN' from project 'APATOKEN')
+    cd /Users/eternal/Desktop/APATOKEN/APATOKEN
+    
+
+SwiftCompile normal arm64 Compiling\ DspsBlePort.swift,\ MeterTransaction.swift /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/BLE/DspsBlePort.swift /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Comm/MeterTransaction.swift (in target 'APATOKEN' from project 'APATOKEN')
+
+SwiftCompile normal arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/BLE/DspsBlePort.swift (in target 'APATOKEN' from project 'APATOKEN')
+    cd /Users/eternal/Desktop/APATOKEN/APATOKEN
+    
+
+SwiftCompile normal arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Comm/MeterTransaction.swift (in target 'APATOKEN' from project 'APATOKEN')
+    cd /Users/eternal/Desktop/APATOKEN/APATOKEN
+    
+
+SwiftCompile normal arm64 Compiling\ MeterPickerViewModel.swift,\ SettingsView.swift /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/Meters/MeterPickerViewModel.swift /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/Settings/SettingsView.swift (in target 'APATOKEN' from project 'APATOKEN')
+
+SwiftCompile normal arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/Meters/MeterPickerViewModel.swift (in target 'APATOKEN' from project 'APATOKEN')
+    cd /Users/eternal/Desktop/APATOKEN/APATOKEN
+    
+
+SwiftCompile normal arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/Settings/SettingsView.swift (in target 'APATOKEN' from project 'APATOKEN')
+    cd /Users/eternal/Desktop/APATOKEN/APATOKEN
+    
+
+SwiftCompile normal arm64 Compiling\ Bytes.swift,\ L.swift /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Core/Bytes.swift /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Core/L.swift (in target 'APATOKEN' from project 'APATOKEN')
+
+SwiftCompile normal arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Core/Bytes.swift (in target 'APATOKEN' from project 'APATOKEN')
+    cd /Users/eternal/Desktop/APATOKEN/APATOKEN
+    
+
+SwiftCompile normal arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Core/L.swift (in target 'APATOKEN' from project 'APATOKEN')
+    cd /Users/eternal/Desktop/APATOKEN/APATOKEN
+    
+
+SwiftCompile normal arm64 Compiling\ ChargeModel.swift,\ ReadingModel.swift /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Model/ChargeModel.swift /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Model/ReadingModel.swift (in target 'APATOKEN' from project 'APATOKEN')
+
+SwiftCompile normal arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Model/ChargeModel.swift (in target 'APATOKEN' from project 'APATOKEN')
+    cd /Users/eternal/Desktop/APATOKEN/APATOKEN
+    
+
+SwiftCompile normal arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Model/ReadingModel.swift (in target 'APATOKEN' from project 'APATOKEN')
+    cd /Users/eternal/Desktop/APATOKEN/APATOKEN
+    
+
+SwiftCompile normal arm64 Compiling\ APATOKENApp.swift,\ GeneratedAssetSymbols.swift /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/APATOKENApp.swift /Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/DerivedSources/GeneratedAssetSymbols.swift (in target 'APATOKEN' from project 'APATOKEN')
+
+** BUILD FAILED **
+
+
+The following build commands failed:
+	SwiftCompile normal arm64 Compiling\ AboutView.swift,\ AppRootView.swift /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/About/AboutView.swift /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/AppRoot/AppRootView.swift (in target 'APATOKEN' from project 'APATOKEN')
+	SwiftCompile normal arm64 /Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/About/AboutView.swift (in target 'APATOKEN' from project 'APATOKEN')
+(2 failures)

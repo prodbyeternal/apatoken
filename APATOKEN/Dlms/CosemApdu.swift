@@ -116,6 +116,19 @@ enum CosemDataAccessResult: UInt8, CustomStringConvertible, Equatable {
     case noLongSetInProgress = 18
     case otherReason = 250
 
+    var localizedDescription: String {
+        switch self {
+        case .success: return L.message.msgOperationSucceeded
+        case .hardwareFault: return L.text("msgMeterHardwareFault")
+        case .temporaryFailure: return L.text("msgMeterTemporaryFailure")
+        case .readWriteDenied, .scopeOfAccessViolated: return L.text("msgMeterAccessDenied")
+        case .objectUndefined, .objectUnavailable, .dataBlockUnavailable: return L.text("msgMeterDataUnavailable")
+        case .objectClassInconsistent, .typeUnmatched: return L.message.msgWrongDataType
+        case .longGetAborted, .noLongGetInProgress, .longSetAborted, .noLongSetInProgress: return L.text("msgMeterTransferInterrupted")
+        case .otherReason: return L.message.msgUnknownErrorReason
+        }
+    }
+
     var description: String {
         switch self {
         case .success: return "DATA_ACCESS_RESULT_SUCCESS"
@@ -182,10 +195,9 @@ final class FrameCosemError: CommsError {}
 final class CosemAccessError: CommsError {
     let result: CosemDataAccessResult
 
-    init(message: String, result: CosemDataAccessResult) {
+    init(message: @autoclosure @escaping () -> String, result: CosemDataAccessResult) {
         self.result = result
-        let display = message.isEmpty ? result.description : "\(message) (\(result.description))"
-        super.init(display)
+        super.init((message().isEmpty ? "" : message() + ". ") + result.localizedDescription + " (\(result.rawValue))")
     }
 }
 
@@ -215,11 +227,7 @@ final class CosemRequestResult {
 
     func checkResponseStatus() throws {
         guard let status = responseStatus, status != .success else { return }
-        var text = describe()
-        if pduType != 0 {
-            text = pduName(pduType).uppercased() + " " + text
-        }
-        throw CosemAccessError(message: text, result: status)
+        throw CosemAccessError(message: self.describe(), result: status)
     }
 
     private func pduName(_ tag: UInt8) -> String {
@@ -244,10 +252,10 @@ enum CosemApduResponse {
         var results: [CosemRequestResult] = []
         for apdu in apdus {
             if case .exceptionResponse(let state, let service) = apdu {
-                throw FrameCosemError("ExceptionResponse : \(state) : \(service)")
+                throw FrameCosemError(L.message.msgAccessError + " (\(state):\(service))")
             }
             guard case .getResponse(let invoke, let selector, let result) = apdu else {
-                throw CommsError("not implemented: " + String(reflecting: apdu))
+                throw CommsError(L.message.msgNotImplemented)
             }
             _ = invoke
             let requestResult = CosemRequestResult(responseData: result.data ?? ByteBuffer(), pduType: 196)
@@ -263,10 +271,10 @@ enum CosemApduResponse {
         var results: [CosemRequestResult] = []
         for apdu in apdus {
             if case .exceptionResponse(let state, let service) = apdu {
-                throw FrameCosemError("ExceptionResponse : \(state) : \(service)")
+                throw FrameCosemError(L.message.msgAccessError + " (\(state):\(service))")
             }
             guard case .actionResponse(let actionResult, let returnParameters) = apdu else {
-                throw CommsError("not implemented: " + String(reflecting: apdu))
+                throw CommsError(L.message.msgNotImplemented)
             }
             let requestResult = CosemRequestResult(responseData: returnParameters?.data ?? ByteBuffer(), pduType: 199)
             requestResult.responseStatus = actionStatusToEnum(actionResult)
@@ -419,7 +427,7 @@ enum ApduParser {
             }
             return .confirmedServiceError(details: details)
         default:
-            throw CommsError("Nierozpoznany typ ramki PDU: \(first)")
+            throw CommsError(L.message.msgWrongPDU + " (\(first))")
         }
     }
 

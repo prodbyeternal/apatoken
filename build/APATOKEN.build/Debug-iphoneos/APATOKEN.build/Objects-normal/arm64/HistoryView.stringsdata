@@ -4,26 +4,10 @@
     "Localizable": [
       {
         "comment": "",
-        "key": "Filter by meter",
-        "location": {
-          "startingColumn": 26,
-          "startingLine": 191
-        }
-      },
-      {
-        "comment": "",
-        "key": "Filter by meter",
-        "location": {
-          "startingColumn": 26,
-          "startingLine": 238
-        }
-      },
-      {
-        "comment": "",
         "key": "%@ kWh / %@ kWh",
         "location": {
           "startingColumn": 22,
-          "startingLine": 308
+          "startingLine": 309
         }
       },
       {
@@ -31,7 +15,7 @@
         "key": "Energy Token Purchase",
         "location": {
           "startingColumn": 21,
-          "startingLine": 351
+          "startingLine": 352
         }
       },
       {
@@ -39,7 +23,7 @@
         "key": "Charging Type",
         "location": {
           "startingColumn": 21,
-          "startingLine": 356
+          "startingLine": 357
         }
       },
       {
@@ -47,7 +31,7 @@
         "key": "After Recharge",
         "location": {
           "startingColumn": 21,
-          "startingLine": 365
+          "startingLine": 366
         }
       },
       {
@@ -55,7 +39,7 @@
         "key": "Energy Delivered",
         "location": {
           "startingColumn": 21,
-          "startingLine": 370
+          "startingLine": 371
         }
       }
     ]

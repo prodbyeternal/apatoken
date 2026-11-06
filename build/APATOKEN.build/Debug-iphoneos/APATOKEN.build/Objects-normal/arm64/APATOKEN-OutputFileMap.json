@@ -36,6 +36,16 @@
     "swift-dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/MeterTransaction.swiftdeps",
     "swiftmodule" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/MeterTransaction~partial.swiftmodule"
   },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Core/BundleImage.swift" : {
+    "const-values" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/BundleImage.swiftconstvalues",
+    "dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/BundleImage.d",
+    "diagnostics" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/BundleImage.dia",
+    "index-unit-output-path" : "/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/BundleImage.o",
+    "llvm-bc" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/BundleImage.bc",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/BundleImage.o",
+    "swift-dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/BundleImage.swiftdeps",
+    "swiftmodule" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/BundleImage~partial.swiftmodule"
+  },
   "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Core/Bytes.swift" : {
     "const-values" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/Bytes.swiftconstvalues",
     "dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/build/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/Bytes.d",

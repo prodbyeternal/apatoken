@@ -1,0 +1,12 @@
+{
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/BLE/DspsBlePort.swift" : {
+    "abi-baseline-json" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/iAPATOKEN.abi.json",
+    "const-values" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/APATOKEN-primary.swiftconstvalues",
+    "dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/APATOKEN-primary.d",
+    "diagnostics" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/APATOKEN-primary.dia",
+    "objc-header" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/iAPATOKEN-Swift.h",
+    "swiftdoc" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/iAPATOKEN.swiftdoc",
+    "swiftmodule" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/iAPATOKEN.swiftmodule",
+    "swiftsourceinfo" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/iAPATOKEN.swiftsourceinfo"
+  }
+}

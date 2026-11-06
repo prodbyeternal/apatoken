@@ -1,0 +1,16 @@
+Command line invocation:
+    /Users/eternal/Downloads/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project APATOKEN.xcodeproj -scheme APATOKEN -destination "platform=iOS Simulator,id=CD903FD2-01CE-49FD-BFD6-440EE21BE0CC" -derivedDataPath /Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Testing -resultBundlePath /Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Regression-1.xcresult CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO test
+
+Build settings from command line:
+    CODE_SIGNING_ALLOWED = NO
+    CODE_SIGNING_REQUIRED = NO
+
+Writing result bundle at path:
+	/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Regression-1.xcresult
+
+xcodebuild: error: Unable to find a destination matching the provided destination specifier:
+		{ platform:iOS Simulator, id:CD903FD2-01CE-49FD-BFD6-440EE21BE0CC }
+
+	Ineligible destinations for the "APATOKEN" scheme:
+		{ platform:iOS, arch:arm64e, id:00008030-000E4DE10AA3802E, name:hehe, error:iOS 26.2 is not installed. Please download and install the platform from Xcode > Settings > Components. }
+		{ platform:iOS, id:dvtdevice-DVTiPhonePlaceholder-iphoneos:placeholder, name:Any iOS Device, error:iOS 26.2 is not installed. Please download and install the platform from Xcode > Settings > Components. }

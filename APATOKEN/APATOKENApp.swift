@@ -5,6 +5,7 @@ import CoreText
 
 @main
 struct APATOKENApp: App {
+    @StateObject private var app = AppState()
     init() {
         Self.registerFonts()
     }
@@ -12,7 +13,7 @@ struct APATOKENApp: App {
     var body: some Scene {
         WindowGroup {
             AppRootView()
-                .environmentObject(AppState())
+                .environmentObject(app)
         }
     }
 

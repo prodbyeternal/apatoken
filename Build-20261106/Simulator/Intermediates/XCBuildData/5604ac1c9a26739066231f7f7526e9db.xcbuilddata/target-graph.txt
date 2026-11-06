@@ -1,0 +1,2 @@
+Target dependency graph (1 target)
+Target 'APATOKEN' in project 'APATOKEN' (no dependencies)

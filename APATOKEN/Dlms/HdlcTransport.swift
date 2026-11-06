@@ -279,15 +279,15 @@ final class ExchangedFrame {
             throw TransportProtocolError("\(L.message.msgWrongResponseFromMeter) \(L.message.msgNoTile)")
         }
         if recvControl == .frmr {
-            throw TransportProtocolError("FRMR - Frame Reject response")
+            throw TransportProtocolError(L.text("msgFrameRejected"))
         }
         guard recvControl == .ua, recvData.count > 0 else { return }
         let ua = ByteBuffer(recvData.toByteArray())
         if try ua.parseUInt8() != 129 {
-            throw TransportProtocolError("No UA header first tag")
+            throw TransportProtocolError(L.message.msgWrongHDLCHeader)
         }
         if try ua.parseUInt8() != 128 {
-            throw TransportProtocolError("No UA header second tag")
+            throw TransportProtocolError(L.message.msgWrongHDLCHeader)
         }
         let rest = try ua.parseData(withLen8182: true, toEnd: 0, ignoreLengthValue: false)
         let body = ByteBuffer(rest.toByteArray())

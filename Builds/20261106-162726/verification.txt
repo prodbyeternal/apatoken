@@ -1,0 +1,6 @@
+IPA: /Users/eternal/Desktop/iAPATOKEN-1.2-build2026110601-20261106-162726.ipa
+Latest copy: /Users/eternal/Desktop/iAPATOKEN.ipa
+Version: 1.2 (2026110601)
+SHA-256: fa147b5524d184739eddb97cf111b4318613ca1e4365612111c92eb2bfde3927
+Source build: /Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726
+Verified: all packaged bytes match the fresh app; en/pl/fr tables; iPhone/iPad icons; logos.

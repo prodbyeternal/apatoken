@@ -2,7 +2,7 @@ import Foundation
 import SwiftUI
 
 /// Localized string accessors with dynamic language switching support.
-/// All keys live in Localizable.xcstrings.
+/// All keys live in Resources/{en,pl,fr}.lproj/Localizable.strings.
 enum L {
     /// UI strings (MAUI resource keys).
     enum ui {
@@ -41,7 +41,7 @@ enum L {
         static var txtTotalCredit: String { LocalizedKey("txtTotalCredit").localized }
         static var txtRecharge: String { LocalizedKey("txtRecharge").localized }
         static var txtTariffZone: String { LocalizedKey("txtTariffZone").localized }
-        static var txtZone: String { LocalizedKey("Zone").localized }
+        static var txtZone: String { LocalizedKey("txtZone").localized }
         static var txtSingleCharging: String { LocalizedKey("txtSingleCharging").localized }
         static var txtDualCharging: String { LocalizedKey("txtDualCharging").localized }
         static var txtDeviceAddress: String { LocalizedKey("txtDeviceAddress").localized }
@@ -59,12 +59,24 @@ enum L {
         static var txtUnlockCommunication: String { LocalizedKey("txtUnlockCommunication").localized }
         static var txtLanguage: String { LocalizedKey("txtLanguage").localized }
         static var txtCharges: String { LocalizedKey("txtCharges").localized }
-        static var txtCodename: String { LocalizedKey("txtCodename").localized }
         static var txtDeveloper: String { LocalizedKey("txtDeveloper").localized }
         static var txtReverseEngineering: String { LocalizedKey("txtReverseEngineering").localized }
         static var txtUIUX: String { LocalizedKey("txtUIUX").localized }
         static var txtAboutIAPATOKEN: String { LocalizedKey("txtAboutIAPATOKEN").localized }
         static var txtVersion: String { LocalizedKey("txtVersion").localized }
+        static var txtTokenNumber: String { LocalizedKey("txtTokenNumber").localized }
+        static var txtEnterTokenPlaceholder: String { LocalizedKey("txtEnterTokenPlaceholder").localized }
+        static var txtApplyToken: String { LocalizedKey("txtApplyToken").localized }
+        static var txtTokenApplied: String { LocalizedKey("txtTokenApplied").localized }
+        static var txtTokenAppliedSuccess: String { LocalizedKey("txtTokenAppliedSuccess").localized }
+        static var txtSectionMeter: String { LocalizedKey("txtSectionMeter").localized }
+        static var txtSectionTools: String { LocalizedKey("txtSectionTools").localized }
+        static var txtSectionDisplay: String { LocalizedKey("txtSectionDisplay").localized }
+        static var txtSectionAbout: String { LocalizedKey("txtSectionAbout").localized }
+        static var txtSelectPairedMeter: String { LocalizedKey("txtSelectPairedMeter").localized }
+        static var txtPortLog: String { LocalizedKey("txtPortLog").localized }
+        static var txtNotConfigured: String { LocalizedKey("txtNotConfigured").localized }
+        static var txtAll: String { LocalizedKey("txtAll").localized }
     }
 
     /// App-level messages (MAUI resource keys).
@@ -172,6 +184,10 @@ enum L {
         static var msgEntityServer: String { LocalizedKey("txtEntityServer").localized }
         static var msgWrongNumberOfCharsInHexString: String { LocalizedKey("msgWrongNumberOfCharsInHexString").localized }
         static var msgTransfer_ApplicationContextNameNotSupported: String { LocalizedKey("msgTransfer_ApplicationContextNameNotSupported").localized }
+    }
+
+    static func text(_ key: String) -> String {
+        LocalizationManager.shared.localizedString(forKey: key)
     }
 
     /// Formats a .NET-style {0},{1} template.

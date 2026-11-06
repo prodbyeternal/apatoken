@@ -1,248 +1,171 @@
 import SwiftUI
-import Combine
-
-// MARK: - Token flow coordinator
-
-@MainActor
-final class TokenFlowCoordinator: ObservableObject {
-    @Published var token = ""
-    @Published var isSubmitting = false
-    @Published var showSuccess = false
-    @Published var showError = false
-    @Published var errorMessage = ""
-    @Published var meterName: String = ""
-    @Published var showMeterPicker = false
-    @Published var showLanguagePicker = false
-
-    var hasMeter: Bool {
-        !meterName.isEmpty && meterName != L.ui.txtNoMeterSelected
-    }
-
-    var canPaste: Bool {
-        guard let text = UIPasteboard.general.string else { return false }
-        let digits = text.filter { $0.isNumber }
-        return digits.count == 20
-    }
-
-    var canSubmit: Bool {
-        token.filter({ $0.isNumber }).count == 20 && hasMeter && !isSubmitting
-    }
-
-    func updateToken(_ newToken: String) {
-        token = String(newToken.filter { $0.isNumber }.prefix(20))
-        if showError {
-            showError = false
-        }
-    }
-
-    func pasteFromClipboard() -> Bool {
-        guard let text = UIPasteboard.general.string else { return false }
-        let digits = text.filter { $0.isNumber }
-        if digits.count == 20 {
-            token = digits
-            return true
-        }
-        return false
-    }
-
-    func clearToken() {
-        token = ""
-    }
-
-    func selectMeter() {
-        showMeterPicker = true
-    }
-
-    func submitToken() async {
-        guard canSubmit else { return }
-
-        isSubmitting = true
-
-        do {
-            let result = try await MeterCommunication.beginTokenTransaction(
-                token: token.filter { $0.isNumber },
-                deviceAddress: SettingsManager.getBluetoothDeviceAddress(),
-                baudRate: SettingsManager.getMeterBaudRate()
-            )
-
-            switch result.deliveryStatus.statusCodeValue {
-            case 0, 1, 2, 3:
-                await MainActor.run {
-                    showSuccess = true
-                    isSubmitting = false
-                    token = ""
-                }
-                try? await Task.sleep(nanoseconds: 2_000_000_000)
-                await MainActor.run {
-                    showSuccess = false
-                }
-
-            case 4:
-                await MainActor.run {
-                    showError = true
-                    errorMessage = L.message.msgTokenEnteredButNotAccepted
-                    isSubmitting = false
-                }
-
-            default:
-                await MainActor.run {
-                    showError = true
-                    errorMessage = L.message.msgOperationFailed
-                    isSubmitting = false
-                }
-            }
-        } catch let error as CommsError {
-            await MainActor.run {
-                showError = true
-                errorMessage = error.chainMessage
-                isSubmitting = false
-            }
-        } catch {
-            await MainActor.run {
-                showError = true
-                errorMessage = String(describing: error)
-                isSubmitting = false
-            }
-        }
-    }
-}
-
-// MARK: - Token flow view
 
 struct TokenFlowView: View {
-    @StateObject private var coordinator = TokenFlowCoordinator()
-    @EnvironmentObject private var app: AppState
+    @ObservedObject private var session = MeterSession.shared
+    @State private var token = ""
+    @State private var error: Error?
+    @State private var receipt: RechargeReceipt?
+    @State private var showMeterPicker = false
+    @State private var showGenerator = false
+    @FocusState private var tokenFocused: Bool
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
+
+    private var canSubmit: Bool { TokenInput.isValid(token) && session.hasMeter && !session.busy }
 
     var body: some View {
         NavigationStack {
-            VStack(spacing: 0) {
-                // Header with title and meter selector
-                VStack(alignment: .leading, spacing: 16) {
-                    HStack {
-                        Text(L.ui.txtRecharge)
-                            .font(.largeTitle.bold())
-                            .foregroundStyle(Color.primary)
-                        Spacer()
-                        Image("apatoken_logo")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(height: 28)
+            ScrollView {
+                VStack(alignment: .leading, spacing: 20) {
+                    if session.testing { TestingBanner() }
+                    MeterSelectorButton(meterName: session.meterName, hasMeter: session.hasMeter) {
+                        tokenFocused = false
+                        showMeterPicker = true
                     }
-                    .padding(.horizontal)
+                    .disabled(session.busy)
 
-                    // Meter selector - tappable button
-                    MeterSelectorButton(
-                        meterName: coordinator.meterName,
-                        hasMeter: coordinator.hasMeter
-                    ) {
-                        coordinator.selectMeter()
-                    }
-                    .padding(.horizontal)
-                }
-                .padding(.top, 16)
-
-                // Token input
-                VStack(alignment: .leading, spacing: 8) {
-                    Text("Token Number")
-                        .font(.caption)
-                        .textCase(.uppercase)
-                        .foregroundStyle(Color.secondary)
-
-                    TextField("Enter 20-digit token", text: $coordinator.token)
+                    VStack(alignment: .leading, spacing: 8) {
+                        Text(L.ui.txtTokenNumber)
+                            .font(.caption).foregroundStyle(.secondary)
+                        TextField(L.ui.txtEnterTokenPlaceholder, text: Binding(
+                            get: { token },
+                            set: { token = TokenInput.normalize($0); error = nil; receipt = nil }
+                        ))
+                        .accessibilityIdentifier("tokenInput")
                         .keyboardType(.numberPad)
-                        .font(.system(size: 18, design: .monospaced))
+                        .focused($tokenFocused)
+                        .font(.system(.body, design: .monospaced))
                         .padding(16)
-                        .background(Color(UIColor.secondarySystemGroupedBackground), in: RoundedRectangle(cornerRadius: 16, style: .continuous))
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 16, style: .continuous)
-                                .stroke(Color(UIColor.separator).opacity(0.3), lineWidth: 0.5)
-                        )
-                }
-                .padding(.horizontal)
-                .padding(.top, 12)
-
-                // Paste / Clear buttons
-                HStack(spacing: 24) {
-                    Button {
-                        _ = coordinator.pasteFromClipboard()
-                    } label: {
-                        Label("Paste", systemImage: "doc.on.doc")
-                            .font(.subheadline.weight(.medium))
-                            .foregroundStyle(coordinator.canPaste ? Color.accentColor : Color.secondary)
+                        .background(Color(uiColor: .secondarySystemGroupedBackground), in: RoundedRectangle(cornerRadius: 16))
+                        .disabled(session.busy)
+                        Text("\(token.count)/20")
+                            .font(.caption.monospacedDigit()).foregroundStyle(.secondary)
+                            .frame(maxWidth: .infinity, alignment: .trailing)
                     }
-                    .disabled(!coordinator.canPaste)
 
-                    Button {
-                        coordinator.clearToken()
-                    } label: {
-                        Label("Clear", systemImage: "trash")
-                            .font(.subheadline.weight(.medium))
-                            .foregroundStyle(Color.secondary)
+                    HStack(spacing: 24) {
+                        Button {
+                            tokenFocused = false
+                            token = TokenInput.normalize(UIPasteboard.general.string ?? "")
+                            error = nil
+                            receipt = nil
+                        } label: { Label(L.ui.txtPaste, systemImage: "doc.on.doc") }
+                        Button {
+                            tokenFocused = false
+                            token = ""
+                            error = nil
+                            receipt = nil
+                        } label: { Label(L.ui.txtClear, systemImage: "trash") }
+                        .disabled(token.isEmpty)
                     }
-                    .disabled(coordinator.token.isEmpty)
+                    .disabled(session.busy)
+
+                    if session.testing {
+                        Button {
+                            tokenFocused = false
+                            showGenerator = true
+                        } label: { Label(L.text("txtTestTokens"), systemImage: "ticket") }
+                        .accessibilityIdentifier("testTokens")
+                        .disabled(session.busy)
+                    }
+
+                    if let error {
+                        Label(ErrorText.message(error), systemImage: "exclamationmark.triangle.fill")
+                            .foregroundStyle(.red)
+                            .accessibilityIdentifier("tokenError")
+                    }
+                    if let receipt {
+                        VStack(alignment: .leading, spacing: 12) {
+                            Label(L.ui.txtTokenApplied, systemImage: "checkmark.circle.fill")
+                                .font(.headline).foregroundStyle(.green)
+                            Text(L.ui.txtTokenAppliedSuccess)
+                            Text(ChargeConverter.chargingValues(receipt.charge))
+                                .monospacedDigit()
+                            if let warning = receipt.warning {
+                                Text(ErrorText.message(warning)).foregroundStyle(.orange)
+                            }
+                        }
+                        .accessibilityIdentifier("rechargeSuccess")
+                        .padding()
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .background(Color(uiColor: .secondarySystemGroupedBackground), in: RoundedRectangle(cornerRadius: 16))
+                    }
                 }
-                .padding(.horizontal)
-                .padding(.top, 12)
-
-                Spacer()
-
-                // Submit button
+                .padding()
+                .frame(maxWidth: .infinity, alignment: .leading)
+            }
+            .scrollDismissesKeyboard(.interactively)
+            .safeAreaInset(edge: .bottom) {
                 Button {
-                    Task { await coordinator.submitToken() }
+                    tokenFocused = false
+                    let submitted = token
+                    withAnimation(reduceMotion ? nil : .spring(response: 0.4, dampingFraction: 0.85)) {
+                        session.rechargePresentation = .working(session.meterName)
+                    }
+                    Task {
+                        error = nil
+                        receipt = nil
+                        // Give the card time to present, including for immediate local test results.
+                        try? await Task.sleep(for: .milliseconds(650))
+                        do {
+                            let result = try await session.recharge(submitted)
+                            receipt = result
+                            token = ""
+                            session.rechargePresentation = .success(result)
+                        } catch {
+                            self.error = error
+                            session.rechargePresentation = .failure(error)
+                        }
+                    }
                 } label: {
-                    if coordinator.isSubmitting {
-                        ProgressView()
-                            .progressViewStyle(.circular)
-                            .tint(.white)
-                            .frame(maxWidth: .infinity)
-                            .frame(height: 54)
-                    } else {
-                        Label("Apply Token", systemImage: "arrow.up.circle.fill")
-                            .font(.headline.weight(.semibold))
-                            .foregroundStyle(.white)
-                            .frame(maxWidth: .infinity)
-                            .frame(height: 54)
+                    HStack {
+                        if session.busy { ProgressView() }
+                        Label(L.ui.txtApplyToken, systemImage: "arrow.up.circle.fill")
                     }
+                    .font(.headline)
+                    .frame(maxWidth: .infinity).padding(.vertical, 10)
                 }
-                .buttonStyle(.plain)
-                .background(
-                    coordinator.canSubmit && !coordinator.isSubmitting
-                        ? Color.accentColor
-                        : Color(UIColor.secondarySystemGroupedBackground),
-                    in: RoundedRectangle(cornerRadius: 16, style: .continuous)
-                )
-                .disabled(!coordinator.canSubmit || coordinator.isSubmitting)
-                .padding(.horizontal)
-                .padding(.bottom, 32)
+                .accessibilityIdentifier("applyToken")
+                .buttonStyle(.borderedProminent)
+                .disabled(!canSubmit)
+                .padding()
+                .background(.bar)
             }
-            .background(Color(UIColor.systemGroupedBackground))
-            .navigationBarTitleDisplayMode(.large)
-            .sheet(isPresented: $coordinator.showMeterPicker) {
-                MeterPickerView { selectedDevice in
-                    if let device = selectedDevice {
-                        coordinator.meterName = device.shortName
-                    }
+            .background(Color(uiColor: .systemGroupedBackground))
+            .navigationTitle(L.ui.txtRecharge)
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    BundleImage(name: "apatoken_logo.png").scaledToFit().frame(width: 100, height: 22)
+                }
+                ToolbarItemGroup(placement: .keyboard) {
+                    Spacer()
+                    Button(L.text("txtDone")) { tokenFocused = false }
+                        .accessibilityIdentifier("hideKeyboard")
                 }
             }
-            .overlay(
-                SuccessConfirmationView(isPresented: $coordinator.showSuccess)
-            )
-            .overlay(
-                ErrorBannerView(
-                    isPresented: $coordinator.showError,
-                    message: coordinator.errorMessage
-                )
-            )
-            .onAppear {
-                coordinator.meterName = SettingsManager.getBluetoothDeviceName().isEmpty
-                    ? L.ui.txtNoMeterSelected
-                    : SettingsManager.getBluetoothDeviceName()
+            .sheet(isPresented: $showMeterPicker) { MeterPickerView() }
+            .sheet(isPresented: $showGenerator) {
+                NavigationStack {
+                    TestingToolsView { generated in
+                        token = generated
+                        error = nil
+                        receipt = nil
+                        showGenerator = false
+                    }
+                    .toolbar { ToolbarItem(placement: .cancellationAction) { Button(L.ui.txtClose) { showGenerator = false } } }
+                }
+                .dynamicLocalization()
             }
+            .onChange(of: session.contextID) {
+                tokenFocused = false
+                token = ""
+                receipt = nil
+                error = nil
+            }
+            .onDisappear { tokenFocused = false }
         }
+        .dynamicLocalization()
     }
 }
-
-// MARK: - Meter selector button
 
 struct MeterSelectorButton: View {
     let meterName: String
@@ -252,114 +175,21 @@ struct MeterSelectorButton: View {
     var body: some View {
         Button(action: onSelect) {
             HStack(spacing: 16) {
-                Circle()
-                    .fill(hasMeter ? Color.accentColor : Color.secondary.opacity(0.3))
+                Image(systemName: hasMeter ? "powermeter" : "questionmark")
+                    .foregroundStyle(.white)
                     .frame(width: 44, height: 44)
-                    .overlay(
-                        Circle()
-                            .stroke(Color(UIColor.separator), lineWidth: 0.5)
-                    )
-                    .overlay(
-                        Image(systemName: hasMeter ? "powermeter" : "questionmark")
-                            .foregroundStyle(hasMeter ? .white : Color.secondary)
-                    )
-
-                VStack(alignment: .leading, spacing: 2) {
-                    Text("Meter")
-                        .font(.caption)
-                        .textCase(.uppercase)
-                        .foregroundStyle(Color.secondary)
-
-                    Text(hasMeter ? meterName : L.ui.txtNoMeterSelected)
-                        .font(.system(size: 16, weight: .medium))
-                        .foregroundStyle(hasMeter ? Color.primary : Color.secondary)
+                    .background(hasMeter ? Color.accentColor : Color.gray, in: Circle())
+                VStack(alignment: .leading, spacing: 4) {
+                    Text(L.ui.txtMeterNumber).font(.caption).foregroundStyle(.secondary)
+                    Text(hasMeter ? meterName : L.ui.txtNoMeterSelected).font(.headline)
                 }
-
                 Spacer()
-
-                Image(systemName: "chevron.right")
-                    .font(.system(size: 14, weight: .semibold))
-                    .foregroundStyle(Color(UIColor.tertiarySystemFill))
+                Image(systemName: "chevron.right").foregroundStyle(.secondary)
             }
             .padding()
-            .background(Color(UIColor.secondarySystemGroupedBackground), in: RoundedRectangle(cornerRadius: 16, style: .continuous))
+            .background(Color(uiColor: .secondarySystemGroupedBackground), in: RoundedRectangle(cornerRadius: 16))
         }
         .buttonStyle(.plain)
+        .accessibilityIdentifier("meterSelector")
     }
-}
-
-// MARK: - Success confirmation overlay
-
-struct SuccessConfirmationView: View {
-    @Binding var isPresented: Bool
-
-    var body: some View {
-        if isPresented {
-            VStack {
-                Spacer()
-                HStack {
-                    Spacer()
-                    VStack(spacing: 16) {
-                        Image(systemName: "checkmark.circle.fill")
-                            .font(.system(size: 56))
-                            .foregroundStyle(Color.green)
-
-                        Text("Token Applied!")
-                            .font(.headline.weight(.semibold))
-
-                        Text("Electricity has been added to your meter.")
-                            .font(.subheadline)
-                            .foregroundStyle(Color.secondary)
-                            .multilineTextAlignment(.center)
-                    }
-                    .padding(.horizontal, 32)
-                    .padding(.vertical, 24)
-                    .background(Color(UIColor.systemGroupedBackground), in: RoundedRectangle(cornerRadius: 20, style: .continuous))
-                    .shadow(color: .black.opacity(0.2), radius: 24, y: 8)
-                    Spacer()
-                }
-            }
-            .ignoresSafeArea()
-            .transition(.opacity.combined(with: .scale(scale: 0.95)))
-            .onTapGesture {
-                isPresented = false
-            }
-        }
-    }
-}
-
-// MARK: - Error banner
-
-struct ErrorBannerView: View {
-    @Binding var isPresented: Bool
-    let message: String
-
-    var body: some View {
-        if isPresented {
-            VStack {
-                HStack(spacing: 12) {
-                    Image(systemName: "exclamationmark.triangle.fill")
-                        .foregroundStyle(Color.red)
-                        .font(.system(size: 18, weight: .semibold))
-
-                    Text(message)
-                        .font(.subheadline)
-                        .foregroundStyle(Color.primary)
-                        .multilineTextAlignment(.leading)
-
-                    Spacer()
-                }
-                .padding()
-                .background(Color.red.opacity(0.1), in: RoundedRectangle(cornerRadius: 14, style: .continuous))
-                .padding(.horizontal)
-            }
-            .padding(.top, 12)
-            .transition(.move(edge: .top).combined(with: .opacity))
-        }
-    }
-}
-
-#Preview {
-    TokenFlowView()
-        .environmentObject(AppState())
 }

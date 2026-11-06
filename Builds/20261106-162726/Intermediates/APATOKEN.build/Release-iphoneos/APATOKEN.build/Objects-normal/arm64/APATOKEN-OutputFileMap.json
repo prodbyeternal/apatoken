@@ -1,0 +1,176 @@
+{
+  "" : {
+    "const-values" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/APATOKEN-primary.swiftconstvalues",
+    "dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/APATOKEN-primary.d",
+    "diagnostics" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/APATOKEN-primary.dia",
+    "emit-module-dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/APATOKEN-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/APATOKEN-primary-emit-module.dia",
+    "pch" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/APATOKEN-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/APATOKEN-primary.swiftdeps"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/APATOKENApp.swift" : {
+    "index-unit-output-path" : "/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/APATOKENApp.o",
+    "llvm-bc" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/APATOKENApp.bc",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/APATOKENApp.o"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/BLE/DspsBlePort.swift" : {
+    "index-unit-output-path" : "/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/DspsBlePort.o",
+    "llvm-bc" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/DspsBlePort.bc",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/DspsBlePort.o"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Comm/MeterSession.swift" : {
+    "index-unit-output-path" : "/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/MeterSession.o",
+    "llvm-bc" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/MeterSession.bc",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/MeterSession.o"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Comm/MeterTransaction.swift" : {
+    "index-unit-output-path" : "/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/MeterTransaction.o",
+    "llvm-bc" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/MeterTransaction.bc",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/MeterTransaction.o"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Core/APATOKENAppBundleMarker.swift" : {
+    "index-unit-output-path" : "/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/APATOKENAppBundleMarker.o",
+    "llvm-bc" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/APATOKENAppBundleMarker.bc",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/APATOKENAppBundleMarker.o"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Core/AppVersion.swift" : {
+    "index-unit-output-path" : "/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/AppVersion.o",
+    "llvm-bc" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/AppVersion.bc",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/AppVersion.o"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Core/BundleImage.swift" : {
+    "index-unit-output-path" : "/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/BundleImage.o",
+    "llvm-bc" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/BundleImage.bc",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/BundleImage.o"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Core/Bytes.swift" : {
+    "index-unit-output-path" : "/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/Bytes.o",
+    "llvm-bc" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/Bytes.bc",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/Bytes.o"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Core/EnergyText.swift" : {
+    "index-unit-output-path" : "/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/EnergyText.o",
+    "llvm-bc" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/EnergyText.bc",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/EnergyText.o"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Core/L.swift" : {
+    "index-unit-output-path" : "/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/L.o",
+    "llvm-bc" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/L.bc",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/L.o"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Core/LocalizationManager.swift" : {
+    "index-unit-output-path" : "/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/LocalizationManager.o",
+    "llvm-bc" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/LocalizationManager.bc",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/LocalizationManager.o"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Dlms/CosemApdu.swift" : {
+    "index-unit-output-path" : "/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/CosemApdu.o",
+    "llvm-bc" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/CosemApdu.bc",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/CosemApdu.o"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Dlms/HdlcTransport.swift" : {
+    "index-unit-output-path" : "/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/HdlcTransport.o",
+    "llvm-bc" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/HdlcTransport.bc",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/HdlcTransport.o"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Dlms/TokenModels.swift" : {
+    "index-unit-output-path" : "/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/TokenModels.o",
+    "llvm-bc" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/TokenModels.bc",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/TokenModels.o"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Model/ChargeModel.swift" : {
+    "index-unit-output-path" : "/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/ChargeModel.o",
+    "llvm-bc" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/ChargeModel.bc",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/ChargeModel.o"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Model/ReadingModel.swift" : {
+    "index-unit-output-path" : "/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/ReadingModel.o",
+    "llvm-bc" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/ReadingModel.bc",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/ReadingModel.o"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Model/SimulatedEnvironment.swift" : {
+    "index-unit-output-path" : "/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/SimulatedEnvironment.o",
+    "llvm-bc" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/SimulatedEnvironment.bc",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/SimulatedEnvironment.o"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Persist/Stores.swift" : {
+    "index-unit-output-path" : "/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/Stores.o",
+    "llvm-bc" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/Stores.bc",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/Stores.o"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Utils/IconHelper.swift" : {
+    "index-unit-output-path" : "/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/IconHelper.o",
+    "llvm-bc" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/IconHelper.bc",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/IconHelper.o"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/About/AboutView.swift" : {
+    "index-unit-output-path" : "/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/AboutView.o",
+    "llvm-bc" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/AboutView.bc",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/AboutView.o"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/AppRoot/AppRootView.swift" : {
+    "index-unit-output-path" : "/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/AppRootView.o",
+    "llvm-bc" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/AppRootView.bc",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/AppRootView.o"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/Components/Animations.swift" : {
+    "index-unit-output-path" : "/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/Animations.o",
+    "llvm-bc" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/Animations.bc",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/Animations.o"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/Components/KeyboardDismissOnTap.swift" : {
+    "index-unit-output-path" : "/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/KeyboardDismissOnTap.o",
+    "llvm-bc" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/KeyboardDismissOnTap.bc",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/KeyboardDismissOnTap.o"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/Components/RechargeResultOverlay.swift" : {
+    "index-unit-output-path" : "/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/RechargeResultOverlay.o",
+    "llvm-bc" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/RechargeResultOverlay.bc",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/RechargeResultOverlay.o"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/Credits/CreditsView.swift" : {
+    "index-unit-output-path" : "/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/CreditsView.o",
+    "llvm-bc" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/CreditsView.bc",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/CreditsView.o"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/History/HistoryView.swift" : {
+    "index-unit-output-path" : "/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/HistoryView.o",
+    "llvm-bc" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/HistoryView.bc",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/HistoryView.o"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/Meters/MeterPickerView.swift" : {
+    "index-unit-output-path" : "/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/MeterPickerView.o",
+    "llvm-bc" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/MeterPickerView.bc",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/MeterPickerView.o"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/Meters/MeterPickerViewModel.swift" : {
+    "index-unit-output-path" : "/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/MeterPickerViewModel.o",
+    "llvm-bc" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/MeterPickerViewModel.bc",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/MeterPickerViewModel.o"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/Settings/SettingsView.swift" : {
+    "index-unit-output-path" : "/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/SettingsView.o",
+    "llvm-bc" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/SettingsView.bc",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/SettingsView.o"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/Settings/TestingToolsView.swift" : {
+    "index-unit-output-path" : "/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/TestingToolsView.o",
+    "llvm-bc" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/TestingToolsView.bc",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/TestingToolsView.o"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/Theme.swift" : {
+    "index-unit-output-path" : "/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/Theme.o",
+    "llvm-bc" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/Theme.bc",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/Theme.o"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Views/Token/TokenFlowView.swift" : {
+    "index-unit-output-path" : "/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/TokenFlowView.o",
+    "llvm-bc" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/TokenFlowView.bc",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/TokenFlowView.o"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "index-unit-output-path" : "/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Builds/20261106-162726/Intermediates/APATOKEN.build/Release-iphoneos/APATOKEN.build/Objects-normal/arm64/GeneratedAssetSymbols.o"
+  }
+}

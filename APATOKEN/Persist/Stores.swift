@@ -40,10 +40,6 @@ enum SettingsManager {
     static func setLanguage(_ languageName: String, _ languageTag: String) {
         defaults.set(languageName, forKey: "LanguageName")
         defaults.set(languageTag, forKey: "LanguageTag")
-        // Notify observers to trigger UI refresh
-        DispatchQueue.main.async {
-            NotificationCenter.default.post(name: .languageChanged, object: nil)
-        }
     }
 
     static func getMeterBaudRate() -> Int {
@@ -82,24 +78,19 @@ enum HistoryManager {
     @discardableResult
     static func add(_ model: ChargeModel) -> Bool {
         do {
-            let line = convertModelToString(model) + "\n"
-            let path = getFilePath()
-            if !FileManager.default.fileExists(atPath: path.path) {
-                try Data().write(to: path)
-            }
-            let handle = try FileHandle(forWritingTo: path)
-            defer { try? handle.close() }
-            _ = try handle.seekToEnd()
-            try handle.write(contentsOf: Data(line.utf8))
+            try save(model)
             return true
         } catch {
             return false
         }
     }
 
+    static func save(_ model: ChargeModel, at path: URL = getFilePath()) throws {
+        try HistoryFile.append(convertModelToString(model), to: path)
+    }
+
     /// ReadAll(): last line first.
-    static func readAll() -> [ChargeModel] {
-        let path = getFilePath()
+    static func readAll(at path: URL = getFilePath()) -> [ChargeModel] {
         guard FileManager.default.fileExists(atPath: path.path) else {
             return []
         }
@@ -125,8 +116,8 @@ enum HistoryManager {
         // C# Split(";"): the Substring(len-8, 8) and the field indexers
         // throw on short rows/fields → catch → the row is skipped.
         let fields = row.split(separator: ";", omittingEmptySubsequences: false).map(String.init)
-        guard fields.count >= 8, fields[0].count >= 8 else { return nil }
-        let meter = String(fields[0].suffix(8))
+        guard fields.count >= 8, !fields[0].isEmpty else { return nil }
+        let meter = fields[0]
         // TryParseExact(invariant "dd.MM.yyyy HH:mm:ss") failure → Now.
         let date = dateTimeFormatter.date(from: fields[2]) ?? Date()
         return ChargeModel(meter: meter, mac: fields[1], date: date, code: fields[3],
@@ -134,4 +125,21 @@ enum HistoryManager {
                            value1: fields[6], value2: fields[7])
     }
 
+}
+
+enum HistoryFile {
+    static let changed = Notification.Name("HistoryFileChanged")
+    private static let lock = NSLock()
+
+    /// Atomic replacement keeps the previous history intact if saving fails.
+    static func append(_ line: String, to path: URL) throws {
+        lock.lock()
+        defer { lock.unlock() }
+        try FileManager.default.createDirectory(at: path.deletingLastPathComponent(), withIntermediateDirectories: true)
+        var data = FileManager.default.fileExists(atPath: path.path) ? try Data(contentsOf: path) : Data()
+        if !data.isEmpty && data.last != 10 { data.append(10) }
+        data.append(Data((line + "\n").utf8))
+        try data.write(to: path, options: .atomic)
+        NotificationCenter.default.post(name: changed, object: nil)
+    }
 }

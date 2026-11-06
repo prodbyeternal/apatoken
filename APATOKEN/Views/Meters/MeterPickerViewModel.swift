@@ -21,7 +21,7 @@ final class MeterPickerViewModel: NSObject, ObservableObject {
 
     @Published var devices: [DiscoveredBLEDevice] = []
     @Published var isPowered = false
-    @Published var error: String?
+    @Published var error: Error?
     @Published var selectedMeterName: String = ""
     @Published var isPresented = false
 
@@ -29,10 +29,17 @@ final class MeterPickerViewModel: NSObject, ObservableObject {
     private var foundKeys: Set<String> = []
 
     func start() {
+        stop()
         devices = []
         foundKeys = []
         error = nil
         isPowered = false
+        if MeterSession.shared.testing {
+            devices = MeterSession.shared.testState?.meters.map {
+                DiscoveredBLEDevice(shortName: $0.number, address: $0.id)
+            } ?? []
+            return
+        }
         central = CBCentralManager(delegate: self, queue: nil)
     }
 
@@ -41,11 +48,16 @@ final class MeterPickerViewModel: NSObject, ObservableObject {
         central = nil
     }
 
-    func connect(to device: DiscoveredBLEDevice) {
+    func connect(to device: DiscoveredBLEDevice) -> Bool {
         stop()
-        SettingsManager.setCommunicationPort("Bluetooth_LowEnergyService")
-        SettingsManager.setBluetoothDevice(device.shortName, device.address)
-        selectedMeterName = device.shortName
+        do {
+            try MeterSession.shared.select(name: device.shortName, id: device.address)
+            selectedMeterName = device.shortName
+            return true
+        } catch {
+            self.error = error
+            return false
+        }
     }
 }
 
@@ -54,12 +66,19 @@ final class MeterPickerViewModel: NSObject, ObservableObject {
 extension MeterPickerViewModel: CBCentralManagerDelegate {
     nonisolated func centralManagerDidUpdateState(_ central: CBCentralManager) {
         Task { @MainActor in
+            guard !MeterSession.shared.testing, self.central === central else { return }
             guard central.state == .poweredOn else {
+                self.isPowered = false
                 if central.state == .unsupported {
-                    self.error = L.message.msgBluetoothNotSupported
+                    self.error = CommsError(L.message.msgBluetoothNotSupported)
+                } else if central.state == .poweredOff {
+                    self.error = CommsError(L.text("msgBluetoothOff"))
+                } else if central.state == .unauthorized {
+                    self.error = CommsError(L.text("msgBluetoothPermission"))
                 }
                 return
             }
+            self.error = nil
             self.isPowered = true
             central.scanForPeripherals(withServices: nil, options: nil)
         }
@@ -79,6 +98,7 @@ extension MeterPickerViewModel: CBCentralManagerDelegate {
         }
 
         Task { @MainActor in
+            guard !MeterSession.shared.testing, self.central === central else { return }
             self.addDevice(peripheral: peripheral, name: name)
         }
     }

@@ -1,0 +1,23 @@
+{
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Core/EnergyText.swift" : {
+    "const-values" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Intermediates/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/EnergyText.swiftconstvalues",
+    "dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Intermediates/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/EnergyText.d",
+    "diagnostics" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Intermediates/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/EnergyText.dia",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Intermediates/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/EnergyText.o",
+    "swift-dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Intermediates/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/EnergyText.swiftdeps"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Core/L.swift" : {
+    "const-values" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Intermediates/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/L.swiftconstvalues",
+    "dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Intermediates/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/L.d",
+    "diagnostics" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Intermediates/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/L.dia",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Intermediates/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/L.o",
+    "swift-dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Intermediates/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/L.swiftdeps"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Core/LocalizationManager.swift" : {
+    "const-values" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Intermediates/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/LocalizationManager.swiftconstvalues",
+    "dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Intermediates/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/LocalizationManager.d",
+    "diagnostics" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Intermediates/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/LocalizationManager.dia",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Intermediates/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/LocalizationManager.o",
+    "swift-dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Intermediates/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/LocalizationManager.swiftdeps"
+  }
+}

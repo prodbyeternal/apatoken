@@ -6,11 +6,12 @@ import Foundation
 /// `CommonMethods.IsTimeoutException` – a type check plus a "timeout"
 /// substring check on the whole chain.
 open class CommsError: Error, CustomStringConvertible {
-    public let message: String
+    private let messageProvider: () -> String
+    public var message: String { messageProvider() }
     public private(set) var cause: CommsError?
 
-    public init(_ message: String, cause: CommsError? = nil) {
-        self.message = message
+    public init(_ message: @autoclosure @escaping () -> String, cause: CommsError? = nil) {
+        self.messageProvider = message
         self.cause = cause
     }
 

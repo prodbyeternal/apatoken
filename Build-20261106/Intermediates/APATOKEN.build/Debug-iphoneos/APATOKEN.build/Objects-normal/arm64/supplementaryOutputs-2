@@ -1,0 +1,23 @@
+{
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Core/AppVersion.swift" : {
+    "const-values" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Intermediates/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/AppVersion.swiftconstvalues",
+    "dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Intermediates/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/AppVersion.d",
+    "diagnostics" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Intermediates/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/AppVersion.dia",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Intermediates/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/AppVersion.o",
+    "swift-dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Intermediates/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/AppVersion.swiftdeps"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Core/BundleImage.swift" : {
+    "const-values" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Intermediates/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/BundleImage.swiftconstvalues",
+    "dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Intermediates/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/BundleImage.d",
+    "diagnostics" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Intermediates/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/BundleImage.dia",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Intermediates/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/BundleImage.o",
+    "swift-dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Intermediates/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/BundleImage.swiftdeps"
+  },
+  "/Users/eternal/Desktop/APATOKEN/APATOKEN/APATOKEN/Core/Bytes.swift" : {
+    "const-values" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Intermediates/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/Bytes.swiftconstvalues",
+    "dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Intermediates/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/Bytes.d",
+    "diagnostics" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Intermediates/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/Bytes.dia",
+    "object" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Intermediates/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/Bytes.o",
+    "swift-dependencies" : "/Users/eternal/Desktop/APATOKEN/APATOKEN/Build-20261106/Intermediates/APATOKEN.build/Debug-iphoneos/APATOKEN.build/Objects-normal/arm64/Bytes.swiftdeps"
+  }
+}

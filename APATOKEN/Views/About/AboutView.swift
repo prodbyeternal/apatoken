@@ -1,17 +1,9 @@
 import SwiftUI
-import Combine
-// MARK: - About view model
-
-@MainActor
-final class AboutViewModel: ObservableObject {
-    @Published var showAPATOR = false
-    @Published var showEternal = false
-}
 
 // MARK: - About view
 
 struct AboutView: View {
-    @StateObject private var viewModel = AboutViewModel()
+    @Environment(\.openURL) private var openURL
 
     var body: some View {
         NavigationStack {
@@ -19,8 +11,7 @@ struct AboutView: View {
                 VStack(spacing: 24) {
                     // App icon + title
                     VStack(spacing: 12) {
-                        Image("AppIcon1024")
-                            .resizable()
+                        BundleImage(name: "AppIcon1024")
                             .frame(width: 96, height: 96)
                             .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
                             .shadow(color: .black.opacity(0.15), radius: 12, y: 4)
@@ -30,7 +21,7 @@ struct AboutView: View {
                             .foregroundStyle(Color.primary)
                             .multilineTextAlignment(.center)
 
-                        Text("v1.1 • \(L.ui.txtCodename) Ramune")
+                        Text(AppVersion.description)
                             .font(.subheadline)
                             .foregroundStyle(Color.secondary)
                             .multilineTextAlignment(.center)
@@ -39,7 +30,7 @@ struct AboutView: View {
 
                     // Authors section
                     VStack(alignment: .leading, spacing: 16) {
-                        Text("Authors")
+                        Text(L.text("txtAuthors"))
                             .font(.headline)
                             .foregroundStyle(Color.primary)
                             .padding(.horizontal)
@@ -47,22 +38,22 @@ struct AboutView: View {
                         // APATOR S.A.
                         AuthorRow(
                             name: "APATOR S.A.",
-                            role: "Electricity meters, Android app development",
+                            role: L.text("txtApatorRole"),
                             logoName: "apator_logo.jpg",
                             logoBackground: Color.white,
                             action: {
-                                viewModel.showAPATOR = true
+                                openURL(URL(string: "https://www.apator.com")!)
                             }
                         )
 
                         // prodbyeternal
                         AuthorRow(
                             name: "prodbyeternal",
-                            role: "iOS port, reverse engineering, UI/UX",
+                            role: L.text("txtEternalRole"),
                             logoName: "eternal_logo.jpg",
                             logoBackground: Color(UIColor.systemGray6),
                             action: {
-                                viewModel.showEternal = true
+                                openURL(URL(string: "https://github.com/prodbyeternal")!)
                             }
                         )
                     }
@@ -74,7 +65,7 @@ struct AboutView: View {
                             .foregroundStyle(Color.secondary)
                             .multilineTextAlignment(.center)
 
-                        Text("OpenSans by Steve Mattione")
+                        Text(L.text("txtFontCredit"))
                             .font(.caption)
                             .foregroundStyle(Color.secondary)
                     }
@@ -83,26 +74,9 @@ struct AboutView: View {
                 .padding(.vertical, 24)
             }
             .background(Color(UIColor.systemGroupedBackground))
-            .navigationTitle(L.ui.txtSettings)
+            .navigationTitle(L.ui.txtAboutIAPATOKEN)
             .navigationBarTitleDisplayMode(.inline)
-            .sheet(isPresented: $viewModel.showAPATOR) {
-                Link(destination: URL(string: "https://www.apator.com")!) {
-                    Text("Open APATOR S.A.")
-                        .font(.headline)
-                        .frame(maxWidth: .infinity, maxHeight: .infinity)
-                        .background(Color(UIColor.systemGroupedBackground))
-                }
-                .statusBar(hidden: true)
-            }
-            .sheet(isPresented: $viewModel.showEternal) {
-                Link(destination: URL(string: "https://github.com/prodbyeternal")!) {
-                    Text("Open GitHub")
-                        .font(.headline)
-                        .frame(maxWidth: .infinity, maxHeight: .infinity)
-                        .background(Color(UIColor.systemGroupedBackground))
-                }
-                .statusBar(hidden: true)
-            }
+            .dynamicLocalization()
         }
     }
 }
@@ -119,8 +93,7 @@ struct AuthorRow: View {
     var body: some View {
         Button(action: action) {
             HStack(spacing: 16) {
-                Image(logoName)
-                    .resizable()
+                BundleImage(name: logoName)
                     .frame(width: 56, height: 56)
                     .clipShape(Circle())
                     .background(logoBackground, in: Circle())
